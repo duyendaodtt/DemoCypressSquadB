@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://www.google.com",
+    "testFiles": "**/*.feature",
+    "ignoreTestFiles": "*.js"
+}

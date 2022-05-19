@@ -1,0 +1,33 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "demo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-run": "cypress run; node cypress/cucumber-json/cucumber-html-report.js "
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "duyen dao",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.6.1",
+    "tsify": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^1.20.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Quantum homepage",
+    "line": 1,
+    "id": "quantum-homepage",
+    "tags": [],
+    "uri": "QuantumHomePage.feature",
+    "elements": [
+      {
+        "id": "quantum-homepage;visting-the-quantum-homepage-and-see-the-title",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "visting the quantum homepage and see the title",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I visit Quantum page",
+            "result": {
+              "status": "passed",
+              "duration": 4075000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I see \"Quantum\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
