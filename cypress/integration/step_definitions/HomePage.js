@@ -10,4 +10,10 @@ Then("I should see a search bar", () => {
     "placeholder",
     "Search the web without being tracked"
   );
-});
+})
+/** 
+Then(`I should see the module Last News with {} items and title as {string}`, (numOfItem, titleName) =>{
+    // var itemCount = parseInt(numOfItem);
+    homePage.checkModuleLastNewTitle(titleName)
+}
+*/

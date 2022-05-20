@@ -22,7 +22,7 @@
             "name": "I visit duckduckgo.com",
             "result": {
               "status": "passed",
-              "duration": 1845000000
+              "duration": 1990000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I should see a search bar",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 56000000
             }
           }
         ]
