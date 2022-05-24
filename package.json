@@ -4,6 +4,7 @@
   "description": "demo project",
   "main": "index.js",
   "scripts": {
+    "test-browser": "cypress run --browser chrome;cypress run --browser firefox",
     "test": "cypress run&&node cypress/cucumber-json/cucumber-html-report.js",
     "e2e" : "cypress run&&node cypress/cucumber-json/cucumber-html-report.js"
   },
