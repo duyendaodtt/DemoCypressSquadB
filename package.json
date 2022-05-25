@@ -23,7 +23,7 @@
     "multiple-cucumber-html-reporter": "^1.20.0"
   },
   "cypress-cucumber-preprocessor": {
-    "step_definitions": "cypress/integration/step_definitions/",
+    "step_definitions": "cypress/integration/step_definitions",
     "cucumberJson": {
       "generate": true,
       "outputFolder": "cypress/cucumber-json",

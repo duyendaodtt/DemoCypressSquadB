@@ -1,0 +1,32 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "SEO",
+    "line": 1,
+    "id": "seo",
+    "tags": [],
+    "uri": "SEO_GlobalGroup.feature",
+    "elements": [
+      {
+        "id": "seo;\"check-setting-seo-groups-with-hide-from-search-engines\"",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "\"Check setting SEO groups with Hide from Search Engines\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "I login ContentStack",
+            "result": {
+              "status": "passed",
+              "duration": 7165000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

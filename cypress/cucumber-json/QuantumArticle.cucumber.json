@@ -1,0 +1,58 @@
+[
+  {
+    "description": "  I want check Quantum Article site",
+    "keyword": "Feature",
+    "name": "Quantum Article",
+    "line": 1,
+    "id": "quantum-article",
+    "tags": [],
+    "uri": "QuantumArticle.feature",
+    "elements": [
+      {
+        "id": "quantum-article;go-to-article-site",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Go to article site",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I open \"https://stage.quantumbusinessnews.com/deals-partnerships/quantum-company-delays-processor-plans-by-one-year\" page",
+            "result": {
+              "status": "passed",
+              "duration": 6289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see header is \"Test Article 1 - Edited Header\"",
+            "result": {
+              "status": "failed",
+              "duration": 3012000000,
+              "error_message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I see summary is \"123123123\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
