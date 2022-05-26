@@ -23,3 +23,21 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('loginWith', ({ email, password }) =>
+
+  cy.visit('https://eu-app.contentstack.com/#!/login')
+
+    .findByPlaceholderText(/email address/)
+
+    .type(email)
+
+    .findByPlaceholderText(/password/)
+
+    .type(password)
+
+    .findByText('Log in')
+
+    .click()
+
+)
