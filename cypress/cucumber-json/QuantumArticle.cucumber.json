@@ -9,46 +9,71 @@
     "uri": "QuantumArticle.feature",
     "elements": [
       {
-        "id": "quantum-article;go-to-article-site",
+        "id": "quantum-article;go-to-license-global-article-site",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Go to article site",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 5
-          }
-        ],
+        "line": 18,
+        "name": "Go to License Global article site",
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "I open \"https://stage.quantumbusinessnews.com/deals-partnerships/quantum-company-delays-processor-plans-by-one-year\" page",
+            "line": 19,
+            "name": "I open \"https://stage.licenseglobal.com/entertainment/jazwares-makes-licensing-expo-debut-with-squishmallows-\" page",
             "result": {
               "status": "passed",
-              "duration": 6289000000
+              "duration": 18258000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "I see header is \"Test Article 1 - Edited Header\"",
+            "line": 20,
+            "name": "I see header is \"Jazwares Makes Licensing Expo Debut with Squishmallows\"",
             "result": {
-              "status": "failed",
-              "duration": 3012000000,
-              "error_message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n"
+              "status": "passed",
+              "duration": 68000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
-            "name": "I see summary is \"123123123\"",
+            "line": 21,
+            "name": "I see summary is \"Plush brand drives new opportunities across multiple licensing categories.\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 377000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I see author name is \"License Global\"",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I see author image",
+            "result": {
+              "status": "passed",
+              "duration": 147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I see feature image",
+            "result": {
+              "status": "passed",
+              "duration": 79000000
             }
           }
         ]

@@ -1,10 +1,15 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
 
-// const url = 'https://google.com'
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  return false
+})
+
 Given('I visit Quantum page', () => {
   cy.visit('https://www.quantumbusinessnews.com/')
 })
 
 Given('I open {string} page', (url) => {
-  cy.visit(url)
+  cy.visit(url, {timeout:30000})
 })

@@ -1,5 +1,4 @@
 /// <reference types = "Cypress"/>
-/// <reference types="cypress-xpath" />
 class HomePage {
     checkModuleLastNew(listLength, moduleTitle) {
         /**
