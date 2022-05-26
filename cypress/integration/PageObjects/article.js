@@ -28,14 +28,15 @@ class Article {
       cy.get('img')
         .should('have.class','rounded w-full object-cover h-full')
     }
+
+    checkFeatureImageCaption(){
+      cy.get('div').should('have.class','mt-12 text-base leading-5 text-sonic-silver')
+    }
     
     checkKeyword(title) {
       cy.get('a[href*="/keywords/'+title+'"]')
     }
 
-    checkShareFacebook()
-    {
-      cy.get('span').should('have.class','share-sns facebook')
-    }
+    
 }
 export default Article
