@@ -1,10 +1,10 @@
 /// <reference types = "Cypress"/>
 class Article {
 
-    checkArticleHeader(title) {
-        cy.get('h1')
-          .first()
-          .should('have.text', title);
+    checkArticleHeader(locator, title) {
+      cy.get(locator)
+        .first()
+        .should('have.text', title);
     }
     checkArticleSummary(title) {
         cy.get('div')

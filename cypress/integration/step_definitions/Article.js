@@ -6,8 +6,18 @@ import SharedObject from "../PageObjects/sharedObject";
 const article = new Article();
 const utils = new SharedObject();
 
+before(()=> {
+  cy.fixture("webElements/articleElements.json").then(eles =>{
+     this.eles = eles
+ //return article.checkArticleHeader(eles.articleTitle, title);
+})
+})
+
 Then(`I see header is {string}`, (title) =>{
-    return article.checkArticleHeader(title);
+ //  cy.fixture("webElements/articleElements.json").then((eles){
+ //     return article.checkArticleHeader(eles.articleTitle, title);
+ // }) 
+ return article.checkArticleHeader(this.eles.articleTitle, title);
 })
 
 
