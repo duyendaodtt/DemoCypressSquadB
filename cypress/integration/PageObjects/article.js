@@ -6,8 +6,8 @@ class Article {
         .first()
         .should('have.text', title);
     }
-    checkArticleSummary(title) {
-        cy.get('div')
+    checkArticleSummary(locator, title) {
+        cy.get(locator)
           .should('contain.text',title);
         }
 
