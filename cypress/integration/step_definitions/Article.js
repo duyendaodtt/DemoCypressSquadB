@@ -1,5 +1,6 @@
 import cypress from "cypress";
 import { Then } from "cypress-cucumber-preprocessor/steps";
+import { fixtures } from "../../support/fixtures";
 import Article from "../PageObjects/article";
 import SharedObject from "../PageObjects/sharedObject";
 
@@ -7,7 +8,7 @@ const article = new Article();
 const utils = new SharedObject();
 
 before(()=> {
-  cy.fixture("webElements/articleElements.json").then(eles =>{
+  cy.fixture(fixtures.Article).then(eles =>{
      this.eles = eles
 })
 })
