@@ -1,5 +1,8 @@
 {
     "baseUrl": "https://www.google.com",
     "testFiles": "**/*.feature",
-    "ignoreTestFiles": "*.js"
+    "ignoreTestFiles": "*.js",
+    "fixtures":{
+        "Article": "webElements/articleElements.json"
+    }
 }
