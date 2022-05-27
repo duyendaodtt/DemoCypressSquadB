@@ -105,7 +105,7 @@ class SharedObject{
     //#endregion
 
     checkBreadcrumbs(){
-        cy.get('a[href=/]')
+      cy.get('nav').children('ul').children('li').children('a').should('have.text','HOME')
     }
 
     //Sign me up block
@@ -113,6 +113,24 @@ class SharedObject{
         cy.get('button').should('have.text','Sign me up')
     }
 
+    // Cagetory 
+
+    checkBreadcrumbsWithText(txt){
+      cy.get('nav>ul>li').each(($element,index,$list) => {
+        if($element.text == txt){return true}
+        return false
+      })
+    }
+
+    //#region Body
+    checkBody_Category(txt){
+      cy.get('section>div').each(($element) => {
+        if($element.text == txt){return true}
+        return false
+      })
+    }
+    //#endregion
+    
 
 }
 
