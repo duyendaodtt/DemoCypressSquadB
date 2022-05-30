@@ -20,8 +20,7 @@ class Article {
     }
 
     checkArticleAuthorImage() {
-        cy.get('img')
-        .should('have.class','rounded-full object-cover w-48 h-48 text-sm font-semibold leading-7 text-sonic-silver')
+        cy.get('.w-48.h-48').should('have.attr','src').should('contain','auto=webp&format=png')
     }
 
     checkArticleFeatureImage() {
@@ -37,6 +36,9 @@ class Article {
       cy.get('a[href*="/keywords/'+title+'"]')
     }
 
+    checkblabla(){
+      cy.get('img').should('satisfy', hasAtLeastOneClass())
+    }
     
 }
 export default Article

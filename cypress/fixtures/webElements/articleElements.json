@@ -1,4 +1,5 @@
 {
     "articleTitle": "h1",
-    "summaryLocator": "div"
+    "summaryLocator": "div",
+    "authorImage": ".w48.h48"
 }

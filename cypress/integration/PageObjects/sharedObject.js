@@ -1,136 +1,33 @@
 /// <reference types = "Cypress"/>
 
 class SharedObject{
-    // Check header
-    checkHeader(title) {
-        cy.get('h1')
-          .first()
-          .should('have.text', title);
+
+    //Check if locator have text
+    checkLocatorHaveText(locator, txt) {
+      cy.get(locator)
+        .should('have.text', txt);
     }
-    // check summary
-    checkSummary(title) {
-        cy.get('div')
-          .should('contain.text',title);
-        }
-    //#region Author
-    checkAuthor(title) {
-      cy.contains('a',title)
+    //Check if locator containts text
+    checkLocatorContaints(locator, txt) {
+      cy.get(locator)
+        .should('contain', txt);
     }
-
-    checkPublishedDate(title) {
-      cy.contains('p',title)
+    //Check if first locator have text
+    checkLocatorFirstHaveText(locator, txt) {
+      cy.get(locator)
+      .first()
+        .should('have.text', txt);
     }
-
-    checkAuthorImage() {
-        cy.get('img')
-        .should('have.class','rounded-full object-cover w-48 h-48 text-sm font-semibold leading-7 text-sonic-silver')
+    //Check if locator have class
+    checkLocatorFirstHaveText(locator, className) {
+      cy.get(locator) 
+        .should('have.class', className);
     }
-    //#endregion
-
-
-    //#region Feature Image
-    checkFeatureImage() {
-      cy.get('img')
-        .should('have.class','rounded w-full object-cover h-full')
+    //Check if locator have class
+    checkLocatorClassHaveText(locator, className) {
+      cy.get(locator)
+        .should('have.class', className);
     }
-    
-    //Check Alt text
-    checkFeatureImageAltText(title){
-        cy.get('img')
-        .should('have.class','rounded w-full object-cover h-full')
-        .and('have.text',title)
-    }
-
-    checkFeatureImageCaption(){
-      cy.get('div').should('have.class','mt-12 text-base leading-5 text-sonic-silver')
-    }
-    //#endregion
-
-
-    //#region Social Sharing
-    checkShareFacebook()
-    {
-      cy.get('span').should('have.class','share-sns facebook')
-    }
-
-    checkShareLinkin()
-    {
-      cy.get('span').should('have.class','share-sns linkedin')
-    }
-
-    checkShareTwiter()
-    {
-      cy.get('span').should('have.class','share-sns twitter')
-    }
-    //#endregion
-
-
-    //#region SEO
-
-    checkMetaTitle(title)
-    {
-        cy.get('meta[name=title]').should('have.text',title)
-    }
-
-    checkMetaDescription(title)
-    {
-        cy.get('meta[name=description]').should('have.text',title)
-    }
-
-    checkMetaKeywords(title)
-    {
-        cy.get('meta[name=keywords]').should('have.text',title)
-    }
-
-    checkCanonicalURL(title)
-    {
-        cy.get('link[rel=canonical]').should('have.text',title)
-    }
-
-    checkHideFromSearchEngines(title)
-    {
-        cy.get('meta[content=noindex]').should('have.text',title)
-    }
-
-    //#endregion    
-
-    checkKeyword(title) {
-        cy.get('a[href*="/keywords/'+title+'"]')
-      }
-
-    //#region Category tags
-      checkCategoryPrimary(categoryName){
-          cy.get('a[href*="/'+categoryName+'"]')
-      }
-    //#endregion
-
-    checkBreadcrumbs(){
-      cy.get('nav').children('ul').children('li').children('a').should('have.text','HOME')
-    }
-
-    //Sign me up block
-    checkSignMeUpBlock(){
-        cy.get('button').should('have.text','Sign me up')
-    }
-
-    // Cagetory 
-
-    checkBreadcrumbsWithText(txt){
-      cy.get('nav>ul>li').each(($element,index,$list) => {
-        if($element.text == txt){return true}
-        return false
-      })
-    }
-
-    //#region Body
-    checkBody_Category(txt){
-      cy.get('section>div').each(($element) => {
-        if($element.text == txt){return true}
-        return false
-      })
-    }
-    //#endregion
-    
 
 }
 

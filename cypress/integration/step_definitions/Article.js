@@ -13,8 +13,10 @@ before(()=> {
 })
 })
 
-Then(`I see header is {string}`, (title) =>{
- return article.checkArticleHeader(this.eles.articleTitle, title);
+
+
+Then(`I see header is {string}`, (txt) =>{
+ return article.checkArticleHeader(this.eles.articleTitle, txt);
 })
 
 

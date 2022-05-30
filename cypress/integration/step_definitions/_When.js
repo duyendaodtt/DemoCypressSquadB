@@ -1,5 +1,5 @@
 import { When } from "cypress-cucumber-preprocessor/steps";
 
-When(`I visit {string}`, (title) => {
-  cy.visit(title)
+When(`I visit {string}`, (url) => {
+  cy.visit(url)
 })
