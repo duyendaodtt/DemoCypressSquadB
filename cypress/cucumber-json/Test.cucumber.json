@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test",
+    "line": 1,
+    "id": "test",
+    "tags": [],
+    "uri": "Test.feature",
+    "elements": [
+      {
+        "id": "test;go-to-quantum-article-site",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Go to Quantum article site",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "I open \"https://stage.quantumbusinessnews.com/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "passed",
+              "duration": 7123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I see author image",
+            "result": {
+              "status": "passed",
+              "duration": 100000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
