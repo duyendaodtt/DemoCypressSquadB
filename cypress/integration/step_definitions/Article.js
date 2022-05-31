@@ -13,10 +13,8 @@ before(()=> {
 })
 })
 
-
-
 Then(`I see header is {string}`, (txt) =>{
- return article.checkArticleHeader(this.eles.articleTitle, txt);
+ return utils.checkLocatorHaveText(this.eles.articleHeader,txt)
 })
 
 

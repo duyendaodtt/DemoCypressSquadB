@@ -23,7 +23,7 @@
             "name": "I open \"https://stage.licenseglobal.com/entertainment/jazwares-makes-licensing-expo-debut-with-squishmallows-\" page",
             "result": {
               "status": "passed",
-              "duration": 18171000000
+              "duration": 7912000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I see header is \"Jazwares Makes Licensing Expo Debut with Squishmallows\"",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 89000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I see summary is \"Plush brand drives new opportunities across multiple licensing categories.\"",
             "result": {
               "status": "passed",
-              "duration": 515000000
+              "duration": 319000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I see author name is \"License Global\"",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 37000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I see author image",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 43000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I see feature image",
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 68000000
             }
           }
         ]

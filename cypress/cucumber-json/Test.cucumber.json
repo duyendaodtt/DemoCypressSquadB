@@ -22,17 +22,17 @@
             "name": "I open \"https://stage.quantumbusinessnews.com/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
             "result": {
               "status": "passed",
-              "duration": 7123000000
+              "duration": 3723000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 4,
-            "name": "I see author image",
+            "name": "I see header is \"How Financial Services Can Benefit from Quantum Computing Solutions\"",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 139000000
             }
           }
         ]
