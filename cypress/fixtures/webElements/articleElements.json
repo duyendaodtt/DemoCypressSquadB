@@ -1,5 +1,7 @@
 {
     "articleTitle": "h1",
     "summaryLocator": "div",
+    "authorLocator": "a",
+    "publishDateLocator": "//div[starts-with(@class, 'flex-grow')]/p",
     "authorImage": ".w48.h48"
 }

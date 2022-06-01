@@ -1,4 +1,5 @@
 /// <reference types = "Cypress"/>
+/// <reference types="cypress-xpath" />
 
 class SharedObject{
 
@@ -8,7 +9,13 @@ class SharedObject{
         .should('have.text', txt);
     }
     //Check if locator containts text
-    checkLocatorContaints(locator, txt) {
+    checkXpathContains(locator, txt) {
+      cy.xpath(locator)
+        .should('contain', txt);
+    }
+
+    //Check if locator containts text
+    checkLocatorContains(locator, txt) {
       cy.get(locator)
         .should('contain', txt);
     }

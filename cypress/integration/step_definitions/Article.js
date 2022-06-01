@@ -14,22 +14,21 @@ before(()=> {
 })
 
 
-
 Then(`I see header is {string}`, (txt) =>{
  return article.checkArticleHeader(this.eles.articleTitle, txt);
 })
 
 
-Then(`I see summary is {string}`, (title) =>{
-  return article.checkArticleSummary(this.eles.summaryLocator,title);
+Then(`I see summary is {string}`, (txt) =>{
+  return article.checkArticleSummary(this.eles.summaryLocator,txt);
 })
 
-Then(`I see author name is {string}`, (title) =>{
-  return article.checkArticleAuthor(title);
+Then(`I see author name is {string}`, (txt) =>{
+  return article.checkArticleAuthor(this.eles.authorLocator,txt);
 })
 
-Then(`I see published date is {string}`, (title) =>{
-  return article.checkArticlePublishedDate(title);
+Then(`I see published date is {string}`, (publishDate) =>{
+  return article.checkArticlePublishedDate(this.eles.publishDateLocator,publishDate);
 })
 
 

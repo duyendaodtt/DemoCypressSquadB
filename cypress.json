@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://www.google.com",
+    "baseUrl": "https://stage.quantumbusinessnews.com",
     "testFiles": "**/*.feature",
     "ignoreTestFiles": "*.js",
     "fixtures":{

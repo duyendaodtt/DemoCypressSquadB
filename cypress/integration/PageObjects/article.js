@@ -1,25 +1,28 @@
 /// <reference types = "Cypress"/>
+import SharedObject  from "./sharedObject";
+const shareFunction = new SharedObject()
 class Article {
 
-    checkArticleHeader(locator, title) {
-      cy.get(locator)
-        .first()
-        .should('have.text', title);
+    checkArticleHeader(locator, headerText) {
+      shareFunction.checkLocatorHaveText(locator,headerText);
     }
-    checkArticleSummary(locator, title) {
-        cy.get(locator)
-          .should('contain.text',title);
+    checkArticleSummary(locator, summaryValue) {
+        shareFunction.checkLocatorContains(locator, summaryValue);
         }
 
-    checkArticleAuthor(title) {
-      cy.contains('a',title)
+    checkArticleAuthor(locator, authorName) {
+      // cy.contains('a',title)
+      shareFunction.checkLocatorContains(locator, authorName);
     }
 
-    checkArticlePublishedDate(title) {
-      cy.contains('p',title)
+    checkArticlePublishedDate(locator, publishDate) {
+      shareFunction.checkXpathContains(locator, publishDate);
+      // shareFunction.checkLocatorContains(locator, publishDate);
+      // cy.contains('p',title)
     }
 
     checkArticleAuthorImage() {
+  
         cy.get('.w-48.h-48').should('have.attr','src').should('contain','auto=webp&format=png')
     }
 

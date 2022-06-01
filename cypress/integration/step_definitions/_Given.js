@@ -10,6 +10,6 @@ Given('I visit Quantum page', () => {
   cy.visit('https://www.quantumbusinessnews.com/')
 })
 
-Given('I open {string} page', (url) => {
-  cy.visit(url, {timeout:30000})
+Given('I open {string} page', (actualUrl) => {
+  cy.visit(actualUrl, {timeout:30000})
 })
