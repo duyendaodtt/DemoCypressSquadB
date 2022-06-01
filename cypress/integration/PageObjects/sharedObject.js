@@ -47,6 +47,10 @@ class SharedObject{
         .should('have.class', className).should('contain',txt);
     }
 
+    //Check if link contains text in  URL
+    checkLinkContainsTextInURL(txt) {
+      cy.get('a[href*="'+txt+'"');
+    }
 }
 
 export default SharedObject
