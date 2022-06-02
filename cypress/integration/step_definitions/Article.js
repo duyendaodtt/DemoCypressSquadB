@@ -10,39 +10,51 @@ const utils = new SharedObject();
 before(()=> {
   cy.fixture(fixtures.Article).then(eles =>{
      this.eles = eles
-})
-})
-
-
-Then(`I see header is {string}`, (txt) =>{
- return article.checkArticleHeader(this.eles.articleTitle, txt);
+  })
+  cy.fixture("responseApi/article.json").then(resp =>{
+    this.resp = resp
+  })
 })
 
-
-Then(`I see summary is {string}`, (txt) =>{
-  return article.checkArticleSummary(this.eles.summaryLocator,txt);
+Then(`I see {string} is {string}`, (fieldName, contentValue)=>{
+    if(fieldName.toLowerCase().includes("header")){
+      return utils.checkLocatorContains(this.eles.articleTitle, contentValue);
+    }
+    if(fieldName.toLowerCase().includes("summary")){
+      return utils.checkLocatorContains(this.eles.summaryLocator,contentValue);
+    }
+    else{
+      console.error(fieldName + " is not defined on Then phase");
+    }
+})
+ 
+Then(/^I see (.*) image$/, (fieldName) =>{
+  if(fieldName.toLowerCase().includes("author")){
+    return article.checkArticleAuthorImage();
+  }
+  if(fieldName.toLowerCase().includes("feature")) {
+    return article.checkArticleFeatureImage();
+  }
+  else {
+    console.error(field + " is not defined on Then phase");
+  }
 })
 
-Then(`I see author name is {string}`, (txt) =>{
-  return article.checkArticleAuthor(this.eles.authorLocator,txt);
+Then(/^I see (.*) as (.*)$/, (field, expectedResult) =>{
+  if(field.toLowerCase().includes("author",)){
+    return article.checkArticleAuthor(this.eles.authorLocator,expectedResult);
+  }
+  if(field.toLowerCase().includes("publish")){
+    return article.checkArticlePublishedDate(this.eles.publishDateLocator,expectedResult);
+  }
+  if(field.toLowerCase().includes("keyword")){
+    return utils.checkXpathContains(this.eles.keywordLocator, expectedResult);
+  }
+  else{
+    console.error(field + " is not defined on Then phase");
+  }
 })
 
-Then(`I see published date is {string}`, (publishDate) =>{
-  return article.checkArticlePublishedDate(this.eles.publishDateLocator,publishDate);
-})
-
-
-Then(`I see author image`, () =>{
-  return article.checkArticleAuthorImage();
-})
-
-Then(`I see feature image`, () =>{
-  return article.checkArticleFeatureImage();
-})
-
-Then(`I see keyword {string}`, (title) =>{
-  return article.checkKeyword(title);
-})
 
 Then(`I see facebook share icon`, () =>{
   return utils.checkShareFacebook();

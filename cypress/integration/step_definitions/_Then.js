@@ -6,3 +6,6 @@ import { fixtures } from "../../support/fixtures";
   Then(`Locator {string} containts {string}`, (locator, txt) =>{
     return article.checkArticleHeader(locator, txt);
    })
+
+    
+   

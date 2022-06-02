@@ -12,7 +12,7 @@ class Article {
 
     checkArticleAuthor(locator, authorName) {
       // cy.contains('a',title)
-      shareFunction.checkLocatorContains(locator, authorName);
+      shareFunction.checkXpathHaveText(locator, authorName);
     }
 
     checkArticlePublishedDate(locator, publishDate) {
