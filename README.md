@@ -4,10 +4,9 @@
 4. If want to add more feature, create on folder: cypress/integration
 5. Then define the step definition at folder: support/step_definitions
 # Gherkin Expressions 
-  Given I open {taxonomyPath} page
-  
-  Then I see {string} is {string}
-  Then I see (.*) image
-  Then I see (.*) as (.*)
+Given I open {taxonomyPath} page
+Then I see {string} is {string}
+Then I see (.*) image
+Then I see (.*) as (.*)
   
 
