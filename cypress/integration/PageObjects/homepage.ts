@@ -19,4 +19,3 @@ class HomePage {
           .should('have.text', title)
     }
 }
-export default HomePage

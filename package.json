@@ -6,7 +6,7 @@
   "scripts": {
     "test-browser": "cypress run --browser chrome;cypress run --browser firefox",
     "test": "cypress run&&node cypress/cucumber-json/cucumber-html-report.js",
-    "e2e" : "cypress run&&node cypress/cucumber-json/cucumber-html-report.js"
+    "e2e": "cypress run&&node cypress/cucumber-json/cucumber-html-report.js"
   },
   "keywords": [
     "demo"
@@ -20,7 +20,9 @@
   "devDependencies": {
     "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "multiple-cucumber-html-reporter": "^1.20.0"
+    "cypress-xpath": "^1.6.2",
+    "multiple-cucumber-html-reporter": "^1.20.0",
+    "typescript": "^4.7.2"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/integration/step_definitions",

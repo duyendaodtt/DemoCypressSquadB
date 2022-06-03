@@ -1,7 +1,7 @@
 {
     "baseUrl": "https://stage.quantumbusinessnews.com",
     "testFiles": "**/*.feature",
-    "ignoreTestFiles": "*.js",
+    "ignoreTestFiles": "*.ts",
     "fixtures":{
         "Article": "webElements/articleElements.json"
     }

@@ -22,7 +22,7 @@
             "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
             "result": {
               "status": "passed",
-              "duration": 9454000000
+              "duration": 6502000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I see author image",
             "result": {
               "status": "passed",
-              "duration": 172000000
+              "duration": 42000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I see \"header\" is \"How Financial Services Can Benefit from Quantum Computing Solutions\"",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 39000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I see \"summary\" is \"Q&A with Multiverse Computing CTO Sam Mugel\"",
             "result": {
               "status": "passed",
-              "duration": 1878000000
+              "duration": 655000000
             }
           }
         ]
@@ -72,7 +72,7 @@
             "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
             "result": {
               "status": "passed",
-              "duration": 1475000000
+              "duration": 885000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "I see Author Name as Berenice Baker",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 15000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "I see publish date as May 9, 2022",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 16000000
             }
           }
         ]

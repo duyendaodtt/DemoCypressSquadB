@@ -1,22 +1,21 @@
 /// <reference types = "Cypress"/>
-import SharedObject  from "./sharedObject";
-const shareFunction = new SharedObject()
-class Article {
+import {utils} from "../../support/CheckFunction"
+export const article = new class Article {
 
     checkArticleHeader(locator, headerText) {
-      shareFunction.checkLocatorHaveText(locator,headerText);
+      utils.checkLocatorHaveText(locator,headerText);
     }
     checkArticleSummary(locator, summaryValue) {
-        shareFunction.checkLocatorContains(locator, summaryValue);
+      utils.checkLocatorContains(locator, summaryValue);
         }
 
     checkArticleAuthor(locator, authorName) {
       // cy.contains('a',title)
-      shareFunction.checkXpathHaveText(locator, authorName);
+      utils.checkXpathHaveText(locator, authorName);
     }
 
     checkArticlePublishedDate(locator, publishDate) {
-      shareFunction.checkXpathContains(locator, publishDate);
+      utils.checkXpathContains(locator, publishDate);
       // shareFunction.checkLocatorContains(locator, publishDate);
       // cy.contains('p',title)
     }
@@ -39,9 +38,8 @@ class Article {
       cy.get('a[href*="/keywords/'+title+'"]')
     }
 
-    checkblabla(){
-      cy.get('img').should('satisfy', hasAtLeastOneClass())
-    }
+    // checkblabla(){
+    //   cy.get('img').should('satisfy', hasAtLeastOneClass())
+    // }
     
 }
-export default Article
