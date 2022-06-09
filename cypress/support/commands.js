@@ -7,12 +7,11 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-// Cypress.Commands.add('dataCy', (value) => {
-//     return cy.xpath(`[data-cy=${value}]`)
-//   })
+//
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
+//
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
