@@ -1,5 +1,5 @@
 {
-    "articleTitle": "h1",
+    "articleHeader": "h1",
     "summaryLocator": "div",
     "authorLocator": "//div[starts-with(@class, 'flex-grow')]/a",
     "publishDateLocator": "//div[starts-with(@class, 'flex-grow')]/p",

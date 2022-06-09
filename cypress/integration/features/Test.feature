@@ -1,5 +1,6 @@
 Feature: Test
   Scenario: Go to Quantum article site
+<<<<<<< HEAD
     Given I open "/applications/how-financial-services-can-benefit-from-quantum-computing-solutions" page
     Then I see author image
     And I see "header" is "How Financial Services Can Benefit from Quantum Computing Solutions"
@@ -12,3 +13,7 @@ Feature: Test
     Examples:
         | actualPath | authorName | publishDate |
         | "/applications/how-financial-services-can-benefit-from-quantum-computing-solutions"  | Berenice Baker | May 9, 2022  |
+=======
+    When I open "https://stage.quantumbusinessnews.com/applications/how-financial-services-can-benefit-from-quantum-computing-solutions" page
+    Then I see header is "How Financial Services Can Benefit from Quantum Computing Solutions"
+>>>>>>> origin/ha
