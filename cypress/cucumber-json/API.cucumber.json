@@ -1,0 +1,75 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test API",
+    "line": 1,
+    "id": "test-api",
+    "tags": [],
+    "uri": "API.feature",
+    "elements": [
+      {
+        "id": "test-api;check-scenario-get",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Check scenario GET",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "I make a \"GET\" request to \"https://fakerestapi.azurewebsites.net/api/v1/Activities\"",
+            "result": {
+              "status": "passed",
+              "duration": 2139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "Response code is 200",
+            "result": {
+              "status": "passed",
+              "duration": 146000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-api;check-scenario-post-with-body",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Check scenario POST with body",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "content": "{\n  \"id\": 0,\n  \"title\": \"string\",\n  \"dueDate\": \"2022-06-14T04:54:47.884Z\",\n  \"completed\": true\n}",
+                "line": 8
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I make a \"POST\" request to \"https://fakerestapi.azurewebsites.net/api/v1/Activities\" with a body",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Response code is 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -8,10 +8,10 @@
     "uri": "Test.feature",
     "elements": [
       {
-        "id": "test;go-to-quantum-article-site",
+        "id": "test;check-scenario-with-outline",
         "keyword": "Scenario",
-        "line": 2,
-        "name": "Go to Quantum article site",
+        "line": 8,
+        "name": "Check scenario with outline",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -22,77 +22,27 @@
             "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
             "result": {
               "status": "passed",
-              "duration": 5926000000
+              "duration": 13214000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 4,
-            "name": "I see author image",
+            "name": "I see Author Name as Berenice Baker",
             "result": {
-              "status": "passed",
-              "duration": 51000000
+              "status": "failed",
+              "duration": 2576000000,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'checkArticleAuthor')\n    at Context.eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/Test.feature:188:34)\n    at Context.resolveAndRunStepDefinition (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/Test.feature:10701:29)\n    at Context.eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/Test.feature:10022:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 5,
-            "name": "I see \"header\" is \"How Financial Services Can Benefit from Quantum Computing Solutions\"",
-            "result": {
-              "status": "passed",
-              "duration": 56000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I see \"summary\" is \"Q&A with Multiverse Computing CTO Sam Mugel\"",
-            "result": {
-              "status": "passed",
-              "duration": 940000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test;check-scenario-with-outline",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Check scenario with outline",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
-            "result": {
-              "status": "passed",
-              "duration": 1781000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I see Author Name as Berenice Baker",
-            "result": {
-              "status": "passed",
-              "duration": 28000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
             "name": "I see publish date as May 9, 2022",
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           }
         ]
