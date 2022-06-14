@@ -1,66 +1,16 @@
 [
   {
     "keyword": "Feature",
-    "name": "Test",
+    "name": "Test with outline",
     "line": 1,
-    "id": "test",
+    "id": "test-with-outline",
     "tags": [],
     "uri": "Test.feature",
     "elements": [
       {
-        "id": "test;go-to-quantum-article-site",
+        "id": "test-with-outline;check-scenario-with-outline",
         "keyword": "Scenario",
-        "line": 2,
-        "name": "Go to Quantum article site",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 3,
-            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
-            "result": {
-              "status": "passed",
-              "duration": 6502000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 4,
-            "name": "I see author image",
-            "result": {
-              "status": "passed",
-              "duration": 42000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 5,
-            "name": "I see \"header\" is \"How Financial Services Can Benefit from Quantum Computing Solutions\"",
-            "result": {
-              "status": "passed",
-              "duration": 39000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I see \"summary\" is \"Q&A with Multiverse Computing CTO Sam Mugel\"",
-            "result": {
-              "status": "passed",
-              "duration": 655000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test;check-scenario-with-outline",
-        "keyword": "Scenario",
-        "line": 14,
+        "line": 9,
         "name": "Check scenario with outline",
         "tags": [],
         "type": "scenario",
@@ -68,31 +18,70 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
-            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "line": 4,
+            "name": "I visit the page via \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\"",
             "result": {
-              "status": "passed",
-              "duration": 885000000
+              "status": "failed",
+              "duration": 7822000000,
+              "error_message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > jstag is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <anonymous>:6:14\n    at <anonymous>:11:5\n    at nrWrapper (https://stage.quantumbusinessnews.com/api/integration/new-relic.js:1:30193)\n    at i (https://stage.quantumbusinessnews.com/applications/how-financial-services-can-benefit-from-quantum-computing-solutions:1:1434)\n    at https://stage.quantumbusinessnews.com/applications/how-financial-services-can-benefit-from-quantum-computing-solutions:1:1807"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 5,
             "name": "I see Author Name as Berenice Baker",
             "result": {
-              "status": "passed",
-              "duration": 15000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
+            "line": 6,
             "name": "I see publish date as May 9, 2022",
             "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-with-outline;check-scenario-with-outline",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Check scenario with outline",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit the page via \"/infrastructure/lg-joins-ibm-quantum-network\"",
+            "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 3973000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see Author Name as Chuck Martin",
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I see publish date as January 28, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
             }
           }
         ]

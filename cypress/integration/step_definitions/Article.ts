@@ -4,6 +4,8 @@ import {article} from "../PageObjects/article"
 
 const webElements = require("../../fixtures/webElements/articleElements.json");
 
+
+
 Then(`I see {string} is {string}`, (fieldName, contentValue)=>{
     if(fieldName.toLowerCase().includes("header")){
       return utils.checkLocatorContains(webElements.articleTitle, contentValue);

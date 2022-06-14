@@ -1,0 +1,122 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Scenario only",
+    "line": 1,
+    "id": "scenario-only",
+    "tags": [],
+    "uri": "test2.feature",
+    "elements": [
+      {
+        "id": "scenario-only;scenario-1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Scenario 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "failed",
+              "duration": 4615000000,
+              "error_message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > jstag is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <anonymous>:6:14\n    at <anonymous>:11:5\n    at nrWrapper (https://stage.quantumbusinessnews.com/api/integration/new-relic.js:1:30193)\n    at i (https://stage.quantumbusinessnews.com/applications/how-financial-services-can-benefit-from-quantum-computing-solutions:1:1434)\n    at https://stage.quantumbusinessnews.com/applications/how-financial-services-can-benefit-from-quantum-computing-solutions:1:1807"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I see \"summary\" is \"Q&A with Multiverse Computing CTO Sam Mugel\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "scenario-only;scenario-2",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Scenario 2",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1564000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see author image",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I see \"header\" is \"How Financial Services Can Benefit from Quantum Computing Solutions\"",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I see \"summary\" is \"Q&A with Multiverse Computing CTO Sam Mugel\"",
+            "result": {
+              "status": "passed",
+              "duration": 719000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "scenario-only;scenario-3",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Scenario 3",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1051000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I see \"summary\" is \"Q&A with Multiverse Computing CTO Sam Mugel\"",
+            "result": {
+              "status": "passed",
+              "duration": 627000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
