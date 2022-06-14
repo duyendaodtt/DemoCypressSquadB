@@ -29,7 +29,7 @@ Then(`Response code is {int}`, (responseCode) => {
 
 Then(`Response header containts {string}`, (txtContaint) => {
     cy.get('@headers').then((header) => {
-        expect(header).eq(txtContaint)
+        expect(header).contain(txtContaint)
     })
 });
 

@@ -22,7 +22,7 @@
             "name": "I make a \"GET\" request to \"https://fakerestapi.azurewebsites.net/api/v1/Activities\"",
             "result": {
               "status": "passed",
-              "duration": 2139000000
+              "duration": 2718000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Response code is 200",
             "result": {
               "status": "passed",
-              "duration": 146000000
+              "duration": 200000000
             }
           }
         ]
