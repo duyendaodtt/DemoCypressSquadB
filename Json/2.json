@@ -1,0 +1,14 @@
+[
+    {"name":"John", "age":30, "car":null},
+    {"name":"Joe", "age":32, "car":"Lamborghini"},
+    {"name":"Trump", "age":null, "car":"Lincon"},
+    {"name":"Biden", "age":75, "car":"Vinfast"},
+    {"name":"John", "age":30, "car":null},
+    {"name":"Joe", "age":32, "car":"Lamborghini"},
+    {"name":"Trump", "age":null, "car":"Lincon"},
+    {"name":"Biden", "age":75, "car":"Vinfast"},
+    {"name":"John", "age":30, "car":null},
+    {"name":"Joe", "age":32, "car":"Lamborghini"},
+    {"name":"Trump", "age":null, "car":"Lincon"},
+    {"name":"Biden", "age":75, "car":"Vinfast"}
+]

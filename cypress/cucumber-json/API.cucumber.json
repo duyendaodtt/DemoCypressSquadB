@@ -22,7 +22,7 @@
             "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "result": {
               "status": "passed",
-              "duration": 1687000000
+              "duration": 2628000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Response code is 200",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 228000000
             }
           }
         ]
@@ -52,7 +52,17 @@
             "name": "I make POST request to https://fakerestapi.azurewebsites.net/api/v1/Activities with body from postbody file",
             "result": {
               "status": "passed",
-              "duration": 4720000000
+              "duration": 4078000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Response code is 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
             }
           }
         ]
