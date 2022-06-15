@@ -17,6 +17,7 @@
     "@cypress/request": "^2.88.10",
     "cypress": "^9.6.1",
     "request": "^2.88.2",
+    "soft-assert": "^0.2.6",
     "tsify": "^5.0.4"
   },
   "devDependencies": {
