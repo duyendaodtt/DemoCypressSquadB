@@ -22,7 +22,7 @@
             "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "result": {
               "status": "passed",
-              "duration": 2209000000
+              "duration": 1687000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Response code is 200",
             "result": {
               "status": "passed",
-              "duration": 152000000
+              "duration": 25000000
             }
           }
         ]
@@ -49,10 +49,10 @@
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "I make \"POST\" request to \"https://fakerestapi.azurewebsites.net/api/v1/Activities\" with body from /Users/hoangha/Documents/Demo_Automation_Testing_Tools/DemoCypressSquadB/json/postbody.json",
+            "name": "I make POST request to https://fakerestapi.azurewebsites.net/api/v1/Activities with body from postbody file",
             "result": {
-              "status": "failed",
-              "error_message": "Error: Cannot find module '/Users/hoangha/Documents/Demo_Automation_Testing_Tools/DemoCypressSquadB/json/postbody.json'\n    at o (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:1:159)\n    at eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:1:316)\n    at Context.eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:47:20)\n    at Context.resolveAndRunStepDefinition (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:27713:29)\n    at Context.eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:27034:35)"
+              "status": "passed",
+              "duration": 4720000000
             }
           }
         ]

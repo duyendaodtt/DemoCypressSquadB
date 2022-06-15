@@ -4,4 +4,4 @@ Feature: Test API
     Then Response code is 200
 
   Scenario: Check scenario POST with body
-    When I make "POST" request to "https://fakerestapi.azurewebsites.net/api/v1/Activities" with body from /Users/hoangha/Documents/Demo_Automation_Testing_Tools/DemoCypressSquadB/json/postbody.json
+    When I make POST request to https://fakerestapi.azurewebsites.net/api/v1/Activities with body from postbody file

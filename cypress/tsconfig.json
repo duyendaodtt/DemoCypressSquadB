@@ -4,5 +4,5 @@
       "lib": ["es5", "dom"],
       "types": ["cypress", "node", "@bahmutov/cy-api"]
     },
-    "include": ["**/*.ts"]
+    "include": ["**/*.ts", "integration/step_definitions/_Given.js", "integration/step_definitions/_Then.js", "integration/step_definitions/_When.js", "integration/step_definitions/API.js", "integration/step_definitions/shared.js", "integration/step_definitions/test.js", "integration/PageObjects/homepage.js", "support/CheckFunction.js", "integration/PageObjects/article.js"]
   }
