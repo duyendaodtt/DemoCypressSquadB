@@ -19,10 +19,10 @@
             "arguments": [],
             "keyword": "When ",
             "line": 3,
-            "name": "I make a \"GET\" request to \"https://fakerestapi.azurewebsites.net/api/v1/Activities\"",
+            "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "result": {
               "status": "passed",
-              "duration": 2718000000
+              "duration": 2209000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Response code is 200",
             "result": {
               "status": "passed",
-              "duration": 200000000
+              "duration": 152000000
             }
           }
         ]
@@ -46,26 +46,13 @@
         "type": "scenario",
         "steps": [
           {
-            "arguments": [
-              {
-                "content": "{\n  \"id\": 0,\n  \"title\": \"string\",\n  \"dueDate\": \"2022-06-14T04:54:47.884Z\",\n  \"completed\": true\n}",
-                "line": 8
-              }
-            ],
+            "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "I make a \"POST\" request to \"https://fakerestapi.azurewebsites.net/api/v1/Activities\" with a body",
+            "name": "I make \"POST\" request to \"https://fakerestapi.azurewebsites.net/api/v1/Activities\" with body from /Users/hoangha/Documents/Demo_Automation_Testing_Tools/DemoCypressSquadB/json/postbody.json",
             "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Response code is 200",
-            "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "Error: Cannot find module '/Users/hoangha/Documents/Demo_Automation_Testing_Tools/DemoCypressSquadB/json/postbody.json'\n    at o (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:1:159)\n    at eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:1:316)\n    at Context.eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:47:20)\n    at Context.resolveAndRunStepDefinition (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:27713:29)\n    at Context.eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress/integration/features/API.feature:27034:35)"
             }
           }
         ]

@@ -1,7 +1,7 @@
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps";
 var request = require('request');
 
-When(`I make a {string} request to {string}`, (requestMethod, url) => {
+When(/^I make a (.*?) request to (.*)$/, (requestMethod, url) => {
     cy.request(requestMethod, url).then((res) => {
         cy.wrap(res.status).as('status');
         cy.wrap(res.headers).as('headers');
@@ -9,16 +9,31 @@ When(`I make a {string} request to {string}`, (requestMethod, url) => {
     }).as('req');
 });
 
-When(/^I make a {string} request to {string} with a body (.*)$/, (requestMethod, requestUrl, requestBody) => {
+When(/^I make a (.*) request to (.*?) with body from (.*)$/, (requestMethod, requestUrl, path) => {
+    var bodyjson = require(path);
+
     cy.api({
-        method: requestMethod, 
-        url: requestUrl, 
-        body: JSON.parse(requestBody)
-      }).then(res => {
+            method: requestMethod,
+            url: requestUrl,
+            body: bodyjson
+        }).then((res) => {
         cy.wrap(res.status).as('status');
         cy.wrap(res.headers).as('headers');
         cy.wrap(res.body).as('body');
-      })
+    }).as('req');
+});
+
+When(`I make {string} request to {string} with body from {}`, (requestMethod, requestUrl, path) => {
+    var bodyjson = require(path);
+    cy.api({
+            method: requestMethod,
+            url: requestUrl,
+            body: bodyjson
+        }).then((res) => {
+        cy.wrap(res.status).as('status');
+        cy.wrap(res.headers).as('headers');
+        cy.wrap(res.body).as('body');
+    }).as('req')
 });
 
 Then(`Response code is {int}`, (responseCode) => {
