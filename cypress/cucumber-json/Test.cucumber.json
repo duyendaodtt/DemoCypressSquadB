@@ -22,7 +22,11 @@
             "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
             "result": {
               "status": "passed",
+<<<<<<< Updated upstream
               "duration": 5926000000
+=======
+              "duration": 9639000000
+>>>>>>> Stashed changes
             }
           },
           {
@@ -32,7 +36,11 @@
             "name": "I see author image",
             "result": {
               "status": "passed",
+<<<<<<< Updated upstream
               "duration": 51000000
+=======
+              "duration": 32000000
+>>>>>>> Stashed changes
             }
           },
           {
@@ -42,7 +50,11 @@
             "name": "I see \"header\" is \"How Financial Services Can Benefit from Quantum Computing Solutions\"",
             "result": {
               "status": "passed",
+<<<<<<< Updated upstream
               "duration": 56000000
+=======
+              "duration": 30000000
+>>>>>>> Stashed changes
             }
           },
           {
@@ -52,7 +64,11 @@
             "name": "I see \"summary\" is \"Q&A with Multiverse Computing CTO Sam Mugel\"",
             "result": {
               "status": "passed",
+<<<<<<< Updated upstream
               "duration": 940000000
+=======
+              "duration": 503000000
+>>>>>>> Stashed changes
             }
           }
         ]
@@ -72,7 +88,11 @@
             "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
             "result": {
               "status": "passed",
+<<<<<<< Updated upstream
               "duration": 1781000000
+=======
+              "duration": 762000000
+>>>>>>> Stashed changes
             }
           },
           {
@@ -82,7 +102,11 @@
             "name": "I see Author Name as Berenice Baker",
             "result": {
               "status": "passed",
+<<<<<<< Updated upstream
               "duration": 28000000
+=======
+              "duration": 12000000
+>>>>>>> Stashed changes
             }
           },
           {
@@ -92,7 +116,11 @@
             "name": "I see publish date as May 9, 2022",
             "result": {
               "status": "passed",
+<<<<<<< Updated upstream
               "duration": 14000000
+=======
+              "duration": 11000000
+>>>>>>> Stashed changes
             }
           }
         ]
