@@ -1,5 +1,472 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "title": "Mega Menu",
+  "uid": "mega_menu",
+  "schema": [
+    {
+      "display_name": "Title",
+      "uid": "title",
+      "data_type": "text",
+      "mandatory": true,
+      "unique": true,
+      "field_metadata": { "_default": true, "version": 3 },
+      "multiple": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "Section 1",
+      "field_metadata": {
+        "description": "On Front-end, \u001dthis section will show the exact items and related links as are defined in the main navigation bar."
+      },
+      "schema": [
+        {
+          "data_type": "reference",
+          "display_name": "Main Navigation Reference",
+          "reference_to": ["main_navigation"],
+          "field_metadata": {
+            "ref_multiple": false,
+            "ref_multiple_content_types": true
+          },
+          "uid": "main_navigation_reference",
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "group",
+          "display_name": "Additional Sections",
+          "field_metadata": {
+            "description": "This field is for cases that content manager wants to add more sections.",
+            "instruction": ""
+          },
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Title",
+              "uid": "title",
+              "field_metadata": {
+                "description": "",
+                "default_value": "",
+                "placeholder": "",
+                "isTitle": true,
+                "version": 3
+              },
+              "format": "",
+              "error_messages": { "format": "" },
+              "mandatory": false,
+              "multiple": false,
+              "unique": false,
+              "non_localizable": false
+            },
+            {
+              "data_type": "group",
+              "display_name": "Section link",
+              "field_metadata": { "description": "" },
+              "schema": [
+                {
+                  "data_type": "text",
+                  "display_name": "Title",
+                  "uid": "title",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "isTitle": true,
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "non_localizable": false,
+                  "mandatory": true,
+                  "multiple": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "text",
+                  "display_name": "Manual link url",
+                  "uid": "manual_link_url",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "non_localizable": false,
+                  "multiple": false,
+                  "mandatory": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "reference",
+                  "display_name": "Reference link url",
+                  "reference_to": [
+                    "keyword",
+                    "topic_primary",
+                    "topic_secondary"
+                  ],
+                  "field_metadata": {
+                    "ref_multiple": false,
+                    "ref_multiple_content_types": true
+                  },
+                  "uid": "reference_link",
+                  "non_localizable": false,
+                  "multiple": false,
+                  "mandatory": false,
+                  "unique": false
+                }
+              ],
+              "uid": "section_link",
+              "multiple": true,
+              "mandatory": false,
+              "unique": false,
+              "non_localizable": false,
+              "max_instance": 20
+            }
+          ],
+          "uid": "additional_sections",
+          "mandatory": false,
+          "multiple": true,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "section_1",
+      "multiple": false,
+      "mandatory": false,
+      "unique": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "Section 2",
+      "field_metadata": {},
+      "schema": [
+        {
+          "data_type": "group",
+          "display_name": "Child Sections",
+          "field_metadata": { "description": "", "instruction": "" },
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Title",
+              "uid": "title",
+              "field_metadata": {
+                "description": "",
+                "default_value": "",
+                "isTitle": true,
+                "version": 3
+              },
+              "format": "",
+              "error_messages": { "format": "" },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "group",
+              "display_name": "Section link",
+              "field_metadata": {
+                "description": "Limit: 8 items - Front-end will show only first 8 items",
+                "instruction": ""
+              },
+              "schema": [
+                {
+                  "data_type": "text",
+                  "display_name": "Title",
+                  "uid": "title",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "isTitle": true,
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "non_localizable": false,
+                  "mandatory": true,
+                  "multiple": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "text",
+                  "display_name": "Manual link url",
+                  "uid": "manual_link_url",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "non_localizable": false,
+                  "multiple": false,
+                  "mandatory": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "reference",
+                  "display_name": "Reference link url",
+                  "reference_to": [
+                    "keyword",
+                    "topic_primary",
+                    "topic_secondary"
+                  ],
+                  "field_metadata": {
+                    "ref_multiple": false,
+                    "ref_multiple_content_types": true
+                  },
+                  "uid": "reference_link",
+                  "mandatory": false,
+                  "multiple": false,
+                  "non_localizable": false,
+                  "unique": false
+                }
+              ],
+              "uid": "section_link",
+              "mandatory": false,
+              "multiple": true,
+              "non_localizable": false,
+              "unique": false,
+              "max_instance": 20
+            }
+          ],
+          "uid": "child_sections",
+          "mandatory": false,
+          "multiple": true,
+          "non_localizable": false,
+          "unique": false,
+          "max_instance": 3
+        }
+      ],
+      "uid": "our_network",
+      "multiple": false,
+      "mandatory": false,
+      "unique": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "Section 3",
+      "field_metadata": {},
+      "schema": [
+        {
+          "data_type": "group",
+          "display_name": "Registration",
+          "field_metadata": { "description": "", "instruction": "" },
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Statement Text",
+              "uid": "statement_text",
+              "field_metadata": {
+                "description": "",
+                "default_value": "",
+                "version": 3
+              },
+              "format": "",
+              "error_messages": { "format": "" },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false,
+              "max": 120
+            }
+          ],
+          "uid": "registration",
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "group",
+          "display_name": "Social Networks",
+          "field_metadata": {
+            "description": "Social Networks: Twitter, LinkedIn, Facebook, Instagram"
+          },
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Title",
+              "uid": "title",
+              "field_metadata": {
+                "description": "",
+                "default_value": "Follow Us",
+                "version": 3
+              },
+              "format": "",
+              "error_messages": { "format": "" },
+              "multiple": false,
+              "mandatory": false,
+              "unique": false,
+              "non_localizable": false
+            },
+            {
+              "data_type": "group",
+              "display_name": "Social link",
+              "field_metadata": {
+                "description": "Limit: 4 items"
+              },
+              "schema": [
+                {
+                  "data_type": "text",
+                  "display_name": "Title",
+                  "uid": "title",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "isTitle": true,
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "non_localizable": false,
+                  "mandatory": true,
+                  "multiple": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "text",
+                  "display_name": "URL",
+                  "uid": "manual_link_url",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "non_localizable": false,
+                  "multiple": false,
+                  "mandatory": false,
+                  "unique": false
+                }
+              ],
+              "uid": "section_link",
+              "multiple": true,
+              "mandatory": false,
+              "unique": false,
+              "non_localizable": false,
+              "max_instance": 4
+            }
+          ],
+          "uid": "social_networks",
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false
+        },
+        {
+          "data_type": "group",
+          "display_name": "Additional Sections",
+          "field_metadata": { "description": "", "instruction": "" },
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Title",
+              "uid": "title",
+              "field_metadata": {
+                "description": "",
+                "default_value": "",
+                "isTitle": true,
+                "version": 3
+              },
+              "format": "",
+              "error_messages": { "format": "" },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "group",
+              "display_name": "Section link",
+              "field_metadata": {
+                "description": "Limit: 8 items - Front-end will show only first 8 items",
+                "instruction": ""
+              },
+              "schema": [
+                {
+                  "data_type": "text",
+                  "display_name": "Title",
+                  "uid": "title",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "isTitle": true,
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "mandatory": true,
+                  "non_localizable": false,
+                  "multiple": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "text",
+                  "display_name": "Manual link url",
+                  "uid": "manual_link_url",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": { "format": "" },
+                  "non_localizable": false,
+                  "multiple": false,
+                  "mandatory": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "reference",
+                  "display_name": "Reference link url",
+                  "reference_to": [
+                    "keyword",
+                    "topic_primary",
+                    "topic_secondary"
+                  ],
+                  "field_metadata": {
+                    "ref_multiple": false,
+                    "ref_multiple_content_types": true
+                  },
+                  "uid": "reference_link",
+                  "mandatory": false,
+                  "multiple": false,
+                  "non_localizable": false,
+                  "unique": false
+                }
+              ],
+              "uid": "section_link",
+              "mandatory": false,
+              "multiple": true,
+              "non_localizable": false,
+              "unique": false,
+              "max_instance": 20
+            }
+          ],
+          "uid": "additional_sections",
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "section_3",
+      "multiple": false,
+      "mandatory": false,
+      "unique": false,
+      "non_localizable": false
+    }
+  ],
+  "description": "Content type of mega menu",
+  "options": {
+    "is_page": false,
+    "singleton": true,
+    "title": "title",
+    "sub_title": []
+  }
 }

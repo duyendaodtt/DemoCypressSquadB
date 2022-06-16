@@ -7,12 +7,17 @@ defineParameterType({
     regexp: /true|false/,
     transformer: (s) => s === "true" ? true : false
   });
-
   Then(`Response code is {int}`, (responseCode) => {
-    cy.get('@status').then((stt) => {
-        expect(stt).eql(responseCode)
+    cy.get('@status').then(code => {
+        expect(code).eq(responseCode);
     })
 });
+
+// Then(`Response code is {int}`, (responseCode) => {
+//     cy.get('@status').then((stt) => {
+//         expect(stt).eql(responseCode)
+//     })
+// });
 
 Then(`Response header contains {string}`, (txtContain) => {
     cy.get('@headers').then((header) => {

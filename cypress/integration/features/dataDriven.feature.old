@@ -1,0 +1,12 @@
+Feature: Data Driven testing   
+    Scenario Outline: Check with table data 
+        Given I have a file json as data
+        When I check with <name>
+        Then I will see their age is <age>
+        And I will see they own a <car>
+        Examples: 
+            | name | age | car |
+            | John | 30 |  |
+            | Joe | 32 | Lamborghini |
+            | Trump |  | Lincon |
+            | Biden | 75 | Vinfast |

@@ -1,5 +1,6 @@
 /// <reference types = "Cypress"/>
 import {Given, When, Then, defineParameterType} from "cypress-cucumber-preprocessor/steps";
+
 var request = require('request');
 const jsonAssertion = require("soft-assert")
 // defineParameterType({
