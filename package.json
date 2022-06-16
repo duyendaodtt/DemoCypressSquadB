@@ -6,7 +6,7 @@
   "scripts": {
     "test-browser": "cypress run --browser chrome;cypress run --browser firefox",
     "test": "cypress run&&node cypress/cucumber-json/cucumber-html-report.js",
-    "e2e" : "cypress run&&node cypress/cucumber-json/cucumber-html-report.js"
+    "e2e": "cypress run&&node cypress/cucumber-json/cucumber-html-report.js"
   },
   "keywords": [
     "demo"
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^9.6.1",
+    "cypress-xpath": "^1.6.2",
     "tsify": "^5.0.4"
   },
   "devDependencies": {
