@@ -1,6 +1,12 @@
 /// <reference types = "Cypress"/>
-import {Given, When, Then} from "cypress-cucumber-preprocessor/steps";
+import {Given, When, Then, defineParameterType} from "cypress-cucumber-preprocessor/steps";
 var request = require('request');
+const jsonAssertion = require("soft-assert")
+// defineParameterType({
+//     name: "boolean",
+//     regexp: /true|false/,
+//     transformer: (s) => s === "true" ? true : false
+//   });
 
 When(/^I make a (.*?) request to (.*)$/, (requestMethod, url) => {
     cy.request(requestMethod, url).then((res) => {
@@ -11,7 +17,6 @@ When(/^I make a (.*?) request to (.*)$/, (requestMethod, url) => {
 });
 
 When(/^I make (.*) request to (.*?) with body from (.*) file$/, (requestMethod, requestUrl, path) => {
-    // var bodyjson = require(path);
     var newpath = '/inputAPI/' + path + '.json'
     cy.fixture(newpath).then((jsonBody) => {
         cy.api({
@@ -27,33 +32,8 @@ When(/^I make (.*) request to (.*?) with body from (.*) file$/, (requestMethod, 
     })
 });
 
-// When(`I make {string} request to {string} with body from {}`, (requestMethod, requestUrl, path) => {
-//     var bodyjson = require(path);
-//     cy.api({
-//             method: requestMethod,
-//             url: requestUrl,
-//             body: bodyjson
-//         }).then((res) => {
-//         cy.wrap(res.status).as('status');
-//         cy.wrap(res.headers).as('headers');
-//         cy.wrap(res.body).as('body');
-//     }).as('req')
-// });
-
 Then(`Response code is {int}`, (responseCode) => {
-    cy.get('@status').then((stt) => {
-        expect(stt).eq(responseCode)
-    })
-});
-
-Then(`Response header containts {string}`, (txtContaint) => {
-    cy.get('@headers').then((header) => {
-        expect(header).contain(txtContaint)
-    })
-});
-
-Then(`Response body containts {string}`, (txtContaint) => {
-    cy.get('@headers').then((header) => {
-        expect(header).eq(txtContaint)
+    cy.get('@status').then(code => {
+        expect(code).eq(responseCode);
     })
 });
