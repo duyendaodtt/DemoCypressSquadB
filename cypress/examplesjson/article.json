@@ -13,5 +13,10 @@
 		"actualPath": "/applications/test-article-1",
 		"authorName": "Scarlett Evans",
 		"publishDate": "May 24, 2022"
+	},
+	{
+		"actualPath": "/applications/test-article-2",
+		"authorName": "Scarlett Evans",
+		"publishDate": "May 24, 2022"
 	}
 ]

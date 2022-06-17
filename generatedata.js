@@ -27,7 +27,6 @@ fs.readdir(dir, (err, files) => {
             fs.writeFile(desFile, result, 'utf8', function (err) {
                 if (err) 
                     return console.log(err);
-                
             });
         });
         console.log('\n\n');
