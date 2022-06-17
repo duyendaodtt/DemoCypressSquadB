@@ -14,9 +14,6 @@ class SharedObject{
       cy.xpath(locator).invoke('text').then((text) => {
         expect(text.trim()).equal(txt)
       });
-
-      // cy.xpath(locator, { timeout: 10000 }).should('be.visible')
-      //   .should('have.text', txt);
     }
     //Check if xpath containts text
     checkXpathContains(locator, txt) {

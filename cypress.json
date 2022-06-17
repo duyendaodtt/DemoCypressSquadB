@@ -4,5 +4,9 @@
     "ignoreTestFiles": "*.js",
     "fixtures":{
         "Article": "webElements/articleElements.json"
-    }
+    },
+    "retries": {
+        "runMode": 2,
+        "openMode": 1
+      }
 }
