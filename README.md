@@ -17,9 +17,9 @@
 1. Store input json data in *./cypress/examplesjson/* folder
 2. Make sure .json name has same value with folder in features folder
     For example:
-        - You have *article.json* file and put it on /cypress/examplesjson/ fodler
-        - You have feature files on *cypress/integration/features/article/* folder
-        - Script will replace all "Examples:" with data that you put on *article.json* file
+        . You have *article.json* file and put it on /cypress/examplesjson/ fodler
+        . You have feature files on *cypress/integration/features/article/* folder
+        . Script will replace all "Examples:" with data that you put on *article.json* file
 3. Run script by cmd: 
-        - node generatedata.js
+        . node generatedata.js
 4. All old examples table on your feature files will be deleted and replaced by new table from .json file 
