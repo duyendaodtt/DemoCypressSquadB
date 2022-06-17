@@ -12,8 +12,8 @@ if (opsys == "darwin") {
 }
 
 report.generate({
-    jsonDir: "cypress/cucumber-json",  // ** Path of .json file **//
-    reportPath: "./reports/cucumber-htmlreport.html",
+    jsonDir: "cypress/cucumber-json/jsonReport",  // ** Path of .json file **//
+    reportPath: "./reports/cucumber-htmlreport",
     metadata: {
         browser: {
         name: "chrome",
