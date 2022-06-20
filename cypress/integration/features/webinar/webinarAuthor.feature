@@ -1,6 +1,6 @@
 Feature: Check Webinar.Author
   this is description
-  Scenario Outline: Check scenario with outline: author
+  Scenario Outline: Check scenario with outline: author for <uid>
     Given I open "<actualPath>" page
     Then I see author as <authorName>
     Examples:

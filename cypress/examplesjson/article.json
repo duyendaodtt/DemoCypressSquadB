@@ -1,20 +1,24 @@
 [
-	{
+	{	
+		"uid": "test0001",
 		"actualPath": "/applications/how-financial-services-can-benefit-from-quantum-computing-solutions",
 		"authorName": "Berenice Baker",
 		"publishDate": "May 9, 2022"
 	},
 	{
+		"uid": "test0002",
 		"actualPath": "/applications/quantum-summit-2022-where-is-quantum-computing-now-",
 		"authorName": "Berenice Baker",
 		"publishDate": "June 15, 2022"
 	},
 	{
+		"uid": "test0003",
 		"actualPath": "/applications/test-article-1",
 		"authorName": "Scarlett Evans",
 		"publishDate": "May 24, 2022"
 	},
 	{
+		"uid": "test0004",
 		"actualPath": "/deals-partnerships/ibm-backs-quantinuum-honeywell-cambridge-quantum-venture",
 		"authorName": "Scarlett Evans",
 		"publishDate": "March 8, 2022"

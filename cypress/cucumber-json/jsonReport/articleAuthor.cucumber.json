@@ -1,0 +1,133 @@
+[
+  {
+    "description": "  this is description",
+    "keyword": "Feature",
+    "name": "Check Article.Author",
+    "line": 1,
+    "id": "check-article.author",
+    "tags": [],
+    "uri": "articleAuthor.feature",
+    "elements": [
+      {
+        "id": "check-article.author;check-scenario-with-outline:-author-for-test0001",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Check scenario with outline: Author for test0001",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "passed",
+              "duration": 8882000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see author as Berenice Baker",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-article.author;check-scenario-with-outline:-author-for-test0002",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Check scenario with outline: Author for test0002",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/quantum-summit-2022-where-is-quantum-computing-now-\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see author as Berenice Baker",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-article.author;check-scenario-with-outline:-author-for-test0003",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Check scenario with outline: Author for test0003",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/test-article-1\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3812000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see author as Scarlett Evans",
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-article.author;check-scenario-with-outline:-author-for-test0004",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Check scenario with outline: Author for test0004",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/deals-partnerships/ibm-backs-quantinuum-honeywell-cambridge-quantum-venture\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3861000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see author as Scarlett Evans",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError\n    + expected - actual\n\n    -'Berenice Baker'\n    +'Scarlett Evans'\n\n    at Context.eval (https://stage.quantumbusinessnews.com/__cypress/tests?p=cypress\\integration\\features\\article\\articleAuthor.feature:63:33)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

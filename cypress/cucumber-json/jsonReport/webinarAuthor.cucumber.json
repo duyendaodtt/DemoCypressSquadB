@@ -1,0 +1,103 @@
+[
+  {
+    "description": "  this is description",
+    "keyword": "Feature",
+    "name": "Check Webinar.Author",
+    "line": 1,
+    "id": "check-webinar.author",
+    "tags": [],
+    "uri": "webinarAuthor.feature",
+    "elements": [
+      {
+        "id": "check-webinar.author;check-scenario-with-outline:-author",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Check scenario with outline: author",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3813000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see author as Berenice Baker",
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-webinar.author;check-scenario-with-outline:-author",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Check scenario with outline: author",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/quantum-summit-2022-where-is-quantum-computing-now-\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2811000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see author as Berenice Baker",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-webinar.author;check-scenario-with-outline:-author",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Check scenario with outline: author",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/test-article-1\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2918000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see author as Scarlett Evans",
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

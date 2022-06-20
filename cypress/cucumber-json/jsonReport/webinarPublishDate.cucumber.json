@@ -1,0 +1,103 @@
+[
+  {
+    "description": "  this is description",
+    "keyword": "Feature",
+    "name": "Check Webinar.Published Date",
+    "line": 1,
+    "id": "check-webinar.published-date",
+    "tags": [],
+    "uri": "webinarPublishDate.feature",
+    "elements": [
+      {
+        "id": "check-webinar.published-date;check-scenario-with-outline:-published-date",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Check scenario with outline: Published Date",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "passed",
+              "duration": 5301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see publish as May 9, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-webinar.published-date;check-scenario-with-outline:-published-date",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Check scenario with outline: Published Date",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/quantum-summit-2022-where-is-quantum-computing-now-\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3902000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see publish as June 15, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-webinar.published-date;check-scenario-with-outline:-published-date",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Check scenario with outline: Published Date",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/test-article-1\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see publish as May 24, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

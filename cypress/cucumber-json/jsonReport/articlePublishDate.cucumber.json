@@ -1,0 +1,133 @@
+[
+  {
+    "description": "  this is description",
+    "keyword": "Feature",
+    "name": "Check Article.Published Date",
+    "line": 1,
+    "id": "check-article.published-date",
+    "tags": [],
+    "uri": "articlePublishDate.feature",
+    "elements": [
+      {
+        "id": "check-article.published-date;check-scenario-with-outline:-published-date-for-test0001",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Check scenario with outline: Published Date for test0001",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3922000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see publish as May 9, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-article.published-date;check-scenario-with-outline:-published-date-for-test0002",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Check scenario with outline: Published Date for test0002",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/quantum-summit-2022-where-is-quantum-computing-now-\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see publish as June 15, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-article.published-date;check-scenario-with-outline:-published-date-for-test0003",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Check scenario with outline: Published Date for test0003",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/applications/test-article-1\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see publish as May 24, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-article.published-date;check-scenario-with-outline:-published-date-for-test0004",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Check scenario with outline: Published Date for test0004",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open \"/deals-partnerships/ibm-backs-quantinuum-honeywell-cambridge-quantum-venture\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see publish as March 8, 2022",
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

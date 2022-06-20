@@ -1,6 +1,6 @@
 Feature: Check Webinar.Published Date
   this is description
-  Scenario Outline: Check scenario with outline: Published Date
+  Scenario Outline: Check scenario with outline: Published Date for <uid>
     Given I open "<actualPath>" page
     Then I see publish as <publishDate>
     Examples:
