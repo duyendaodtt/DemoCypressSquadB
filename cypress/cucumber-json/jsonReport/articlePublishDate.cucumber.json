@@ -23,7 +23,7 @@
             "name": "I open \"/applications/how-financial-services-can-benefit-from-quantum-computing-solutions\" page",
             "result": {
               "status": "passed",
-              "duration": 3922000000
+              "duration": 3902000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I see publish as May 9, 2022",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 51000000
             }
           }
         ]
@@ -53,7 +53,7 @@
             "name": "I open \"/applications/quantum-summit-2022-where-is-quantum-computing-now-\" page",
             "result": {
               "status": "passed",
-              "duration": 3192000000
+              "duration": 2837000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I see publish as June 15, 2022",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 35000000
             }
           }
         ]
@@ -83,7 +83,7 @@
             "name": "I open \"/applications/test-article-1\" page",
             "result": {
               "status": "passed",
-              "duration": 3134000000
+              "duration": 2806000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I see publish as May 24, 2022",
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 24000000
             }
           }
         ]
@@ -113,7 +113,7 @@
             "name": "I open \"/deals-partnerships/ibm-backs-quantinuum-honeywell-cambridge-quantum-venture\" page",
             "result": {
               "status": "passed",
-              "duration": 3014000000
+              "duration": 2676000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "I see publish as March 8, 2022",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 32000000
             }
           }
         ]
