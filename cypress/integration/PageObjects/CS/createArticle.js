@@ -5,4 +5,5 @@ export const createArticle = new class CreateArtilce{
     createHeadline(headlineText){
         cy.xpath('//input[@name="title"]').click().type(headlineText);
     }
+    
 }

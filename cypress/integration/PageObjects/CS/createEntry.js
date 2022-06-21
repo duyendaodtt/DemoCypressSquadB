@@ -21,6 +21,7 @@ export const createEntry = new class CreateEntry{
         cy.xpath('//*[@name="AddPlus"]',{timeout: 60000}).click({force: true});
     }
     clickProceed(){
-        cy.xpath('//*[@name="Proceed"]', {timeout: 200000}).wait(60000).click({force:true});
+        cy.xpath('//div[contains(text(),"Proceed")]', {timeout: 200000}).invoke('show').should('be.visible');
+        cy.xpath('//div[contains(text(),"Proceed")]').click();
     }
 }
