@@ -28,6 +28,17 @@ When(/^I search for (.*) content type$/, (contentTypeName ) =>{
 } );
 
 
-When(/^I create new Article with headline as (.*)$/, (articleHeadline) =>{
-   createArticle.createHeadline(articleHeadline)
+When(/^I create new Article with (.*) as (.*)$/, (fieldName, fieldValue) =>{
+  if(fieldName.toLowerCase().trim()==='headline'){
+    createArticle.createHeadline(fieldValue)
+  };
+  if(fieldName.toLowerCase().trim()==='author'){
+    createArticle.createAuthor(fieldValue)
+  };
+  // if(fieldName.toLowerCase().trim()==='publishedDate'){
+  //   createArticle.createAuthor(fieldValue)
+  // };
 } );
+
+
+

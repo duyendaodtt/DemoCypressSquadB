@@ -9,10 +9,10 @@
     "uri": "loginCs.feature",
     "elements": [
       {
-        "id": "go-to-and-interact-with-cs;login-to-cs",
+        "id": "go-to-and-interact-with-cs;create-new-article",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Login to CS",
+        "line": 15,
+        "name": "Create new article",
         "tags": [
           {
             "name": "@focus",
@@ -28,7 +28,7 @@
             "name": "I login to CS site successfully",
             "result": {
               "status": "passed",
-              "duration": 159000000
+              "duration": 219000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "I open content stack page",
             "result": {
               "status": "passed",
-              "duration": 956000000
+              "duration": 4758000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "I go to Entries menu of Quantum CS",
             "result": {
               "status": "passed",
-              "duration": 5457000000
+              "duration": 5539000000
             }
           },
           {
@@ -58,17 +58,28 @@
             "name": "I search for Article content type",
             "result": {
               "status": "passed",
-              "duration": 7337000000
+              "duration": 7042000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "I create new Article with headline as Test article 1",
+            "name": "I create new Article with headline as Test Article 1",
             "result": {
               "status": "passed",
-              "duration": 1769000000
+              "duration": 2084000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I create new Article with Author as ",
+            "result": {
+              "status": "failed",
+              "duration": 1293000000,
+              "error_message": "CypressError: `cy.check()` can only be called on `:checkbox` and `:radio`. Your subject contains a: `<div class=\"checkbox-wrapper\">...</div>`\n    at checkOrUncheckEl (https://eu-app.contentstack.com/__cypress/runner/cypress_runner.js:156446:76)\nFrom previous event:\n    at Context.checkOrUncheck (https://eu-app.contentstack.com/__cypress/runner/cypress_runner.js:156544:89)\n    at Context.check (https://eu-app.contentstack.com/__cypress/runner/cypress_runner.js:156564:29)\n    at Context.<anonymous> (https://eu-app.contentstack.com/__cypress/runner/cypress_runner.js:178413:19)\nFrom Your Spec Code:\n    at CreateArtilce.exports.createArticle.CreateArtilce.createAuthor (https://eu-app.contentstack.com/__cypress/tests?p=cypress\\integration\\features\\loginCs.feature:41:53)\n    at Context.eval (https://eu-app.contentstack.com/__cypress/tests?p=cypress\\integration\\features\\loginCs.feature:309:39)\n    at Context.resolveAndRunStepDefinition (https://eu-app.contentstack.com/__cypress/tests?p=cypress\\integration\\features\\loginCs.feature:10796:29)\n    at Context.eval (https://eu-app.contentstack.com/__cypress/tests?p=cypress\\integration\\features\\loginCs.feature:10117:35)"
             }
           }
         ]
