@@ -1,0 +1,78 @@
+[
+  {
+    "description": "  I want to login to CS and do more action: create, delete entry",
+    "keyword": "Feature",
+    "name": "Go to and interact with CS",
+    "line": 1,
+    "id": "go-to-and-interact-with-cs",
+    "tags": [],
+    "uri": "loginCs.feature",
+    "elements": [
+      {
+        "id": "go-to-and-interact-with-cs;login-to-cs",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login to CS",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I login to CS site successfully",
+            "result": {
+              "status": "passed",
+              "duration": 451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I open content stack page",
+            "result": {
+              "status": "passed",
+              "duration": 1283000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I go to Entries menu of Quantum CS",
+            "result": {
+              "status": "passed",
+              "duration": 4791000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I search for Article content type",
+            "result": {
+              "status": "passed",
+              "duration": 65412000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I create new Article with headline as Test article 1",
+            "result": {
+              "status": "passed",
+              "duration": 3935000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

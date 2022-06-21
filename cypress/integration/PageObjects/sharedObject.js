@@ -34,14 +34,34 @@ class SharedObject{
       cy.get(locator)
       .first()
         .should('have.text', txt);
-    }
+    };
     //Check if locator have class
     checkLocatorFirstHaveText(locator, className) {
       cy.get(locator) 
         .should('have.class', className);
+    };
+
+    //Check if locator have attr that containts text
+   checkLocatorClassHaveText(locator, attribute,txt) {
+      cy.get(locator)
+        .should('have.attr', attribute).should('contain',txt);
+    } 
+    
+
+    //Check if locator have attr that containts text
+    checkLocatorClassHaveAttribute(locator, attribute,txt) {
+      cy.get(locator)
+        .should('have.attr', attribute).should('contain',txt);
     }
-    //Check if locator have class
-    checkLocatorClassHaveText(locator, className) {
+
+    //Check if locator have class and have text
+    checkLocatorClassHaveAndContainsText(locator, className,txt) {
+      cy.get(locator)
+        .should('have.class', className).should('have.text',txt);
+    }
+
+     //Check if locator have class and containts text
+     checkLocatorClassHaveAndContainsText(locator, className,txt) {
       cy.get(locator)
         .should('have.class', className);
     }
