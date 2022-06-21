@@ -43,7 +43,6 @@ When(/^I create new (.*) entry with authtoken as (.*) and api_key as (.*) and bo
     })
 });
 
-
 Then(`Response code is {int}`, (responseCode) => {
     cy.get('@status').then(code => {
         expect(code).eq(responseCode);
