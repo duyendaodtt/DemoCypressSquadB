@@ -4,3 +4,4 @@ Feature: Test API
     Examples:
         | contentType | AuthToken | Api_Key | Body_Json |
         | article  | blt370e8911b939523d  | bltbbbdd615c0ee9096 | entrybody |
+        | article  | blt370e8911b939523d  | bltbbbdd615c0ee9096 | entryArticleFull |

@@ -1,0 +1,52 @@
+{
+    "entry": {
+        "title": "[API_POST] Test Article Full contents",
+        "url": "/api-post-test-article-full",
+        "author_page": [
+            {
+                "uid": "blt9c9e368058f9e95e",
+                "_content_type_uid": "author"
+            }
+        ],
+        "published_date": "2022-06-16T14:00:00.000Z",
+        "term_selector": {
+            "historyOfPrimaryTerm": [
+                "applications"
+            ],
+            "primaryTerm": "applications",
+            "primaryTermInRealText": "Applications",
+            "primaryCategoryBelonged": "applications",
+            "secondaryTerm": [
+                "government"
+            ]
+        },
+        "keywords": [
+            {
+                "uid": "bltba43f929321e6b59",
+                "_content_type_uid": "keyword"
+            },
+            {
+                "uid": "bltf409a17c0ec2b42f",
+                "_content_type_uid": "keyword"
+            },
+            {
+                "uid": "blt7a57ddf803846581",
+                "_content_type_uid": "keyword"
+            },
+            {
+                "uid": "blt7aeb1ae0690894fb",
+                "_content_type_uid": "keyword"
+            }
+        ],
+        "summary": "The facility is dedicated to researching and developing quantum computing in the U.K. and around the world.",
+        "at_a_glance": [],
+        "body": "<p>Speaking on the second day of the Quantum Summit London, National Quantum Computing Center (NQCC) deputy director for innovation Simon Plant delivered an update on the facility and how it is supporting the U.K. quantum ecosystem.&nbsp;</p><p>Under construction at the Harwell campus in Oxfordshire, the NQCC has received £93 million ($113 million) in funding from U.K. Research and Innovation and will open in the fall of 2023. It currently boasts a team of 20 and aims to build to 65 employees for steady-state operation.</p><p>“We're aiming to accelerate the development and adoption of quantum computing,” said Plant. “Our mission is to take the U.K. research strengths that we have in quantum computing and translate those into innovation by building a greater understanding of quantum computing. </p><p>“We aim to work across government, industry and research communities to deliver, or enable the delivery of, assured quantum computing capabilities for the U.K. We want to focus on the barriers, the blockers and the engineering challenges to scaling quantum computing, but at the same time, support the growth of the wider ecosystem.”</p><p>Plant set out two main objectives for the NQCC’s program. The first is to build and evaluate prototypes and demonstrators that will lead to the development of an intermediate-scale quantum machine by 2025.&nbsp;</p><p>The second is to build partnerships with the research community and industry to support the growth of the quantum ecosystem, facilitated by the NQCC’s connections with the government and the public sector.</p><p>These will culminate in the evidence base that can inform the development of a longer-term road map for quantum computing in the U.K. that charts a course toward universal fault-tolerant quantum computing, or general-purpose quantum computing in the next 10 to 20 years.&nbsp;</p><p>Aligning to those objectives, Plant said the NQCC seeks to assure a customer of early products and services related to quantum computing through the validation and testing of quantum computing technologies. This would also help catalyze the U.K. supply chain.&nbsp;</p><p>“By overcoming those engineering challenges, blockers and hurdles, we're aiming to accelerate the scaling of quantum computing as we head towards that ambition of delivering an intermediate scale quantum machine by 2025,” Plant added.</p><p>“The NQCC represents a critical mass investment,” he said. “By providing the development focus for U.K. activity and through engagement with end-users by exploring use cases for quantum computing early on, we're seeking to drive user adoption.”</p><p>Plant said one of the NQCC’s most important roles is supporting skills and training, including continuing professional development and that quantum readiness is becoming an ever more important area.</p><p>He defined a quantum-ready economy as one set to take advantage of the benefits of quantum computing.&nbsp;</p><p>“However, to generate and retain value within the U.K. economy and to distribute those benefits across a wider society is a lofty ambition,” he said. “In practice, that means that we can work with potential early adopters, who in turn stand to gain expertise, market visibility, they're well-positioned to create intellectual property and they can also prepare their organization so that structural preparedness ahead of widespread adoption of quantum computing is important.”</p>",
+        "seo": {
+            "meta_title": "National Quantum Computing Center update",
+            "meta_description": "National Quantum Computing Center (NQCC) deputy director for innovation Simon Plant delivered an update on how the facility is supporting the quantum ecosystem.",
+            "meta_keywords": "NQCC",
+            "canonical_url": "",
+            "no_index": false
+        }
+    }
+}
