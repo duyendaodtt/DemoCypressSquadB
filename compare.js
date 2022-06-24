@@ -1,5 +1,5 @@
 // Install lib 'npm i json-diff'
-
+// Run: node compare.js
 
 const fs = require('fs');
 var jsonDiff = require('json-diff');
