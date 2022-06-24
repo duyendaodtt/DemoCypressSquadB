@@ -19,13 +19,22 @@
 const browserify = require('@cypress/browserify-preprocessor');
 const cucumber = require('cypress-cucumber-preprocessor').default;
 const resolve = require('resolve');
-
+const fs = require('fs')
 
 module.exports = (on, config) => {
   const options = {
     ...browserify.defaultOptions,
     typescript: resolve.sync('typescript', { baseDir: config.projectRoot }),
   };
-
+  on('task', {
+    readFileMaybe(filename) {
+      if (fs.existsSync(filename)) {
+        return fs.readFileSync(filename, 'utf8')
+      }
+  
+      return null
+    },
+  })
   on('file:preprocessor', cucumber(options));
+  require('cypress-log-to-output').install(on);
 }
