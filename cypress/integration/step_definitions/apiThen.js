@@ -1,5 +1,6 @@
 /// <reference types = "Cypress"/>
 import { Then, defineParameterType} from "cypress-cucumber-preprocessor/steps";
+import {validateSchema } from "../PageObjects/apiCheck"
 var request = require('request');
 const jsonAssertion = require("soft-assert")
 defineParameterType({
@@ -43,3 +44,4 @@ Then(`Response body should have {string} field with value as {boolean}`, (fieldN
         expect(responseBody).has.property(fieldName,fieldValue);
     })
 });
+
