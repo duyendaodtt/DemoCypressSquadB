@@ -22,13 +22,18 @@ Given(/^I send a (.*) request to (.*?) with body from (.*) file$/, (requestMetho
   })
 });
 
-Given(/^I make a (.*) request to (.*?) with (.*?) has uid as (.*) $/, (requestMethod, requestUrl, fieldName, fieldValue) =>{
+Given(/^I make a (.*) request to (.*?)with (.*?)has uid as (.*)$/, (requestMethod, fieldName, requestUrl, fieldValue) =>{
     var body= `
       query {
         all_article {
+          skip: 10
+          limit: 10
+          order_by: created_at_ASC
+          where: {uid: "` + fieldValue  + `"}
           items {
-            ` + fieldName + `:` + fieldValue
-            `
+            title
+            url
+            ` + fieldName + `
           }
         }
       }
