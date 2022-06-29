@@ -18,7 +18,7 @@ When(/^I make a (.*?) request to (.*)$/, (requestMethod, url) => {
 });
 
 When(/^I make (.*) request to (.*?) with body from (.*) file$/, (requestMethod, requestUrl, path) => {
-    var newpath = '/inputAPI/' + path + '.json'
+    var newpath = '/inputAPI/' + path + '.txt'
     cy.fixture(newpath).then((jsonBody) => {
         cy.api({
             method: requestMethod,
