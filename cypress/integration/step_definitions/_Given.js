@@ -21,3 +21,28 @@ Given(/^I send a (.*) request to (.*?) with body from (.*) file$/, (requestMetho
   }).as('req');
   })
 });
+
+Given(/^I make a (.*) request to (.*?) with (.*?) has uid as (.*) $/, (requestMethod, requestUrl, fieldName, fieldValue) =>{
+    var body= `
+      query {
+        all_article {
+          items {
+            ` + fieldName + `:` + fieldValue
+            `
+          }
+        }
+      }
+    `;
+    cy.request({
+      method: requestMethod,
+      url: requestUrl,
+      body: {
+        // operationName: 'IntrospectionQuery',
+        query: body,
+      },
+    }).then((res) => {
+      cy.wrap(res.status).as('status');
+      cy.wrap(res.headers).as('headers');
+      cy.wrap(res.body).as('body');
+  }).as('req');
+})
