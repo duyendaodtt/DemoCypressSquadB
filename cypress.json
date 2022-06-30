@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://stage.quantumbusinessnews.com",
+    "baseUrl": "http://localhost:4001/",
     "testFiles": "**/*.feature",
     "ignoreTestFiles": "*.js",
     "fixtures":{

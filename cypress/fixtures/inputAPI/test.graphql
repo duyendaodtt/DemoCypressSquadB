@@ -1,0 +1,58 @@
+query {
+        all_mega_menu {
+          items {
+            title
+            main_menu {
+              main_navigation_reference {
+                title
+              }
+              additional_sections {
+                title
+                section_link {
+                  title
+                  url
+                  reference_link {
+                    title
+                    slug
+                  }
+                }
+              }
+            }
+            secondary_menu {
+              child_sections {
+                section_title
+                section_link {
+                  title
+                  url
+                  reference_link {
+                    __typename
+                  }
+                }
+              }
+            }
+            registration_social_menu {
+              registration_social {
+                statement_text
+              }
+              social_networks {
+                title
+                section_link {
+                  title
+                  url
+                }
+              }
+              additional_sections {
+                title
+                section_link {
+                  title
+                  url
+                  reference_link {
+                    title
+                    slug
+                  }
+                }
+              }
+            }
+          }
+        }
+      }

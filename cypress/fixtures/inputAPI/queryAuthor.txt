@@ -1,7 +1,18 @@
-query {
-    all_article {
-      items {
-        content_format
+query{
+  all_article( asc: "published_date",
+        desc: "title",
+        limit: 10,
+       where: {
+          keyword_in: [
+            "bltfba605714dbd458e"
+          ]
+      }
+  )
+  {
+  	 items {
+      contributor {
+        contributor_name
       }
     }
+   }
   }
