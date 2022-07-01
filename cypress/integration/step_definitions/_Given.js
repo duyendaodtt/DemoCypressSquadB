@@ -13,7 +13,7 @@ Given(/^I send a (.*) request to (.*?) with body from (.*) file$/, (requestMetho
 });
 
 Given(/^I make a (.*) request to (.*?) with (.*?) has uid as (.*)$/, (requestMethod, requestUrl, fieldName, fieldValue) =>{
-    var body= `
+    var queryString= `
       query {
         all_article {
           (
@@ -32,5 +32,6 @@ Given(/^I make a (.*) request to (.*?) with (.*?) has uid as (.*)$/, (requestMet
         }
       }
     `;
+      var body = queryString.toString();
     apiPost.postRequest(requestMethod, requestUrl, body)
 })

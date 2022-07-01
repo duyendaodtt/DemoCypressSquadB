@@ -1,7 +1,7 @@
 Feature: Test query graphql
 
     Scenario Outline: Check for query each item
-        Given I send a <requestMethod> request to http://localhost:4001/graphql with body from <fileName> file
+        Given I send a <requestMethod> request to <url> with body from <fileName> file
         Then Response code is <statusCode>
         Examples:
             | requestMethod | url      | fileName    | statusCode |
@@ -9,7 +9,7 @@ Feature: Test query graphql
             | Post          | /graphql | queryTitle.txt | 200        |
 
     Scenario Outline: query with contributor uid as <uid>
-        Given I make a <requestMethod> request to http://localhost:4001/graphql with contributor has uid as <uid>
+        Given I make a <requestMethod> request to <url> with contributor has uid as <uid>
         Then Response code is <statusCode>
         Examples:
             | requestMethod | url      | uid  | statusCode |
