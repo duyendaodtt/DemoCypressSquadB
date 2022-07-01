@@ -14,12 +14,6 @@ defineParameterType({
     })
 });
 
-// Then(`Response code is {int}`, (responseCode) => {
-//     cy.get('@status').then((stt) => {
-//         expect(stt).eql(responseCode)
-//     })
-// });
-
 Then(`Response header contains {string}`, (txtContain) => {
     cy.get('@headers').then((header) => {
         expect(header).contain(txtContain)
