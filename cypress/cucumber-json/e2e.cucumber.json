@@ -1,0 +1,51 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Post CS",
+    "line": 1,
+    "id": "post-cs",
+    "tags": [],
+    "uri": "e2e.feature",
+    "elements": [
+      {
+        "id": "post-cs;e2e-check-article-1",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "E2E Check Article 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I send a Post request to https://eu-api.contentstack.com/v3/content_types/article/entries?locale=en-us with a body from ArticleBody.txt",
+            "result": {
+              "status": "failed",
+              "duration": 503000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/article/entries?locale=en-us\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/article/entries?locale=en-us\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"bltaafcf579726913de\",\n  \"authtoken\": \"blt1dca3f5c679a66b6\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 2159\n}\nBody: {\r\n    \"entry\": {\r\n        \"at_a_glance\": [],\r\n        \"authored_by\": \"\",\r\n        \"authored_on\": \"\",\r\n        \"body\": \"<p>body1</p><p>body2</p>\",\r\n        \"content_format\": [],\r\n        \"contributor\": [],\r\n        \"created_at\": \"2022-06-29T09:38:20.920Z\",\r\n        \"created_by\": \"blt7b039973e18906dc\",\r\n        \"featured_image_group\": {\r\n  \"featured_image\": null,\r\n  \"featured_image_credit\": \"\",\r\n  \"featured_image_caption\": \"\",\r\n  \"image_alt_text\": \"\"\r\n        },\r\n        \"keywords\": [],\r\n        \"mobile_headline\": \"headline\",\r\n        \"old_url\": \"\",\r\n        \"published_date\": \"2022-06-08T17:00:00.000Z\",\r\n        \"related_inline_content\": [],\r\n        \"seo\": {\r\n  \"meta_title\": \"title\",\r\n  \"meta_description\": \"desc\",\r\n  \"canonical_url\": \"\",\r\n  \"no_index\": false\r\n        },\r\n        \"series_taxonomy\": [],\r\n        \"sponsorship_gating_group\": {\r\n  \"sponsorship_gating_sponsor_flag\": false,\r\n  \"sponsorship_gating_sponsor_reference\": [],\r\n  \"sponsorship_gating_campaign_url\": \"\",\r\n  \"sponsorship_gating_gate_reg_flag\": false,\r\n  \"sponsorship_gating_gate_external_field_flag\": \"None\",\r\n  \"sponsorship_gating_external_form_id\": \"\"\r\n        },\r\n        \"subbrand\": [\r\n  {\r\n      \"uid\": \"blt9d187c6127213d42\",\r\n      \"_content_type_uid\": \"subbrand\"\r\n  }\r\n        ],\r\n        \"summary\": \"Sumary\",\r\n        \"tags\": [],\r\n        \"term_selector\": {\r\n  \"historyOfPrimaryTerm\": [\r\n      \"/Category-Primary-1111\"\r\n  ],\r\n  \"primaryTerm\": \"/Category-Primary-1111\",\r\n  \"primaryTermInRealText\": \"Edited Primary 1\",\r\n  \"primaryCategoryBelonged\": \"/Category-Primary-1111\",\r\n  \"secondaryTerm\": [\r\n      \"/Category-Primary-1111\",\r\n      \"/secondary-topic-1\",\r\n      \"/secondary-topic-2\"\r\n  ]\r\n        },\r\n        \"title\"...\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Mon, 04 Jul 2022 07:15:41 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"91ms\",\n  \"x-request-id\": \"32291\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry creation failed.\",\n  \"error_code\": 119,\n  \"errors\": {\n    \"title\": [\n      \"is not unique.\"\n    ]\n  }\n}\n\n    at http://localhost:4001/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (http://localhost:4001/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4001/__cypress/tests?p=cypress\\support\\index.js:166:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "I publish this article",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Response body should have \"notice\" field with value as \"The requested action has been performed.\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

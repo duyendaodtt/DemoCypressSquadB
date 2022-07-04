@@ -26,6 +26,7 @@ export const apiPost = new class APIPost {
             cy.wrap(res.status).as('status');
             cy.wrap(res.headers).as('headers');
             cy.wrap(res.body).as('body');
+            cy.log('@body')
         }).as('req');
     }
 
@@ -51,6 +52,7 @@ export const apiPost = new class APIPost {
             cy.wrap(res.status).as('status');
             cy.wrap(res.headers).as('headers');
             cy.wrap(res.body).as('body');
+            cy.log('@body')
         }).as('req');
     }
 

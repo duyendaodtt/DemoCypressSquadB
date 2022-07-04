@@ -8,119 +8,32 @@
     "uri": "graphql.feature",
     "elements": [
       {
-        "id": "test-query-graphql;check-for-query-each-item",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Check for query each item",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I send a Post request to /graphql with body from queryAuthor.txt file",
-            "result": {
-              "status": "passed",
-              "duration": 712000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 5,
-            "name": "Response code is 200",
-            "result": {
-              "status": "passed",
-              "duration": 22000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;check-for-query-each-item",
+        "id": "test-query-graphql;e2e-check-article",
         "keyword": "Scenario",
         "line": 9,
-        "name": "Check for query each item",
+        "name": "E2E Check Article",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
+            "keyword": "And ",
             "line": 4,
-            "name": "I send a Post request to /graphql with body from queryTitle.txt file",
+            "name": "I send a Post request to /graphql with body from queryArticle.txt file",
             "result": {
               "status": "passed",
-              "duration": 479000000
+              "duration": 74000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 5,
-            "name": "Response code is 200",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;query-with-contributor-uid-as-1234",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "query with contributor uid as 1234",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I make a Post request to /graphql with contributor has uid as 1234",
+            "name": "Response body should have \"title\" field with value as \"Test 04-07 v1\"",
             "result": {
               "status": "failed",
-              "error_message": "CypressError: `cy.request()` failed on:\n\nhttp://localhost:4001/graphql\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://localhost:4001/graphql\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.6.1 Chrome/94.0.4606.81 Electron/15.5.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 353\n}\nBody: {\"query\":\"\\n      query {\\n        all_article {\\n          (\\n            skip: 10\\n            limit: 10\\n            order_by: created_at_ASC\\n            where: {contributor{\\n                  uid:\\\"1234\\\"\\n                }\\n            }\\n          )\\n          items {\\n            title\\n            url\\n          }\\n        }\\n      }\\n    \"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"access-control-allow-origin\": \"*\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"1768\",\n  \"etag\": \"W/\\\"6e8-mc8ztAiP9wGuo5Q893MBOuVcCvU\\\"\",\n  \"date\": \"Fri, 01 Jul 2022 02:35:44 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {\n  \"errors\": [\n    {\n      \"message\": \"Syntax Error: Expected Name, found \\\"(\\\".\",\n      \"locations\": [\n        {\n\"line\": 4,\n\"column\": 11\n        }\n      ],\n      \"extensions\": {\n        \"code\": \"GRAPHQL_PARSE_FAILED\",\n        \"exception\": {\n\"stacktrace\": [\n  \"GraphQLError: Syntax Error: Expected Name, found \\\"(\\\".\",\n  \"    at syntaxError (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\error\\\\syntaxError.js:15:10)\",\n  \"    at Parser.expectToken (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:1413:40)\",\n  \"    at Parser.parseName (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:98:22)\",\n  \"    at Parser.parseField (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:295:28)\",\n  \"    at Parser.parseSelection (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:284:81)\",\n  \"    at Parser.many (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:1523:26)\",\n  \"    at Parser.parseSelectionSet (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:271:24)\",\n  \"    at Parser.parseField (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:312:68)\",\n  \"    at Parser.parseSelection (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:284:81)\",\n  \"    at Parser.many (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:1523:26)\"\n]\n        }\n      }\n    }\n  ]\n}\n\n\nhttps://on.cypress.io/request\n    at http://localhost:4001/__cypress/runner/cypress_runner.js:165424:80\n    at tryCatcher (http://localhost:4001/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4001/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:4001/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:4001/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:4001/__cypress/runner/cypress_runner.js:11139:18)\n    at _drainQueueStep (http://localhost:4001/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:4001/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4001/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:4001/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at APIPost.exports.apiPost.APIPost.postRequest (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:22:12)\n    at Context.eval (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:100:23)\n    at Context.resolveAndRunStepDefinition (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:45314:29)\n    at Context.eval (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:44635:35)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "Response code is 200",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;query-with-contributor-uid-as-4444",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "query with contributor uid as 4444",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I make a Post request to /graphql with contributor has uid as 4444",
-            "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.request()` failed on:\n\nhttp://localhost:4001/graphql\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://localhost:4001/graphql\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.6.1 Chrome/94.0.4606.81 Electron/15.5.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 353\n}\nBody: {\"query\":\"\\n      query {\\n        all_article {\\n          (\\n            skip: 10\\n            limit: 10\\n            order_by: created_at_ASC\\n            where: {contributor{\\n                  uid:\\\"4444\\\"\\n                }\\n            }\\n          )\\n          items {\\n            title\\n            url\\n          }\\n        }\\n      }\\n    \"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"x-powered-by\": \"Express\",\n  \"access-control-allow-origin\": \"*\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"1768\",\n  \"etag\": \"W/\\\"6e8-mc8ztAiP9wGuo5Q893MBOuVcCvU\\\"\",\n  \"date\": \"Fri, 01 Jul 2022 02:35:45 GMT\",\n  \"connection\": \"keep-alive\",\n  \"keep-alive\": \"timeout=5\"\n}\nBody: {\n  \"errors\": [\n    {\n      \"message\": \"Syntax Error: Expected Name, found \\\"(\\\".\",\n      \"locations\": [\n        {\n\"line\": 4,\n\"column\": 11\n        }\n      ],\n      \"extensions\": {\n        \"code\": \"GRAPHQL_PARSE_FAILED\",\n        \"exception\": {\n\"stacktrace\": [\n  \"GraphQLError: Syntax Error: Expected Name, found \\\"(\\\".\",\n  \"    at syntaxError (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\error\\\\syntaxError.js:15:10)\",\n  \"    at Parser.expectToken (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:1413:40)\",\n  \"    at Parser.parseName (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:98:22)\",\n  \"    at Parser.parseField (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:295:28)\",\n  \"    at Parser.parseSelection (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:284:81)\",\n  \"    at Parser.many (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:1523:26)\",\n  \"    at Parser.parseSelectionSet (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:271:24)\",\n  \"    at Parser.parseField (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:312:68)\",\n  \"    at Parser.parseSelection (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:284:81)\",\n  \"    at Parser.many (C:\\\\Users\\\\MyPC\\\\Documents\\\\GitHub\\\\AutoDemo\\\\smart-connections-monorepo\\\\node_modules\\\\graphql\\\\language\\\\parser.js:1523:26)\"\n]\n        }\n      }\n    }\n  ]\n}\n\n\nhttps://on.cypress.io/request\n    at http://localhost:4001/__cypress/runner/cypress_runner.js:165424:80\n    at tryCatcher (http://localhost:4001/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4001/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:4001/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:4001/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:4001/__cypress/runner/cypress_runner.js:11139:18)\n    at _drainQueueStep (http://localhost:4001/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:4001/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4001/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:4001/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at APIPost.exports.apiPost.APIPost.postRequest (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:22:12)\n    at Context.eval (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:100:23)\n    at Context.resolveAndRunStepDefinition (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:45314:29)\n    at Context.eval (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:44635:35)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "Response code is 200",
-            "result": {
-              "status": "skipped"
+              "duration": 12000000,
+              "error_message": "AssertionError: expected { Object (data) } to have property 'title'\n    at Context.eval (http://localhost:4001/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:203:34)"
             }
           }
         ]

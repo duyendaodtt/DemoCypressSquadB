@@ -17,11 +17,20 @@ Given(/^I publish an (.*) with uid is (.*)$/, (entry, uid) => {
 });
 
 Given(/^I publish this (.*)$/, (entry) => {
-  var uid;
-  cy.get('@body').then((responseBody) => {
-    uid = responseBody[0].uid;
-  });
-  apiPost.postPublishUID(entry, uid);
+  // cy.get('@body').then((responseBody) => {
+  //     this.responseBody = responseBody; 
+
+  // });
+  // cy.log(this.responseBody);
+  cy.then(() =>{
+      cy.get('@body').then((responseBody) =>{
+        this.responseBody = responseBody
+        
+        apiPost.postPublishUID(entry, this.responseBody.entry.uid)
+      })
+     
+  })
+  // apiPost.postPublishUID(entry, this.responseBody.entry.uid);
 });
 
 Given(/^I send a (.*) request to (.*?) with a body from (.*)$/, (requestMethod, requestUrl, path) => {
