@@ -26,6 +26,7 @@ export const apiPost = new class APIPost {
             cy.wrap(res.status).as('status');
             cy.wrap(res.headers).as('headers');
             cy.wrap(res.body).as('body');
+            cy.wrap(res.body.entry["uid"]).as('uid');
         }).as('req');
     }
 
@@ -54,13 +55,27 @@ export const apiPost = new class APIPost {
         }).as('req');
     }
 
+    postDeleteAnEntry(entry, uid) {
+        cy.api({
+            method: 'POST',
+            url: 'https://eu-api.contentstack.com/v3/content_types/'+entry+'/entries/'+uid+'?locale=en-us&delete_all_localized=true',
+            headers: {
+                'api_key': 'bltaafcf579726913de',
+                'authtoken': 'blt1dca3f5c679a66b6',
+                'Content-Type': 'application/json'
+            }
+        }).then((res) => {
+            cy.wrap(res.status).as('status');
+            cy.wrap(res.headers).as('headers');
+            cy.wrap(res.body).as('body');
+        }).as('req');
+    }
+
     postRequest(requestMethod, requestUrl, queryBody) {
         cy.request({
             method: requestMethod,
             url: requestUrl,
-            body: {
-                query: queryBody
-            }
+            body: queryBody
         }).then((res) => {
             cy.wrap(res.status).as('status');
             cy.wrap(res.headers).as('headers');
