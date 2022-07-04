@@ -12,6 +12,25 @@ Given(/^I send a (.*) request to (.*?) with body from (.*) file$/, (requestMetho
   })
 });
 
+Given(/^I publish an (.*) with uid is (.*)$/, (entry, uid) => {
+  apiPost.postPublishUID(entry, uid);
+});
+
+Given(/^I publish this (.*)$/, (entry) => {
+  var uid;
+  cy.get('@body').then((responseBody) => {
+    uid = responseBody[0].uid;
+  });
+  apiPost.postPublishUID(entry, uid);
+});
+
+Given(/^I send a (.*) request to (.*?) with a body from (.*)$/, (requestMethod, requestUrl, path) => {
+  var newpath = '/inputAPI/' + path 
+  cy.fixture(newpath).then((body) => {
+    apiPost.postRequestWithHeaders(requestMethod, requestUrl, body)
+  })
+});
+
 Given(/^I make a (.*) request to (.*?) with (.*?) has uid as (.*)$/, (requestMethod, requestUrl, fieldName, fieldValue) =>{
     var queryString= `
       query {

@@ -1,17 +1,11 @@
 Feature: Test query graphql
 
-    Scenario Outline: Check for query each item
-        Given I send a <requestMethod> request to <url> with body from <fileName> file
-        Then Response code is <statusCode>
-        Examples:
-            | requestMethod | url      | fileName    | statusCode |
-            | Post          | /graphql | queryAuthor.txt | 200        |
-            | Post          | /graphql | queryTitle.txt | 200        |
+    Scenario Outline: E2E Check Article
+        Given I send a <requestMethod> request to <url> with a body from <fileName>
+        And I publish this article
+        And I send a <requestMethod> request to <urlGrapthQL> with body from <fileQuery> file
+        Then Response body should have "title" field with value as "Test 04-07 v1"
 
-    Scenario Outline: query with contributor uid as <uid>
-        Given I make a <requestMethod> request to <url> with contributor has uid as <uid>
-        Then Response code is <statusCode>
         Examples:
-            | requestMethod | url      | uid  | statusCode |
-            | Post          | /graphql | 1234 | 200        |
-            | Post          | /graphql | 4444 | 200        |
+            | requestMethod | url                                                                           | fileName        | statusCode | urlGrapthQL | fileQuery        |
+            | Post          | https://eu-api.contentstack.com/v3/content_types/article/entries?locale=en-us | ArticleBody.txt | 201        | /graphql    | queryArticle.txt |
