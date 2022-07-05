@@ -1,0 +1,8 @@
+query GetArticle{
+  all_article{
+    items{
+      title
+    	url
+    }
+  }
+}

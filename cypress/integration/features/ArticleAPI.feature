@@ -4,4 +4,4 @@ Feature: Test query graphql
         Given I make a query to <url> with body from <fileName>
         Examples:
             | url     | fileName                           |
-            | graphql | queryAllArticleTitle.graphql |
+            | graphql | queryAllArticleTitle.txt |

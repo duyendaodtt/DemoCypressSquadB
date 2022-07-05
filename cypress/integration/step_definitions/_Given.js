@@ -17,12 +17,12 @@ Given(/^I publish an (.*) with uid is (.*)$/, (entry, uid) => {
 });
 
 Given(/^I publish this (.*)$/, (entry) => {
-  var uid;
-  cy.get('@body').then((responseBody) => {
-    uid = responseBody[0].uid;
-  });
-  apiPost.postPublishUID(entry, uid);
+  cy.get('@body').then((responseBody) =>{
+    this.responseBody = responseBody
+    apiPost.postPublishUID(entry, this.responseBody.entry.uid)
+  })
 });
+
 
 Given(/^I send a (.*) request to (.*?) with a body from (.*)$/, (requestMethod, requestUrl, path) => {
   var newpath = '/inputAPI/' + path 
@@ -53,4 +53,11 @@ Given(/^I make a (.*) request to (.*?) with (.*?) has uid as (.*)$/, (requestMet
     `;
       var body = queryString.toString();
     apiPost.postRequest(requestMethod, requestUrl, body)
+})
+
+Given(/^I make a query to (.*) with body from (.*)$/, (graphqlURL, filename) =>{
+  var newpath = '/inputAPI/' + filename 
+  cy.fixture(newpath).then((body) => {
+    apiPost.postRequest("POST", graphqlURL, body.toString());
+  })
 })
