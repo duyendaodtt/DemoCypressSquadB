@@ -1,9 +1,16 @@
 {
-    "baseUrl": "http://localhost:4001/",
+    "baseUrl": "https://content.preview.scm.informagt.com/v1/graphql?client_id=master",
     "testFiles": "**/*.feature",
     "ignoreTestFiles": "*.js",
     "fixtures":{
-        "Article": "webElements/articleElements.json"
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "blt77ccc4c66a6d7939",
+        "Content-Type": "application/json"
+    },
+    "env":{
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "blt77ccc4c66a6d7939",
+        "Content-Type": "application/json"
     },
     "retries": {
         "runMode": 2,

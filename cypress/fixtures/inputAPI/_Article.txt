@@ -1,0 +1,93 @@
+{
+    "entry": {
+        "at_a_glance": [],
+        "authored_by": "author by 6",
+        "authored_on": "author on 6",
+        "body": "<p>body 6</p>",
+        "buyers_journey": null,
+        "content_format": [
+            {
+                "uid": "bltdf95300c25d9fafc",
+                "_content_type_uid": "content_format"
+            }
+        ],
+        "contributor": [
+            {
+                "uid": "blt80c1bacc0104f453",
+                "_content_type_uid": "contributor"
+            }
+        ],
+        "featured_image_group": {
+            "featured_image": {
+                "uid": "blt29c8d7207ab7318a",
+                "created_at": "2021-09-23T08:38:46.444Z",
+                "updated_at": "2021-09-23T08:38:46.444Z",
+                "created_by": "blt78732bd836d545ea",
+                "updated_by": "blt78732bd836d545ea",
+                "content_type": "image/png",
+                "file_size": "16903",
+                "tags": [],
+                "filename": "Chris_Knowles.png",
+                "url": "https://eu-images.contentstack.com/v3/assets/bltaafcf579726913de/blt29c8d7207ab7318a/614c3d16f689317f9db8073d/Chris_Knowles.png",
+                "ACL": [],
+                "is_dir": false,
+                "parent_uid": null,
+                "_version": 1,
+                "title": "Chris_Knowles.png"
+            },
+            "featured_image_credit": "",
+            "featured_image_caption": "",
+            "image_alt_text": ""
+        },
+        "keywords": [
+            {
+                "uid": "blt1d4210b9a978d545",
+                "_content_type_uid": "keyword"
+            }
+        ],
+        "mobile_headline": "mobile change 6",
+        "old_url": "",
+        "published_date": "2022-07-05T17:00:00.000Z",
+        "seo": {
+            "meta_title": "seo 6",
+            "meta_description": "seo des 6",
+            "canonical_url": "canonical6",
+            "no_index": true
+        },
+        "series_taxonomy": [
+            {
+                "uid": "bltb0de71a036cd0471",
+                "_content_type_uid": "series"
+            }
+        ],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_sponsor_flag": false,
+            "sponsorship_gating_sponsor_reference": [
+                {
+                    "uid": "blt05d7169598f6ea3f",
+                    "_content_type_uid": "sponsor"
+                }
+            ],
+            "sponsorship_gating_campaign_url": "",
+            "sponsorship_gating_gate_reg_flag": true,
+            "sponsorship_gating_gate_external_field_flag": "Eloqua",
+            "sponsorship_gating_external_form_id": ""
+        },
+        "subbrand": [
+            {
+                "uid": "bltfbbcd0aa341411d3",
+                "_content_type_uid": "subbrand"
+            }
+        ],
+        "summary": "summary 6",
+        "tags": [],
+        "term_selector": {
+            "primaryTerm": "topic-4",
+            "secondaryTerm": [
+                "/primary-topic-1"
+            ]
+        },
+        "title": "[Test] Article 6",
+        "url": "/-test-article-6"
+    }
+}

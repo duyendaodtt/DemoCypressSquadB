@@ -12,6 +12,8 @@ Given(/^I send a (.*) request to (.*?) with body from (.*) file$/, (requestMetho
   })
 });
 
+
+
 Given(/^I publish an (.*) with uid is (.*)$/, (entry, uid) => {
   apiPost.postPublishUID(entry, uid);
 });
@@ -28,6 +30,13 @@ Given(/^I send a (.*) request to (.*?) with a body from (.*)$/, (requestMethod, 
   var newpath = '/inputAPI/' + path 
   cy.fixture(newpath).then((body) => {
     apiPost.postRequestWithHeaders(requestMethod, requestUrl, body)
+  })
+});
+
+Given(/^I create (.*?) entry with a body from (.*)$/, (requestMethod, path) => {
+  var newpath = '/inputAPI/' + path 
+  cy.fixture(newpath).then((body) => {
+    apiPost.postCreateEntry(requestMethod, body)
   })
 });
 

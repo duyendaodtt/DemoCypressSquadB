@@ -1,7 +1,0 @@
-query {
-    all_article {
-      items {
-        uid: 123456
-      }
-    }
-  }

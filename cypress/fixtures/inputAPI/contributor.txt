@@ -1,0 +1,57 @@
+{
+    "entry": {
+        "contributor_company_name": "Contributor's Company Name",
+        "contributor_description": "Contributor's Job Title<br/><br/><em>Contributor's Job Title</em><br/><br/>Contributor's Job Title<br/><p><strong>asdasd</strong></p><p><strong>as</strong></p><p><strong></strong></p><p><strong>das</strong><br/></p>",
+        "contributor_email": {
+            "email_address": "chung.nguyen@xpondigital.com",
+            "hide_email": true
+        },
+        "contributor_role": "Contributor's Job Title",
+        "contributor_summary": "Contributor Summary",
+        "country": [
+            {
+                "uid": "blt95de122dea8fe66e",
+                "_content_type_uid": "country"
+            }
+        ],
+        "member_since": "2022-07-15",
+        "seo": {
+            "meta_title": "Search Engine Title*",
+            "meta_description": "Search Engine Title*",
+            "canonical_url": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/contributor/en-us/entry/blt62e705a13b6d6961/edit?branch=main",
+            "no_index": true
+        },
+        "social_links": {
+            "facebook_link": {
+                "title": "Facebook link",
+                "href": "https://www.facebook.com/"
+            },
+            "twitter_link": {
+                "title": "Twitter link",
+                "href": "https://twitter.com/"
+            },
+            "instagram_link": {
+                "title": "Instagram",
+                "href": "https://www.instagram.com/"
+            },
+            "linkedin_link": {
+                "title": "LinkedIn link",
+                "href": "https://www.linkedin.com/"
+            }
+        },
+        "tags": [
+            "a",
+            "b",
+            "c"
+        ],
+        "title": "E2E Author title",
+        "url": "/author/e2e-author-title",
+        "contributor_name": "E2E Author title",
+        "user_roles": [
+            "Author",
+            "Moderator",
+            "Speaker",
+            "Podcast Host"
+        ]
+    }
+}

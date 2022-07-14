@@ -1,0 +1,26 @@
+{
+    "entry": {
+        "locale": "en-us",
+        "keyword_branding": {
+            "keyword_branding_logo": null,
+            "keyword_branding_logo_alt_text": "",
+            "keyword_branding_description_with_hyperlink": "",
+            "keyword_branding_color": ""
+        },
+        "keyword_description": "",
+        "keyword_display_options": "Standard",
+        "keyword_sponsor_reference": [],
+        "modules": {
+            "module_blocks": []
+        },
+        "seo": {
+            "meta_title": "Keyword 3",
+            "meta_description": "Keyword 3",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "tags": [],
+        "title": "E2E Keyword",
+        "url": "/E2E-Keyword"
+    }
+}

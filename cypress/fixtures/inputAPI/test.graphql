@@ -1,7 +1,0 @@
-query GetAllArticle{
-  all_article{
-    items{
-      title
-    }
-  }
-}
