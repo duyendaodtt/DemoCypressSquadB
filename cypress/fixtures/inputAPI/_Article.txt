@@ -71,7 +71,7 @@
                 "/primary-topic-1"
             ]
         },
-        "title": "[Test] Article 6",
-        "url": "/-test-article-6"
+        "title": "E2E - Article",
+        "url": "/-12983791273981723"
     }
 }

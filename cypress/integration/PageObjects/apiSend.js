@@ -8,54 +8,25 @@ export const apiPost = new class APIPost {
     updateBodyAndCreateEntry(entry, jsonBody) {
         var j1 = JSON.parse(jsonBody);
         const files = ['keywords.txt','contributor.txt','subbranch.txt','contentformat.txt']
-        const content = []
+        const contents = []
 
-        cy.wrap(files).each((file, i, array) => {
-            return new Cypress.Promise((resolve) => {
-                cy.readFile('./cypress/fixtures/inputAPI/uids/'+file).then((data) => {
-                    content.push(data)
-                }).then(res => {
-                    console.log(res);
-                })
+        cy.wrap(files).each((file) => {
+            cy.readFile('./cypress/fixtures/inputAPI/uids/'+file).then((data) => {
+              contents.push(data)
             })
           })
+          .then(() => {
+            // do whatever you want after all reading files is done
+            
+            j1.entry['keywords'][0]['uid'] = contents[0];
+            j1.entry['contributor'][0]['uid'] = contents[1];
+            j1.entry['subbrand'][0]['uid'] = contents[2];
+            j1.entry['content_format'][0]['uid'] = contents[3];
 
-        // Cypress.each(files, (file) => {
-        //     cy.readFile('./cypress/fixtures/inputAPI/uids/'+file).then((data) => {
-        //         content.push(data)
-        //     })
-        //   })
-        //   .then(() => {
-        //     // do whatever you want after all reading files is done
-        //     cy.log(content)
-        //   })
-
-        // cy.readFile('./cypress/fixtures/inputAPI/uids/keywords.txt').then(obj => {
-        //     j1.entry['keywords'][0]['uid'] = obj;
-        //     cy.log(obj)
-        // })
-        // cy.readFile('./cypress/fixtures/inputAPI/uids/contributor.txt').then(obj => {
-        //     j1.entry['contributor'][0]['uid'] = obj;
-        //     cy.log(obj)
-        // })
-        // cy.readFile('./cypress/fixtures/inputAPI/uids/subbranch.txt').then(obj => {
-        //     j1.entry['subbrand'][0]['uid'] = obj;
-        //     cy.log(obj)
-        // })
-        // cy.readFile('./cypress/fixtures/inputAPI/uids/contentformat.txt').then(obj => {
-        //     j1.entry['content_format'][0]['uid'] = obj;
-        //     cy.log(obj)
-        //     cy.log(j1.entry['content_format'][0]['uid'])
-        // })
-        // cy.log(j1.entry['content_format'][0]['uid'])
-
-       
-        
-        // update body
-
-
-        // create new entry
-        // this.postCreateEntry(entry,obj)
+            // updated uid for bodyJSON
+            // create entry
+            this.postCreateEntry(entry, j1)
+          })
     }
 
 
