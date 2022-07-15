@@ -5,6 +5,35 @@ import { env } from "process";
 
 
 export const apiPost = new class APIPost {
+
+    updateBodyAndCreateEntry(entry, jsonBody) {
+        var j1 = JSON.parse(jsonBody);
+        var uidKeyword
+        var uidContributor
+        var uidSubbranch
+        var uidContentFormat
+        cy.readFile('./cypress/fixtures/inputAPI/uids/keywords.txt').then(obj => {
+            j1.entry['keywords'][0]['uid'] = obj;
+        })
+        cy.readFile('./cypress/fixtures/inputAPI/uids/contributor.txt')
+        cy.readFile('./cypress/fixtures/inputAPI/uids/subbranch.txt')
+        cy.readFile('./cypress/fixtures/inputAPI/uids/contentformat.txt').then{obj => {
+            j1.entry['content_format'][0]['uid'] = obj;
+        }}
+
+        cy.log(j1.entry['keywords'][0]['uid']);
+        //update body
+        
+        j1.entry['content_format'][0]['uid'] = uidContentFormat;
+        
+        j1.entry['contributor'][0]['uid'] = uidContributor;
+        j1.entry['subbrand'][0]['uid'] = uidSubbranch;
+
+        // create new entry
+        //this.postCreateEntry(entry,obj)
+    }
+
+
     postMethod(requestMethod, requestUrl, jsonBody) {
         cy.api({
             method: requestMethod, url: requestUrl,
@@ -50,9 +79,22 @@ export const apiPost = new class APIPost {
             cy.wrap(res.headers).as('headers');
             cy.wrap(res.body).as('body');
             
-            //var data = res.body.entry['uid']
+            //res.body.entry['uid']
             // write to file
-            
+            cy.log(entry)
+            if(entry === 'keyword'){
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/keywords.txt',res.body.entry['uid'])
+            }
+            if(entry === 'contributor'){
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/contributor.txt',res.body.entry['uid'])
+            }
+            if(entry === 'subbrand'){
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/subbranch.txt',res.body.entry['uid'])
+            }
+            if(entry === 'content_format'){
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/contentformat.txt',res.body.entry['uid'])
+            }
+
         }).as('req');
     }
 

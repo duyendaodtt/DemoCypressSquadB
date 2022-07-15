@@ -44,7 +44,7 @@
             "b",
             "c"
         ],
-        "title": "E2E Author title",
+        "title": "E2E Contributor",
         "url": "/author/e2e-author-title",
         "contributor_name": "E2E Author title",
         "user_roles": [

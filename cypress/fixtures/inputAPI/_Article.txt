@@ -18,23 +18,7 @@
             }
         ],
         "featured_image_group": {
-            "featured_image": {
-                "uid": "blt29c8d7207ab7318a",
-                "created_at": "2021-09-23T08:38:46.444Z",
-                "updated_at": "2021-09-23T08:38:46.444Z",
-                "created_by": "blt78732bd836d545ea",
-                "updated_by": "blt78732bd836d545ea",
-                "content_type": "image/png",
-                "file_size": "16903",
-                "tags": [],
-                "filename": "Chris_Knowles.png",
-                "url": "https://eu-images.contentstack.com/v3/assets/bltaafcf579726913de/blt29c8d7207ab7318a/614c3d16f689317f9db8073d/Chris_Knowles.png",
-                "ACL": [],
-                "is_dir": false,
-                "parent_uid": null,
-                "_version": 1,
-                "title": "Chris_Knowles.png"
-            },
+            "featured_image": "blt29c8d7207ab7318a",
             "featured_image_credit": "",
             "featured_image_caption": "",
             "image_alt_text": ""
