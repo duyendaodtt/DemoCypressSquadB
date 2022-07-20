@@ -12,8 +12,6 @@ Given(/^I send a (.*) request to (.*?) with body from (.*) file$/, (requestMetho
   })
 });
 
-
-
 Given(/^I publish an (.*) with uid is (.*)$/, (entry, uid) => {
   apiPost.postPublishUID(entry, uid);
 });

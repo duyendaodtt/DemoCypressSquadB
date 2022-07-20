@@ -12,7 +12,8 @@ Feature: Test query graphql
 
     Scenario Outline: API E2E - Create Article
         Given I update and create <entryName> entry with body from <entryJSON>
-
         Examples:
             | entryJSON | entryName | Header 3 |
             | _Article.txt  | article  | Value 3  |
+    Scenario: Query with uid
+        Given 
