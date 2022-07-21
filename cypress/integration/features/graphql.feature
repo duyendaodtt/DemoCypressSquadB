@@ -10,10 +10,11 @@ Feature: Test query graphql
         And I create content_format entry with a body from contentformat.txt
         And I publish this content_format
 
-    Scenario Outline: API E2E - Create Article
+    Scenario Outline: API E2E - Create Content Type Entries
         Given I update and create <entryName> entry with body from <entryJSON>
         And I publish this <entryName>
 
         Examples:
             | entryJSON    | entryName | 
             | _Article.txt | article   | 
+            | _Webinar.txt | webinar   | 
