@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "entry": {
         "at_a_glance": [],
@@ -73,5 +74,36 @@
         },
         "title": "[Automation Test] - Article",
         "url": "/automation-test-article"
+=======
+query queryAllArticles{
+  all_article(
+    limit: 100
+    skip: 0
+    desc:"title"
+    where: {
+   	  ${condition}
+  )
+  {
+    meta{total}
+    items{
+      title
+      mobileHeadline
+      publishedDate
+      url
+      contributor{
+        contributorName
+        contributorImage{
+          image{url}
+          imageAltText
+        }
+        contributorSummary
+        contributorDescription
+        contributorEmail{
+          emailAddress
+          hideEmail
+        }
+      }
+>>>>>>> e53ec3a28ec866c7f2c3b86d62ecdc34910038ca
     }
+  }
 }
