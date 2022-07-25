@@ -90,6 +90,9 @@ export const apiPost = new class APIPost {
             if (entry === 'content_format') {
                 cy.writeFile('./cypress/fixtures/inputAPI/uids/contentformat.txt', res.body.entry['uid'])
             }
+            if (entry === 'article') {
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/_article.txt', res.body.entry['uid'])
+            }
 
         }).as('req');
     }
