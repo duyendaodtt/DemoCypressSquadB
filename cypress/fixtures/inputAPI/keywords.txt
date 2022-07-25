@@ -20,7 +20,7 @@
             "no_index": false
         },
         "tags": [],
-        "title": "E2E Keyword",
+        "title": "[Automation Test] Keyword",
         "url": "/E2E-Keyword"
     }
 }

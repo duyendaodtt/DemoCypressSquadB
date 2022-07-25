@@ -145,4 +145,12 @@ export const apiPost = new class APIPost {
             cy.wrap(res.body).as('body');
         }).as('req');
     }
+
+    graphqlQuery(requestUrl, queryBody) {
+        cy.request({method: 'POST', url: requestUrl, body: queryBody}).then((res) => {
+            cy.wrap(res.status).as('graphstatus');
+            cy.wrap(res.headers).as('headers');
+            cy.wrap(res.body).as('body');
+        }).as('req');
+    }
 }

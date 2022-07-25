@@ -5,7 +5,7 @@
             "subbrand_image_alt_text": "Alt text"
         },
         "tags": [],
-        "title": "E2E Subbranch",
+        "title": "[Automation Test] Subbranch",
         "url": "/e2e-subbranch"
     }
 }

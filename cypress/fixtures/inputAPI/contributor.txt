@@ -44,9 +44,9 @@
             "b",
             "c"
         ],
-        "title": "E2E Contributor",
+        "title": "[Automation Test] Contributor",
         "url": "/author/e2e-author-title",
-        "contributor_name": "E2E Author title",
+        "contributor_name": "[Automation Test] Author title",
         "user_roles": [
             "Author",
             "Moderator",

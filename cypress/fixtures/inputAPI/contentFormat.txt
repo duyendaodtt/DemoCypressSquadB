@@ -8,7 +8,7 @@
             "no_index": false
         },
         "tags": [],
-        "title": "E2E Content Format",
+        "title": "[Automation Test] Content Format",
         "url": "/e2e-content-format"
     }
 }

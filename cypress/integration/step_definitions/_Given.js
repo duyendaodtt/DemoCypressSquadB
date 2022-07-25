@@ -46,28 +46,29 @@ Given(/^I create (.*?) entry with a body from (.*)$/, (requestMethod, path) => {
   })
 });
 
-Given(/^I make a (.*) request to (.*?) with (.*?) has uid as (.*)$/, (requestMethod, requestUrl, fieldName, fieldValue) =>{
+Given(/^I make query to get (.*) entry from (.*) that uid from (.*)$/, (entryName, urlServerGraphql,path) =>{
+  var newpath = '/inputAPI/uids/' + path 
+  cy.fixture(newpath).then((body) => {
+    apiPost.postCreateEntry(requestMethod, body)
+
     var queryString= `
       query {
-        all_article {
+        all_${entryName} {
           (
-            skip: 10
-            limit: 10
-            order_by: created_at_ASC
-            where: {` + fieldName + `{
-                  uid:"` + fieldValue + `"
-                }
-            `+ `}
+            where: { uid: "${uid}" }
           )
           items {
             title
+            uid
+            summary
             url
           }
         }
       }
     `;
       var body = queryString.toString();
-    apiPost.postRequest(requestMethod, requestUrl, body)
+    apiPost.postRequest(urlServerGraphql, body)
+  })
 })
 
 Given(/^I make a query to (.*) with body from (.*)$/, (graphqlURL, filename) =>{

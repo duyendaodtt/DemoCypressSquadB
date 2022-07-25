@@ -71,7 +71,7 @@
                 "/primary-topic-1"
             ]
         },
-        "title": "E2E - Article",
-        "url": "/-12983791273981723"
+        "title": "[Automation Test] - Article",
+        "url": "/automation-test-article"
     }
 }
