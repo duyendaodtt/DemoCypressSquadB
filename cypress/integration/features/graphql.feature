@@ -24,3 +24,4 @@ Feature: Test query graphql
     Examples:
         | entryName | severUrl | fileName |
         | article  | https://content.staging.scm.informagt.com/v1/graphql?client_id=master  |  _article.txt  |
+

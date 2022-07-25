@@ -67,7 +67,15 @@ Given(/^I make query to get (.*) entry from (.*) that uid from (.*)$/, (entryNam
 
   })
 })
+Given(/^I make graphql query from (.*) with body as file (.*)$/, (urlServerGraphql, path) => {
+  var newpath = '/inputAPI/' + path
+  cy.fixture(newpath).then((body) => {
+    apiPost.graphqlPost("Post", urlServerGraphql, body)
+  })
 
+  // var body = queryString.toString();
+  // apiPost.graphqlQuery(urlServerGraphql, body, 'all_article')
+})
 Given(/^I make query to get (.*) entry from ContentStack with uid from (.*)$/, (entryName, filename) => {
   var newpath = '/inputAPI/uids/' + filename
   cy.fixture(newpath).then((body) => {

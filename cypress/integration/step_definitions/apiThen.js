@@ -39,3 +39,21 @@ Then(`Response body should have {string} field with value as {boolean}`, (fieldN
     })
 });
 
+Then(`Response body of {string} should have total items is not null`, (contentQuery)=>{
+    // cy.get('body').then((responseBody)=>{
+    //     var fieldName = `response.body.data.${contentQuery}.meta.total`
+    //     responseBody.itself(fieldName).should('not.eq', null)
+    // })
+    cy.then( () =>{
+        let fieldName = `response.body.data.${contentQuery}.meta.total`
+        cy.log('body')
+        cy.get('body').its(fieldName).should('not.eq', null)
+    }
+        
+    )
+    // var fieldName = `response.body.data.${contentQuery}.meta.total`
+    // cy.wait('@body')
+    //   .its(fieldName)
+    //   .should('not.eq', null)
+})
+

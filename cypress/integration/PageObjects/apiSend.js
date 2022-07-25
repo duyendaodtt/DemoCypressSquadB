@@ -145,7 +145,19 @@ export const apiPost = new class APIPost {
             cy.wrap(res.body).as('body');
         }).as('req');
     }
-
+    graphqlPost(requestMethod, requestUrl, queryBody) {
+        cy.request({
+            method: requestMethod,
+            url: requestUrl,
+            body: {
+                query: queryBody
+            }
+        }).then((res) => {
+            cy.wrap(res.status).as('status');
+            cy.wrap(res.headers).as('headers');
+            cy.wrap(res.body).as('body');
+        }).as('req');
+    }
     postGetEntryByUID(entry, uid) {
         cy.api({
             method: 'Get',
@@ -163,10 +175,13 @@ export const apiPost = new class APIPost {
     }
 
     graphqlQuery(requestUrl, query, opName) {
-        cy.log(query);
+        // cy.log(query);
         cy.request({
             method: 'POST', 
             url: requestUrl,
+            headers: {
+                "content-type": "application/json; charset=utf-8"
+            },
             body: { query }
         }).then((res) => {
             cy.wrap(res.status).as('graphstatus');
