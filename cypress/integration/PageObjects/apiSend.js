@@ -93,6 +93,24 @@ export const apiPost = new class APIPost {
             if (entry === 'article') {
                 cy.writeFile('./cypress/fixtures/inputAPI/uids/_article.txt', res.body.entry['uid'])
             }
+            if (entry === 'webinar') {
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/_webinar.txt', res.body.entry['uid'])
+            }
+            if (entry === 'podcast') {
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/_podcast.txt', res.body.entry['uid'])
+            }
+            if (entry === 'video') {
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/_video.txt', res.body.entry['uid'])
+            }
+            if (entry === 'slideshow') {
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/_slideshow.txt', res.body.entry['uid'])
+            }
+            if (entry === 'document') {
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/_document.txt', res.body.entry['uid'])
+            }
+            if (entry === 'event') {
+                cy.writeFile('./cypress/fixtures/inputAPI/uids/_event.txt', res.body.entry['uid'])
+            }
 
         }).as('req');
     }
