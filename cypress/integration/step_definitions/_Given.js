@@ -50,7 +50,9 @@ Given(/^I make query to get (.*) entry from (.*) that uid from (.*)$/, (entryNam
 
     var queryString = `
     query all${entryName}{
-      all_${entryName} {
+      all_${entryName} (
+        where: {uid:"${data}"}
+      ) {
         items {
           title
           uid

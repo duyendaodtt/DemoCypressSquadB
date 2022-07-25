@@ -18,6 +18,9 @@ Feature: Test query graphql
     #        | entryJSON    | entryName | 
     #        | _Article.txt | article   |
 
-    Scenario: API E2E Query Entry with API
-    Given I make query to get article entry from https://content.preview.scm.informagt.com/v1/graphql?client_id=master that uid from _article.txt
-    And I make query to get article entry from ContentStack with uid from _article.txt
+    Scenario Outline: API E2E Query Entry with API
+    Given I make query to get <entryName> entry from <severUrl> that uid from <fileName>
+    And I make query to get <entryName> entry from ContentStack with uid from <fileName>
+    Examples:
+        | entryName | severUrl | fileName |
+        | article  | https://content.staging.scm.informagt.com/v1/graphql?client_id=master  |  _article.txt  |
