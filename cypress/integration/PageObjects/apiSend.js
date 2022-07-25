@@ -1,32 +1,32 @@
 // / <reference types = "Cypress"/>
 
-import {env} from "process";
+import { env } from "process";
 
 
 export const apiPost = new class APIPost {
 
     updateBodyAndCreateEntry(entry, jsonBody) {
         var j1 = JSON.parse(jsonBody);
-        const files = ['keywords.txt','contributor.txt','subbranch.txt','contentformat.txt']
+        const files = ['keywords.txt', 'contributor.txt', 'subbranch.txt', 'contentformat.txt']
         const contents = []
 
         cy.wrap(files).each((file) => {
-            cy.readFile('./cypress/fixtures/inputAPI/uids/'+file).then((data) => {
-              contents.push(data)
+            cy.readFile('./cypress/fixtures/inputAPI/uids/' + file).then((data) => {
+                contents.push(data)
             })
-          })
-          .then(() => {
-            // do whatever you want after all reading files is done
-            
-            j1.entry['keywords'][0]['uid'] = contents[0];
-            j1.entry['contributor'][0]['uid'] = contents[1];
-            j1.entry['subbrand'][0]['uid'] = contents[2];
-            j1.entry['content_format'][0]['uid'] = contents[3];
+        })
+            .then(() => {
+                // do whatever you want after all reading files is done
 
-            // updated uid for bodyJSON
-            // create entry
-            this.postCreateEntry(entry, j1)
-          })
+                j1.entry['keywords'][0]['uid'] = contents[0];
+                j1.entry['contributor'][0]['uid'] = contents[1];
+                j1.entry['subbrand'][0]['uid'] = contents[2];
+                j1.entry['content_format'][0]['uid'] = contents[3];
+
+                // updated uid for bodyJSON
+                // create entry
+                this.postCreateEntry(entry, j1)
+            })
     }
 
 
@@ -139,18 +139,39 @@ export const apiPost = new class APIPost {
     }
 
     postRequest(requestMethod, requestUrl, queryBody) {
-        cy.request({method: requestMethod, url: requestUrl, body: queryBody}).then((res) => {
+        cy.request({ method: requestMethod, url: requestUrl, body: queryBody }).then((res) => {
             cy.wrap(res.status).as('status');
             cy.wrap(res.headers).as('headers');
             cy.wrap(res.body).as('body');
         }).as('req');
     }
 
-    graphqlQuery(requestUrl, queryBody) {
-        cy.request({method: 'POST', url: requestUrl, body: queryBody}).then((res) => {
-            cy.wrap(res.status).as('graphstatus');
-            cy.wrap(res.headers).as('headers');
-            cy.wrap(res.body).as('body');
+    postGetEntryByUID(entry, uid) {
+        cy.api({
+            method: 'Get',
+            url: 'https://eu-api.contentstack.com/v3/content_types/' + entry + '/entries/' + uid ,
+            headers: {
+                'api_key': Cypress.env('api_key'),
+                'authtoken': Cypress.env('authtoken'),
+                'Content-Type': 'application/json'
+            }
+        }).then((res) => {
+            cy.wrap(res.status).as('CSstatus');
+            cy.wrap(res.headers).as('CSheaders');
+            cy.wrap(res.body).as('CSbody');
         }).as('req');
+    }
+
+    graphqlQuery(requestUrl, query, opName) {
+        cy.log(query);
+        cy.request({
+            method: 'POST', 
+            url: requestUrl,
+            body: { query }
+        }).then((res) => {
+            cy.wrap(res.status).as('graphstatus');
+            cy.wrap(res.headers).as('graphheaders');
+            cy.wrap(res.body).as('graphbody');
+        }).as('graphreq');
     }
 }
