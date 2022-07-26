@@ -11,7 +11,14 @@ pipeline {
     stage('Execute Cypress') {
       steps {
         echo "Start cypress..."
-        sh "npx cypress info"
+        sh "npx cypress run"
+      }
+    }
+
+    stage('Generate Reports') {
+      steps {
+        echo "Generating report"
+        
       }
     }
   }
