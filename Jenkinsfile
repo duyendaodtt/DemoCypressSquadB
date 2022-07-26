@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  options{
+    ansiColor('xterm')
+  }
+
   stages {
     stage('Checkout git') {
       steps {
@@ -11,7 +15,7 @@ pipeline {
     stage('Execute Cypress') {
       steps {
         echo "Start cypress..."
-        sh "npx cypress run"
+        sh "npx cypress run --headless"
       }
     }
 
