@@ -4,13 +4,13 @@ pipeline {
   stages {
     stage('Checkout git') {
       steps {
-        eco "Checked out git repository."
+        echo "Checked out git repository."
      
       }
     }
     stage('Execute Cypress') {
       steps {
-        eco "Start cypress..."
+        echo "Start cypress..."
         sh "npx cypress info"
       }
     }
