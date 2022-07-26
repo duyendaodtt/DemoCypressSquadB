@@ -19,8 +19,8 @@ pipeline {
       steps {
         echo "Generating report"
         sh "node cypress/cucumber-json/cucumber-html-report.js"
-        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/var/lib/jenkins/workspace/Cypress Pipline/reports/', reportFiles: 'cucumber-htmlreport.html', reportName: 'HTML Report', reportTitles: ''])
-      }
+        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/var/lib/jenkins/workspace/Cypress Pipline/reports/cucumber-htmlreport.html/', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+        }
     }
   }
 
