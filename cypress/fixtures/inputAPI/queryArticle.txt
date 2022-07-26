@@ -16,7 +16,6 @@ query {
       updatedBy
       createdAt
       createdBy
-      contentTypeUid
       contributor {
         title
         uid
