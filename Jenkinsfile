@@ -11,7 +11,7 @@ pipeline {
     stage('Running') {
       steps {
         echo "Start cypress..."
-        sh "npx cypress run --headless"
+        sh "npx cypress run --record false"
       }
     }
 
