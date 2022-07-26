@@ -11,7 +11,6 @@ pipeline {
     stage('Execute Cypress') {
       steps {
         echo "Start cypress..."
-        sh "npm i"
         sh "npx cypress info"
       }
     }
