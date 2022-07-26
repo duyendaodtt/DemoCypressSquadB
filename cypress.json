@@ -2,6 +2,7 @@
     "baseUrl": "https://content.preview.scm.informagt.com",
     "testFiles": "**/*.feature",
     "ignoreTestFiles": "*.js",
+    "video": false,
     "fixtures":{
         "api_key": "bltaafcf579726913de",
         "authtoken": "blt77ccc4c66a6d7939",
