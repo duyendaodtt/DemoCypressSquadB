@@ -2,9 +2,16 @@ pipeline {
   agent any
 
   stages {
-    stage('Cypress run') {
+    stage('Checkout git') {
       steps {
-        sh "npx cypress run"
+        eco "Checked out git repository."
+     
+      }
+    }
+    stage('Execute Cypress') {
+      steps {
+        eco "Start cypress..."
+        sh "npx cypress info"
       }
     }
   }
