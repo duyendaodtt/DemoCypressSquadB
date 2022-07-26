@@ -45,9 +45,14 @@ Then(`Response body of {string} should have total items is not null`, (contentQu
     //     responseBody.itself(fieldName).should('not.eq', null)
     // })
     cy.then( () =>{
-        let fieldName = `response.body.data.${contentQuery}.meta.total`
-        cy.log('body')
-        cy.get('body').its(fieldName).should('not.eq', null)
+        let fieldName = `data.${contentQuery}.meta.total`
+        cy.log('@body')
+        // cy.get('body').its(fieldName).should('be.gte', null)
+        cy.get('@body').its(fieldName).as('totalItem')
+        cy.get('@totalItem').then((totalItem) =>{
+            expect(totalItem).be.greaterThan(0)
+        })
+        
     }
         
     )

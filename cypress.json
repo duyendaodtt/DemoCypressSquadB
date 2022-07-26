@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://content.preview.scm.informagt.com/v1/graphql?client_id=master",
+    "baseUrl": "https://content.preview.scm.informagt.com",
     "testFiles": "**/*.feature",
     "ignoreTestFiles": "*.js",
     "video": false,

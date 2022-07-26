@@ -1,0 +1,63 @@
+query {
+        all_contributor (
+          where:{
+            uid_in:["blt284f1105c132fae1"]
+            url_in:["/author/author-test-1"]
+          }
+        ) {
+          meta {
+            total
+          }
+          items {
+            title
+            contributorName
+            userRoles
+            contributorSummary
+            contributorCompanyName
+            contributorRole
+            contributorDescription
+            url
+            memberSince
+            contributorImage {
+              image {
+                url
+              }
+              imageAltText
+            }
+            
+            contributorEmail {
+              emailAddress
+              hideEmail
+            }
+            socialLinks {
+              facebookLink {
+                href
+                title
+              }
+              twitterLink {
+                href
+                title
+              }
+              instagramLink {
+                href
+                title
+              }
+              linkedinLink {
+                href
+                title
+              }
+            }
+       
+            specialismsConnection {
+              edges
+              __typename
+            }
+            seo {
+              metaTitle
+              metaDescription
+              canonicalUrl
+              noIndex
+            }
+          }
+        }
+      }

@@ -1,0 +1,75 @@
+query all_Slideshow{
+        all_slideshow {
+          meta {
+            total
+          }
+          items {
+            title
+            mobile_headline
+            summary
+            body
+            published_date
+            url
+            authored_by
+            authored_on
+            old_url
+            seo {
+              meta_title
+              meta_description
+              canonical_url
+              no_index
+            }
+            keywords {
+              title
+            }
+            contributor {
+              title
+            }
+            content_format {
+              title
+            }
+            at_a_glance {
+              short_glance_versions
+            }
+            featured_image_group {
+              featured_image {
+                url
+              }
+            }
+            related_inline_content {
+              related_item {
+                __typename
+              }
+            }
+            term_selector {
+              primaryTerm
+              secondaryTerm
+            }
+            series_taxonomy {
+              title
+            }
+            subbrand {
+              title
+            }
+            sponsorship_gating_group {
+              sponsorship_gating_sponsor_flag
+              sponsorship_gating_external_form_id
+              sponsorship_gating_gate_external_field_flag
+              sponsorship_gating_gate_reg_flag
+              sponsorship_gating_sponsor_reference {
+                title
+              }
+            }
+            slideshow {
+              slide_image {
+                url
+              }
+              slide_title
+              slide_image_caption
+              slide_image_credit
+              slide_image_alt_text
+              slide_image_description
+            }
+          }
+        }
+      }
