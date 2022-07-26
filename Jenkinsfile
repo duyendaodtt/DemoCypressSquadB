@@ -1,11 +1,11 @@
 pipeline {
-  agent any
-
+  
   stages {
-    stage('build and test') {
+    stage('Cypress run') {
       steps {
         sh "npx cypress run"
       }
     }
   }
+
 }
