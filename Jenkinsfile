@@ -2,13 +2,13 @@ pipeline {
   agent any
 
   stages {
-    stage('Checkout git') {
+    stage('Initialize') {
       steps {
         echo "Checked out git repository."
-     
+        sh "npm i"
       }
     }
-    stage('Execute Cypress') {
+    stage('Running') {
       steps {
         echo "Start cypress..."
         sh "npx cypress run --headless"
