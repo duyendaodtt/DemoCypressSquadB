@@ -10,3 +10,14 @@ Feature: Query all content types
             | article     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryArticle.txt  | all_article  |
             | document    | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryDocument.txt | all_document |
             | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
+            | webinar     | https://content.preview.scm.informagt.com/v1/graphql?client_id=master | queryWebinar.txt  | all_webinar  |
