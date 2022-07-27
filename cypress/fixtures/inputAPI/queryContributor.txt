@@ -1,8 +1,8 @@
 query {
         all_contributor (
           where:{
-            uid_in:["blt284f1105c132fae1"]
-            url_in:["/author/author-test-1"]
+            uidIn:["blt284f1105c132fae1"]
+            urlIn:["/author/author-test-1"]
           }
         ) {
           meta {
@@ -46,11 +46,6 @@ query {
                 href
                 title
               }
-            }
-       
-            specialismsConnection {
-              edges
-              __typename
             }
             seo {
               metaTitle

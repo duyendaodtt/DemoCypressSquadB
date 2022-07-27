@@ -3,8 +3,8 @@ query Creator{
     asc: "title"
     limit: 10
     where: {
-      url_in:["/brand-e","/sponsor-2"] 
-      uid_in: ["blt9d187c6127213d42", "bltb7a4fd653f123218"]
+      urlIn:["/brand-e","/sponsor-2"] 
+      uidIn: ["blt9d187c6127213d42", "bltb7a4fd653f123218"]
     }
   ){
     meta{total}
