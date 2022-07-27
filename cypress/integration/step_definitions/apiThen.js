@@ -39,3 +39,8 @@ Then(`Response body should have {string} field with value as {boolean}`, (fieldN
     })
 });
 
+Then(`Response headers should have {string} field}`, (fieldName) => {
+    cy.get('@headers').then((responseBody) => {
+        expect(responseBody).has.property(fieldName);
+    })
+});
