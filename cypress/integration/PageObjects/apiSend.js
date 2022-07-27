@@ -47,8 +47,6 @@ export const apiPost = new class APIPost {
             method: requestMethod,
             url: requestUrl,
             headers: {
-                'api_key': fixtures.api_key,
-                'authtoken': fixtures.authtoken,
                 'Content-Type': 'application/json'
             },
             body: jsonBody
@@ -195,4 +193,18 @@ export const apiPost = new class APIPost {
             cy.wrap(res.body).as('graphbody');
         }).as('graphreq');
     }
+
+    getHeaders(requestMethod, requestUrl, jsonBody) {
+        cy.api({
+            method: requestMethod,
+            url: requestUrl,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: jsonBody
+        }).then((res) => {
+            cy.wrap(res.headers).as('headers');
+        }).as('req');
+    }
+
 }

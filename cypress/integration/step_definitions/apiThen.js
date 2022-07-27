@@ -39,8 +39,20 @@ Then(`Response body should have {string} field with value as {boolean}`, (fieldN
     })
 });
 
-Then(`Response headers should have {string} field}`, (fieldName) => {
+Then(`Response headers should have {string}`, (fieldName) => {
+    
     cy.get('@headers').then((responseBody) => {
-        expect(responseBody).has.property(fieldName);
+        const f = fieldName.toLowerCase();
+        expect(responseBody).has.property(f);
+        
+    })
+});
+
+Then(`Response headers should not have {string}`, (fieldName) => {
+    
+    cy.get('@headers').then((responseBody) => {
+        const f = fieldName.toLowerCase();
+        expect(responseBody).has.not.property(f);
+        
     })
 });

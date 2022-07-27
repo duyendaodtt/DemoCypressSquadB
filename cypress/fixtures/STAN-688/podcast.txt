@@ -1,0 +1,1 @@
+{"operationName":null,"variables":{},"query":"{\n  all_podcast {\n    meta {\n      total\n    }\n    items {\n      title\n    }\n  }\n}\n"}

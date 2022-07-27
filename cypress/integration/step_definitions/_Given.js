@@ -74,3 +74,10 @@ Given(/^I make query to get (.*) entry from ContentStack with uid from (.*)$/, (
     apiPost.postGetEntryByUID(entryName, body);
   })
 })
+
+Given(/^I make query to (.*) with body from (.*)$/, (requestUrl, path) => {
+  var newpath = '/STAN-688/' + path
+  cy.fixture(newpath).then((body) => {
+    apiPost.getHeaders('POST', requestUrl, body)
+  })
+});
