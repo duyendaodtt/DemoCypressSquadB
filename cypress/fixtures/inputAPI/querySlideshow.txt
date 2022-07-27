@@ -1,75 +1,109 @@
-query all_Slideshow{
-        all_slideshow {
-          meta {
-            total
-          }
-          items {
-            title
-            mobile_headline
-            summary
-            body
-            published_date
+query {
+  all_slideshow {
+    meta {
+      total
+    }
+    items {
+      uid
+      title
+      mobileHeadline
+      url
+      publishedDate
+      summary
+      body
+      bodyJson
+      updatedAt
+      updatedBy
+      createdAt
+      createdBy
+      contributor {
+        title
+        uid
+        url
+        userRoles
+        contributorName
+        contributorDescription
+        contributorRole
+        contributorImage {
+          image {
             url
-            authored_by
-            authored_on
-            old_url
-            seo {
-              meta_title
-              meta_description
-              canonical_url
-              no_index
-            }
-            keywords {
-              title
-            }
-            contributor {
-              title
-            }
-            content_format {
-              title
-            }
-            at_a_glance {
-              short_glance_versions
-            }
-            featured_image_group {
-              featured_image {
-                url
-              }
-            }
-            related_inline_content {
-              related_item {
-                __typename
-              }
-            }
-            term_selector {
-              primaryTerm
-              secondaryTerm
-            }
-            series_taxonomy {
-              title
-            }
-            subbrand {
-              title
-            }
-            sponsorship_gating_group {
-              sponsorship_gating_sponsor_flag
-              sponsorship_gating_external_form_id
-              sponsorship_gating_gate_external_field_flag
-              sponsorship_gating_gate_reg_flag
-              sponsorship_gating_sponsor_reference {
-                title
-              }
-            }
-            slideshow {
-              slide_image {
-                url
-              }
-              slide_title
-              slide_image_caption
-              slide_image_credit
-              slide_image_alt_text
-              slide_image_description
-            }
           }
+          imageAltText
         }
       }
+      contentFormat {
+        title
+        uid
+        pageDescription
+        updatedAt
+        updatedBy
+        url
+        locale
+      }
+      slideshow{
+        slideImage{
+          url
+        }
+        slideTitle
+        slideImageCredit
+        slideImageAltText
+        slideImageCaption
+        slideImageDescription
+      }
+      featuredImageGroup {
+        featuredImage {
+          url
+        }
+        featuredImageCredit
+        featuredImageCaption
+      }
+      atAGlance {
+        shortGlanceVersions
+      }
+      termSelector {
+        historyOfPrimaryTerm
+        primaryTerm
+        primaryTermInRealText
+        primaryCategoryBelonged
+        secondaryTerm
+      }
+      subbrand {
+        title
+        locale
+        uid
+        url
+        subbrandLogoGroup {
+          subbrandImage {
+            url
+          }
+          subbrandImageAltText
+        }
+      }
+      keywords {
+        keywordBranding {
+          keywordBrandingLogo {
+            url
+          }
+          keywordBrandingColor
+          keywordBrandingLogoAltText
+          keywordBrandingDescriptionWithHyperlink
+        }
+        keywordDescription
+        keywordDisplayOptions
+        keywordSponsorReference {
+          summary
+          title
+          uid
+          publishedDate
+          sponsorUrl
+        }
+      }
+      seo {
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
+    }
+  }
+}
