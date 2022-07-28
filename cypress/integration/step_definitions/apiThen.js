@@ -51,11 +51,11 @@ Then(`Response body of {string} should have total items is not null`, (contentQu
     }  )
 })
 
-Then(`Response body of {string} should have total items is 1`, ()=>{
+Then(`Response body of {string} should have total items is 1`, (contentType)=>{
     cy.then(()=>{
         // cy.get('body').its(fieldName).should('be.gte', null)
         cy.get('@body').its('data').then((items) =>{
-            expect(Object.keys(items).length).equal(1, `Query return correctly with ${Object.keys(items).length} item`)
+            expect(Object.keys(items).length).equal(1, `Query for ${contentType} return correctly with ${Object.keys(items).length} item`)
         })
     })
 })
