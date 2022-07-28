@@ -1,0 +1,18 @@
+query SettingSearch{
+  settings_search{
+    title
+    uid
+    updatedAt
+    updatedBy
+    createdAt
+    createdBy
+    locale
+    boostMatchingTitle
+    boostMatchingAuthor
+    boostMatchingPhrase
+    boostMatchingTags
+    boostMatchingContent
+    searchDisplayRankingScore
+    searchDisplayRankingScore
+  }
+}

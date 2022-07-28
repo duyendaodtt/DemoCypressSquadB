@@ -1,0 +1,29 @@
+query ArticleSetting {
+  settings_article {
+    title
+    uid
+    updatedAt
+    updatedBy
+    createdAt
+    createdBy
+    locale
+    recommendations {
+      recommendationsTitle {
+        title
+        categoryIdBibblio
+      }
+    }
+    articleDisplaySettings {
+      articleTemplate
+    }
+    rightHandRailConfiguration {
+      title
+    }
+    modules {
+      moduleBlocks {
+        title
+        uid
+      }
+    }
+  }
+}

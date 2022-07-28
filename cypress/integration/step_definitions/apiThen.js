@@ -51,7 +51,16 @@ Then(`Response body of {string} should have total items is not null`, (contentQu
     }  )
 })
 
-Then(`Response body of {string} should have total items is 1`, (contentType)=>{
+Then(`Response body of {string} should have total items is 1`, ()=>{
+    cy.then(()=>{
+        // cy.get('body').its(fieldName).should('be.gte', null)
+        cy.get('@body').its('data').then((items) =>{
+            expect(Object.keys(items).length).equal(1, `Query return correctly with ${Object.keys(items).length} item`)
+        })
+    })
+})
+
+Then(`Response body of {string} should have 1 content`, (contentType)=>{
     cy.then(()=>{
         let fieldName = `data.${contentType}`
         // cy.get('body').its(fieldName).should('be.gte', null)
@@ -60,4 +69,3 @@ Then(`Response body of {string} should have total items is 1`, (contentType)=>{
         })
     })
 })
-
