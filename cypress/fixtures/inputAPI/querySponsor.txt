@@ -1,11 +1,6 @@
 query Creator{
   all_sponsor(
     asc: "title"
-    limit: 10
-    where: {
-      urlIn:["/sponsor-1","/sponsor-2"] 
-      uidIn: ["blt3549d8f60aac0bc2", "bltb7a4fd653f123218"]
-    }
   ){
     meta{total}
     items{

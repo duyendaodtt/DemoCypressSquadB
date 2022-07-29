@@ -40,10 +40,6 @@ Then(`Response body should have {string} field with value as {boolean}`, (fieldN
 });
 
 Then(`Response body of {string} should have total items is not null`, (contentQuery)=>{
-    // cy.get('body').then((responseBody)=>{
-    //     var fieldName = `response.body.data.${contentQuery}.meta.total`
-    //     responseBody.itself(fieldName).should('not.eq', null)
-    // })
     cy.then( () =>{
         let fieldName = `data.${contentQuery}.meta.total`
         cy.log('@body')
@@ -51,14 +47,25 @@ Then(`Response body of {string} should have total items is not null`, (contentQu
         cy.get('@body').its(fieldName).as('totalItem')
         cy.get('@totalItem').then((totalItem) =>{
             expect(totalItem).be.greaterThan(0)
-        })
-        
-    }
-        
-    )
-    // var fieldName = `response.body.data.${contentQuery}.meta.total`
-    // cy.wait('@body')
-    //   .its(fieldName)
-    //   .should('not.eq', null)
+        }) 
+    }  )
 })
 
+Then(`Response body of {string} should have total items is 1`, (contentType)=>{
+    cy.then(()=>{
+        // cy.get('body').its(fieldName).should('be.gte', null)
+        cy.get('@body').its('data').then((items) =>{
+            expect(Object.keys(items).length).equal(1, `Query for ${contentType} return correctly with ${Object.keys(items).length} item`)
+        })
+    })
+})
+
+Then(`Response body of {string} should have 1 content`, (contentType)=>{
+    cy.then(()=>{
+        let fieldName = `data.${contentType}`
+        // cy.get('body').its(fieldName).should('be.gte', null)
+        cy.get('@body').its(fieldName).then((items) =>{
+            expect(Object.keys(items).length).equal(1, `Query return correctly with ${Object.keys(items).length} item`)
+        })
+    })
+})

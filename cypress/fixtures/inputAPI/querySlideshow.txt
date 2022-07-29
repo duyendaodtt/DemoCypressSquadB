@@ -1,73 +1,109 @@
-query all_Slideshow{
-        all_slideshow {
-          meta {
-            total
-          }
-          items {
-            title
-            mobileHeadline
-            summary
-            body
-            publishedDate
+query {
+  all_slideshow {
+    meta {
+      total
+    }
+    items {
+      uid
+      title
+      mobileHeadline
+      url
+      publishedDate
+      summary
+      body
+      bodyJson
+      updatedAt
+      updatedBy
+      createdAt
+      createdBy
+      contributor {
+        title
+        uid
+        url
+        userRoles
+        contributorName
+        contributorDescription
+        contributorRole
+        contributorImage {
+          image {
             url
-            seo {
-              metaTitle
-              metaDescription
-              canonicalUrl
-              noIndex
-            }
-            keywords {
-              title
-            }
-            contributor {
-              title
-            }
-            contentFormat {
-              title
-            }
-            atAGlance {
-              shortGlanceVersions
-            }
-            featuredImageGroup {
-              featuredImage {
-                url
-              }
-            }
-            relatedInlineContent {
-              relatedItem {
-                __typename
-              }
-            }
-            termSelector {
-              primaryTerm
-              secondaryTerm
-            }
-            seriesTaxonomy {
-              title
-            }
-            subbrand {
-              title
-            }
-            sponsorshipGatingGroup {
-              sponsorshipGatingCampaignUrl
-              sponsorshipGatingExternalFormId
-              sponsorshipGatingGateExternalFieldFlag
-              sponsorshipGatingGateRegFlag
-              sponsorshipGatingSponsorFlag
-              sponsorshipGatingSponsorReference{
-                title
-              }
-            }
-            slideshow {
-              slideImage {
-                url
-              }
-              slideImageAltText
-              slideImageCaption
-              slideImageCredit
-              slideImageDescription
-              slideTitle
-            }
           }
+          imageAltText
         }
       }
+      contentFormat {
+        title
+        uid
+        pageDescription
+        updatedAt
+        updatedBy
+        url
+        locale
+      }
+      slideshow{
+        slideImage{
+          url
+        }
+        slideTitle
+        slideImageCredit
+        slideImageAltText
+        slideImageCaption
+        slideImageDescription
+      }
+      featuredImageGroup {
+        featuredImage {
+          url
+        }
+        featuredImageCredit
+        featuredImageCaption
+      }
+      atAGlance {
+        shortGlanceVersions
+      }
+      termSelector {
+        historyOfPrimaryTerm
+        primaryTerm
+        primaryTermInRealText
+        primaryCategoryBelonged
+        secondaryTerm
+      }
+      subbrand {
+        title
+        locale
+        uid
+        url
+        subbrandLogoGroup {
+          subbrandImage {
+            url
+          }
+          subbrandImageAltText
+        }
+      }
+      keywords {
+        keywordBranding {
+          keywordBrandingLogo {
+            url
+          }
+          keywordBrandingColor
+          keywordBrandingLogoAltText
+          keywordBrandingDescriptionWithHyperlink
+        }
+        keywordDescription
+        keywordDisplayOptions
+        keywordSponsorReference {
+          summary
+          title
+          uid
+          publishedDate
+          sponsorUrl
+        }
+      }
+      seo {
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
+    }
+  }
+}

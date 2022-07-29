@@ -1,9 +1,6 @@
 query {
         all_contributor (
-          where:{
-            uidIn:["blt284f1105c132fae1"]
-            urlIn:["/author/author-test-1"]
-          }
+         asc:"title"
         ) {
           meta {
             total
