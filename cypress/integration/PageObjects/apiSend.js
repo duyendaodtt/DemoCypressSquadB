@@ -183,6 +183,22 @@ export const apiPost = new class APIPost {
         }).as('req');
     }
 
+    deleteEntry(entryName, uid) {
+        cy.api({
+            method: 'DELETE',
+            url: 'https://eu-api.contentstack.com/v3/content_types/' + entryName + '/entries/' + uid ,
+            headers: {
+                'api_key': Cypress.env('api_key'),
+                'authtoken': Cypress.env('authtoken'),
+                'Content-Type': 'application/json'
+            }
+        }).then((res) => {
+            cy.wrap(res.status).as('status');
+            cy.wrap(res.headers).as('headers');
+            cy.wrap(res.body).as('body');
+        }).as('req');
+    }
+
     graphqlQuery(requestUrl, query, opName) {
         cy.log(query);
         cy.request({

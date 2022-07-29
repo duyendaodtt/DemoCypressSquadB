@@ -74,3 +74,11 @@ Given(/^I make query to get (.*) entry from ContentStack with uid from (.*)$/, (
     apiPost.postGetEntryByUID(entryName, body);
   })
 })
+
+Given(/^I delete (.*) entry with uid from (.*)$/, (entryName, filename) => {
+  var newpath = '/inputAPI/uids/' + filename
+  cy.fixture(newpath).then((body) => {
+      apiPost.deleteEntry(entryName, body);
+
+  })
+})

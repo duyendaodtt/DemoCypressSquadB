@@ -8,121 +8,22 @@
     "uri": "graphql.feature",
     "elements": [
       {
-        "id": "test-query-graphql;api-e2e---prepare-data",
+        "id": "test-query-graphql;api---delete-entries",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "API E2E - Prepare Data",
+        "line": 32,
+        "name": "API - Delete entries",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "I create keyword entry with a body from Keywords.txt",
+            "line": 28,
+            "name": "I delete article entry with uid from _Article.txt",
             "result": {
-              "status": "passed",
-              "duration": 3334000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 5,
-            "name": "I publish this keyword",
-            "result": {
-              "status": "passed",
-              "duration": 1284000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I create contributor entry with a body from contributor.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1250000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I publish this contributor",
-            "result": {
-              "status": "passed",
-              "duration": 1221000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I create subbrand entry with a body from subbranch.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1617000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I publish this subbrand",
-            "result": {
-              "status": "passed",
-              "duration": 1214000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I create content_format entry with a body from contentformat.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1268000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I publish this content_format",
-            "result": {
-              "status": "passed",
-              "duration": 1110000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---create-article",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "API E2E - Create Article",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "I update and create article entry with body from _Article.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1548000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I publish this article",
-            "result": {
-              "status": "passed",
-              "duration": 1061000000
+              "status": "failed",
+              "duration": 1041000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/article/entries/blt95f9e4378c43b4ee\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: https://eu-api.contentstack.com/v3/content_types/article/entries/blt95f9e4378c43b4ee\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"bltaafcf579726913de\",\n  \"authtoken\": \"blt795814efbdddee20\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.6.1 Chrome/94.0.4606.81 Electron/15.5.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Fri, 29 Jul 2022 07:29:50 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"22ms\",\n  \"x-request-id\": \"56302\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"The requested object doesn't exist.\",\n  \"error_code\": 141,\n  \"errors\": {\n    \"uid\": [\n      \"is not valid.\"\n    ]\n  }\n}\n\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.preview.scm.informagt.com/__cypress/tests?p=cypress/support/index.js:169:8)"
             }
           }
         ]
