@@ -13,6 +13,12 @@ query BasicPage{
       locale
       updatedAt
       updatedBy
+      seo{
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
     }
   }
 }

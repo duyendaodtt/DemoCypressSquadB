@@ -1,4 +1,5 @@
 /// <reference types = "Cypress"/>
+import exp from "constants";
 import { Then, defineParameterType} from "cypress-cucumber-preprocessor/steps";
 import {validateSchema } from "../PageObjects/apiCheck"
 var request = require('request');
@@ -67,5 +68,40 @@ Then(`Response body of {string} should have 1 content`, (contentType)=>{
         cy.get('@body').its(fieldName).then((items) =>{
             expect(Object.keys(items).length).equal(1, `Query return correctly with ${Object.keys(items).length} item`)
         })
+    })
+})
+
+Then(/^Required fields for response of (.*) should not empty$/, (contentQuery) =>{
+    cy.then(()=>{
+        if(contentQuery.includes('all')){
+            let fieldName = `data.${contentQuery}.items`
+            cy.get('@body').its(fieldName).then((items) =>{
+                var requiredFields = ["title", "mobileHeadline", "body", "basicPageDisplayOption", "seo.metaTitle", "seo.metaDescription"]
+                requiredFields.forEach((fieldName)=>{
+                    cy.get(item).its(fieldName).as('checkedField')
+                    expect('@checkedField').not.null
+                })
+            })
+        }
+        if(contentQuery.includes('page')){
+            let fieldName = `data.${contentQuery}.content`
+            cy.get('@body').its(fieldName).then((item) =>{
+                var requiredFields = ["title", "mobileHeadline", "body", "basicPageDisplayOption", "seo.metaTitle", "seo.metaDescription"]
+                requiredFields.forEach((fieldName)=>{
+                    cy.get(item).its(fieldName).as('checkedField')
+                    expect('@checkedField').not.null
+                })
+            })
+        }
+        else{
+            cy.get('@body').its('data').then((items) =>{
+                var requiredFields = ["title", "mobileHeadline", "body", "basicPageDisplayOption", "seo.metaTitle", "seo.metaDescription"]
+                requiredFields.forEach((fieldName)=>{
+                    cy.get(item).its(fieldName).as('checkedField')
+                    expect('@checkedField').not.null
+                })
+            })
+        }
+        
     })
 })

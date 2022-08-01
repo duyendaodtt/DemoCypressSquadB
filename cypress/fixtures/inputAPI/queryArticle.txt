@@ -54,7 +54,7 @@ query {
         historyOfPrimaryTerm
         primaryTerm
         primaryTermInRealText
-        primaryCategoryBelonged
+        #primaryCategoryBelonged
         secondaryTerm
       }
       subbrand {
