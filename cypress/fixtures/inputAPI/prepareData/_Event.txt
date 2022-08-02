@@ -1,0 +1,36 @@
+{
+    "entry": {
+        "event_details": {
+            "start_date": "2022-07-05T17:00:00.000Z",
+            "end_date": "2022-07-07T17:00:00.000Z",
+            "event_url": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/event/en-us/entry/create?branch=main",
+            "location": "Hanoi",
+            "button_1_name": "CTA 1",
+            "button_1_link": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/event/en-us/entry/create?branch=main",
+            "button_2_name": "CTA 2",
+            "button_2_link": "google.com",
+            "event_type": "Informa",
+            "event_logo": {
+                "logo_file": "bltb9ee6c4710017940",
+                "event_logo_alt": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/event/en-us/entry/create?branch=main"
+            }
+        },
+        "related_inline_content": {
+            "related_item": [
+                {
+                    "uid": "blt6a0850c26b300ed5",
+                    "_content_type_uid": "webinar"
+                }
+            ]
+        },
+        "seo": {
+            "meta_title": "seo",
+            "meta_description": "seo desc",
+            "canonical_url": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/event/en-us/entry/create?branch=main",
+            "no_index": true
+        },
+        "tags": [],
+        "title": "[Automation Test] - Event",
+        "url": "/events/Automation-Event"
+    }
+}

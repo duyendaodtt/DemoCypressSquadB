@@ -1,0 +1,20 @@
+{
+    "entry": {
+        "authored_by": "qa team",
+        "authored_on": "authored on date",
+        "basic_page_display_option": "Right Hand Column",
+        "body": "<p>about us information:</p><p>1</p><p>2</p><p>3</p>",
+        "mobile_headline": "About Us",
+        "old_url": "/old-about-us",
+        "seo": {
+            "meta_title": "aboutus",
+            "meta_description": "aboutus",
+            "canonical_url": "google.com",
+            "no_index": true
+        },
+        "summary": "summary of about us",
+        "tags": [],
+        "title": "[Automation Test] Basic Page",
+        "url": "/about-us"
+    }
+}

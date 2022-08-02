@@ -1,0 +1,102 @@
+{
+    "entry": {
+        "at_a_glance": [
+            {
+                "short_glance_versions": "Cá hồi hoang ft. Datmaniac",
+                "_metadata": {
+                    "uid": "csb895dc4d34f05434"
+                }
+            }
+        ],
+        "authored_by": "",
+        "authored_on": "",
+        "body": "<p>&lt;iframe width=\"950\" height=\"548\" src=\"https://www.youtube.com/embed/12Ajb_YaIMs?list=RDMM\" title=\"[Demo] Cá hồi hoang ft. Datmaniac (chú Ba) - 2004\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen&gt;&lt;/iframe&gt;</p>",
+        "content_format": [
+            {
+                "uid": "bltdf95300c25d9fafc",
+                "_content_type_uid": "content_format"
+            }
+        ],
+        "contributor": [
+            {
+                "uid": "blt1f701b337676627d",
+                "_content_type_uid": "contributor"
+            }
+        ],
+        "featured_image_group": {
+            "featured_image": "blt29c8d7207ab7318a",
+            "featured_image_credit": "Cá hồi hoang",
+            "featured_image_caption": "Cá hồi hoang",
+            "image_alt_text": ""
+        },
+        "keywords": [
+            {
+                "uid": "blt1d4210b9a978d545",
+                "_content_type_uid": "keyword"
+            }
+        ],
+        "mobile_headline": "Cá hồi hoang ft. Datmaniac",
+        "old_url": "",
+        "published_date": "2022-06-21T17:00:00.000Z",
+        "related_inline_content": [
+            {
+                "related_item": [
+                    {
+                        "uid": "blt4f44239bac7dcb36",
+                        "_content_type_uid": "basic_page"
+                    }
+                ],
+                "_metadata": {
+                    "uid": "cs4fa9820726d1f764"
+                }
+            }
+        ],
+        "seo": {
+            "meta_title": "Datmaniac",
+            "meta_description": "Datmaniac",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "series_taxonomy": [],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_sponsor_flag": false,
+            "sponsorship_gating_sponsor_reference": [],
+            "sponsorship_gating_campaign_url": "",
+            "sponsorship_gating_gate_reg_flag": false,
+            "sponsorship_gating_gate_external_field_flag": "None",
+            "sponsorship_gating_external_form_id": ""
+        },
+        "subbrand": [
+            {
+                "uid": "bltfbbcd0aa341411d3",
+                "_content_type_uid": "subbrand"
+            }
+        ],
+        "summary": "Cá hồi hoang ft. Datmaniac",
+        "tags": [],
+        "term_selector": {
+            "historyOfPrimaryTerm": [
+                "/Category-Primary-1",
+                "/Category-Primary-1111"
+            ],
+            "primaryTerm": "/Category-Primary-1111",
+            "primaryTermInRealText": "Edited Primary 1",
+            "primaryCategoryBelonged": "/Category-Primary-1111",
+            "secondaryTerm": [
+                "/Category-Primary-1111",
+                "/secondary-topic-1",
+                "/secondary-topic-2"
+            ]
+        },
+        "title": "[Automation Test] - Video",
+        "url": "/Automation-Test-Video",
+        "video": {
+            "video_id": "222333",
+            "video_service": "brightcove",
+            "video_credit": "video credit",
+            "duration": {
+                "duration": "15:00:00"
+            }
+        }
+    }
+}

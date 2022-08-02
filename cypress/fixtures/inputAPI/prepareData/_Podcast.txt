@@ -1,0 +1,87 @@
+{
+    "entry": {
+        "at_a_glance": [
+            {
+                "short_glance_versions": "To close Season 3 of The Licensing Mixtape, three franchise leaders from The Walt Disney Company join License Global",
+                "_metadata": {
+                    "uid": "csf9ae5fe94215c982"
+                }
+            }
+        ],
+        "authored_by": "",
+        "authored_on": "",
+        "body": "<p>The final episode of The Licensing Mixtape’s third season&nbsp;proudly&nbsp;brings together&nbsp;three franchise experts –&nbsp;Lauren&nbsp;Yenokida, director,&nbsp;franchise&nbsp;development,&nbsp;Lucasfilm and National Geographic;&nbsp;Melissa&nbsp;Lasdon, vice president,&nbsp;franchise&nbsp;development,&nbsp;Disney Princess & Animation and Disney Media, Classics & Entertainment,&nbsp;and&nbsp;Brian Siegel, vice president,&nbsp;franchise&nbsp;development,&nbsp;Marvel, 20th&nbsp;Century and ESPN&nbsp;– to highlight how The Walt Disney Company brings its fan favorites to life.&nbsp;</p><p></p><iframe src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1136940226%3Fsecret_token%3Ds-HH9FDYgZwLS&color=%2367b1dd&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=true?title=0&byline=0&portrait=0\"></iframe><p>“These characters and stories stick with you after you see the movie or the content,&nbsp;they become a part of your life” says Brian Siegel, vice president, franchise development, Marvel, 20th Century and ESPN. “I’ll use Spider-Man as an example, which is one of my franchises.&nbsp;When kids, or adults, read a book they can become Peter Parker, Miles Morales or Gwen Stacey in their imagination. When they’re playing games, they&nbsp;imagine they’re swinging through New York City. It’s that whole notion of fantasy coming to life.”&nbsp;&nbsp;</p><p>Listen to the full episode for&nbsp;an in-depth insight into franchise plans,&nbsp;the team’s&nbsp;approach to&nbsp;creating&nbsp;moments at retail and growing engagement with the brands fans love.&nbsp;</p><p>The Licensing Mixtape will be back in 2022 with more insights into the licensing landscape, so stay tuned to License Global or subscribe to our channel on Spotify, iTunes, Google Podcasts or Soundcloud to listen to our catalogue of c-level insights from across the brand licensing&nbsp;industry.&nbsp;<a href=\"https://soundcloud.com/user-640590576\">The Licensing Mixtape</a>·<a href=\"https://soundcloud.com/user-640590576/s3-e9-the-art-of-storytelling-with-the-walt-disney-company/s-HH9FDYgZwLS\">S3 E9: The Art of Storytelling with The Walt Disney Company</a>.uuid-069eb914-0a0a-432d-ba71-342fd1c43e47 {font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100; }.uuid-5f29194a-e8f3-473c-91c4-67b3449c04bd {color: #cccccc; text-decoration: none; }.uuid-f38f892d-8327-4789-9d22-e342d862eae0 {color: #cccccc; text-decoration: none; }</p>",
+        "content_format": [
+            {
+                "uid": "bltdf95300c25d9fafc",
+                "_content_type_uid": "content_format"
+            }
+        ],
+        "contributor": [
+            {
+                "uid": "blt80c1bacc0104f453",
+                "_content_type_uid": "contributor"
+            }
+        ],
+        "featured_image_group": {
+            "featured_image": "blt29c8d7207ab7318a",
+            "featured_image_credit": "",
+            "featured_image_caption": "",
+            "image_alt_text": ""
+        },
+        "keywords": [],
+        "mobile_headline": "Licensing Mixtape: The Art of Storytelling",
+        "old_url": "",
+        "podcast": {
+            "podcast_id": "",
+            "podcast_service": "Soundcloud",
+            "podcast_link": "",
+            "duration": {
+                "duration": ""
+            }
+        },
+        "published_date": "2022-06-02T10:29:04.000Z",
+        "related_events": [],
+        "related_inline_content": [],
+        "seo": {
+            "meta_title": "The Art of Storytelling with The Walt Disney Company",
+            "meta_description": "To close Season 3 of The Licensing Mixtape, three franchise leaders from The Walt Disney Company discuss how the team create memorable moments for fans.",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "series_taxonomy": [
+            {
+                "uid": "blt6feae921afbf6fa9",
+                "_content_type_uid": "series"
+            }
+        ],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_sponsor_flag": false,
+            "sponsorship_gating_sponsor_reference": [],
+            "sponsorship_gating_campaign_url": "",
+            "sponsorship_gating_gate_reg_flag": false,
+            "sponsorship_gating_gate_external_field_flag": "None",
+            "sponsorship_gating_external_form_id": ""
+        },
+        "subbrand": [
+            {
+                "uid": "bltfbbcd0aa341411d3",
+                "_content_type_uid": "subbrand"
+            }
+        ],
+        "summary": "To close Season 3 of The Licensing Mixtape, three franchise leaders from The Walt Disney Company join License Global to discuss how the team create memorable moments for fans across products, games and publishing.",
+        "tags": [],
+        "term_selector": {
+            "historyOfPrimaryTerm": [
+                "/crop-management"
+            ],
+            "primaryTerm": "/crop-management",
+            "primaryTermInRealText": "Crop Management",
+            "secondaryTerm": [
+                "/fertilizer"
+            ]
+        },
+        "title": "[Automation Test] - Podcast",
+        "url": "/Automation-Podcast"
+    }
+}

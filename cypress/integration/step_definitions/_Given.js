@@ -24,7 +24,7 @@ Given(/^I publish this (.*)$/, (entry) => {
 });
 
 Given(/^I update and create (.*) entry with body from (.*)$/, (entryName, path) => {
-  var newpath = '/inputAPI/' + path
+  var newpath = '/inputAPI/prepareData/' + path
   cy.fixture(newpath).then((body) => {
     apiPost.updateBodyAndCreateEntry(entryName, body)
   })
@@ -38,7 +38,7 @@ Given(/^I send a (.*) request to (.*?) with a body from (.*)$/, (requestMethod, 
 });
 
 Given(/^I create (.*?) entry with a body from (.*)$/, (requestMethod, path) => {
-  var newpath = '/inputAPI/' + path
+  var newpath = '/inputAPI/prepareData/' + path
   cy.fixture(newpath).then((body) => {
     apiPost.postCreateEntry(requestMethod, body)
   })

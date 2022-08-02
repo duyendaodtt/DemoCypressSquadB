@@ -1,0 +1,82 @@
+{
+    "entry": {
+        "at_a_glance": [
+            {
+                "short_glance_versions": "Entertainment One -  Taking preschool properties to every global market",
+                "_metadata": {
+                    "uid": "cs1a5f177694d45ff4"
+                }
+            }
+        ],
+        "authored_by": "Entertainment",
+        "authored_on": "",
+        "body": "<p>Entertainment One -  Taking preschool properties to every global market</p>",
+        "content_format": [
+            {
+                "uid": "bltdf95300c25d9fafc",
+                "_content_type_uid": "content_format"
+            }
+        ],
+        "contributor": [
+            {
+                "uid": "blt80c1bacc0104f453",
+                "_content_type_uid": "contributor"
+            }
+        ],
+        "document": {
+            "material_title": "Entertainment One -  Taking preschool properties to every global market",
+            "material_url": "Entertainment One -  Taking preschool properties to every global market",
+            "material_resource": "blt29c8d7207ab7318a",
+            "material_multiple": [
+                "blt29c8d7207ab7318a"
+            ]
+        },
+        "featured_image_group": {
+            "featured_image": "bltbfb842f96c95b3d4",
+            "featured_image_credit": "Entertainment One -  Taking preschool properties to every global market",
+            "featured_image_caption": "Entertainment One -  Taking preschool properties to every global market",
+            "image_alt_text": "Entertainment One -  Taking preschool properties to every global market"
+        },
+        "keywords": [],
+        "mobile_headline": "Entertainment One -  Taking preschool",
+        "old_url": "",
+        "published_date": "2022-06-08T17:00:00.000Z",
+        "related_inline_content": [],
+        "seo": {
+            "meta_title": "Entertainment One -  Taking preschool properties to eve",
+            "meta_description": "Entertainment One -  Taking preschool properties to every global market",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "series_taxonomy": [],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_sponsor_flag": false,
+            "sponsorship_gating_sponsor_reference": [],
+            "sponsorship_gating_campaign_url": "",
+            "sponsorship_gating_gate_reg_flag": false,
+            "sponsorship_gating_gate_external_field_flag": "None",
+            "sponsorship_gating_external_form_id": ""
+        },
+        "subbrand": [
+            {
+                "uid": "blt9d187c6127213d42",
+                "_content_type_uid": "subbrand"
+            }
+        ],
+        "summary": "Entertainment One -  Taking preschool properties to every global market",
+        "tags": [],
+        "term_selector": {
+            "historyOfPrimaryTerm": [
+                "/Category-Primary-1111"
+            ],
+            "primaryTerm": "/Category-Primary-1111",
+            "primaryTermInRealText": "Edited Primary 1",
+            "primaryCategoryBelonged": "/Category-Primary-1111",
+            "secondaryTerm": [
+                "/secondary-topic-1"
+            ]
+        },
+        "title": "[Automation Test] - Document",
+        "url": "/Automation-Test-Document"
+    }
+}

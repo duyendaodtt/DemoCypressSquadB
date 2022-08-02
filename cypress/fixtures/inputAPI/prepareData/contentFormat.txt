@@ -1,6 +1,6 @@
 {
     "entry": {
-        "page_description": "Test E2E Content Format",
+        "page_description": "[Automation Test] Content Format",
         "seo": {
             "canonical_url": "",
             "meta_description": "seo_title_description",

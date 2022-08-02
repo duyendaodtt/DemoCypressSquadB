@@ -1,0 +1,106 @@
+{
+    "entry": {
+        "at_a_glance": [],
+        "body": "<p>Webinar june 2022</p>",
+        "content_format": [],
+        "contributor": [
+            {
+                "uid": "blt80c1bacc0104f453",
+                "_content_type_uid": "contributor"
+            }
+        ],
+        "featured_image_group": {
+            "featured_image": "blt29c8d7207ab7318a",
+            "featured_image_credit": "",
+            "featured_image_caption": "",
+            "image_alt_text": ""
+        },
+        "keywords": [
+            {
+                "uid": "blt1d4210b9a978d545",
+                "_content_type_uid": "keyword"
+            }
+        ],
+        "mobile_headline": "Webinar june 2022",
+        "old_url": "",
+        "published_date": "2022-07-25T17:00:00.000Z",
+        "related_events": [],
+        "related_inline_content": [
+            {
+                "related_item": [
+                    {
+                        "uid": "blt6bebc06efee4fd93",
+                        "_content_type_uid": "podcast"
+                    }
+                ],
+                "_metadata": {
+                    "uid": "csfeb60f40caddb63f"
+                }
+            }
+        ],
+        "seo": {
+            "meta_title": "Webinar june 2022",
+            "meta_description": "Webinar june 2022",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "series_taxonomy": [
+            {
+                "uid": "blt8d0c96cd42e20171",
+                "_content_type_uid": "series"
+            }
+        ],
+        "speaker": [],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_campaign_url": "https://eu-app.contentstack.com/",
+            "sponsorship_gating_external_form_id": "FORMID1",
+            "sponsorship_gating_gate_external_field_flag": "On24",
+            "sponsorship_gating_gate_reg_flag": true,
+            "sponsorship_gating_sponsor_flag": true,
+            "sponsorship_gating_sponsor_reference": [
+                {
+                    "uid": "bltb7a4fd653f123218",
+                    "_content_type_uid": "sponsor"
+                }
+            ]
+        },
+        "subbrand": [
+            {
+                "uid": "bltc50f3e12f8cf5d18",
+                "_content_type_uid": "subbrand"
+            }
+        ],
+        "summary": "Webinar june 2022",
+        "tags": [],
+        "term_selector": {
+            "historyOfPrimaryTerm": [
+                "/primary-topic-2",
+                "/crops"
+            ],
+            "primaryTerm": "/crops",
+            "primaryTermInRealText": "Crops",
+            "primaryCategoryBelonged": "/crops",
+            "secondaryTerm": [
+                "/crop-management"
+            ]
+        },
+        "title": "[Automation Test] - Webinar",
+        "url": "/Automation-Test-Webinar",
+        "webinar_group": {
+            "webinar_service": "on24",
+            "webinar_id": "credit",
+            "on24_webinar_event_id": "credit",
+            "on24_webinar_key": "credit",
+            "webinar_url": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/webinar/en-us/entry/blt739df3406d66f2f4/edit?branch=main",
+            "webinar_start_date_and_time": "2022-07-13T17:00:00.000Z",
+            "webinar_timezone": "PDT",
+            "duration": {
+                "duration": "02:01:00"
+            },
+            "webinar_material_title": "",
+            "webinar_material_url": "",
+            "webinar_material_resource_upload_link": null,
+            "multiple_line_materials": []
+        }
+    }
+}

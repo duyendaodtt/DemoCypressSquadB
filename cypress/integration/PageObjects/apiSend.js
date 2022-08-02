@@ -1,5 +1,6 @@
 // / <reference types = "Cypress"/>
 
+import { log } from "console";
 import { env } from "process";
 
 
@@ -7,8 +8,9 @@ export const apiPost = new class APIPost {
 
     updateBodyAndCreateEntry(entry, jsonBody) {
         var j1 = JSON.parse(jsonBody);
-        const files = ['keywords.txt', 'contributor.txt', 'subbranch.txt', 'contentformat.txt']
+        const files = ['keyword.txt', 'contributor.txt', 'subbrand.txt', 'content_format.txt']
         const contents = []
+
 
         cy.wrap(files).each((file) => {
             cy.readFile('./cypress/fixtures/inputAPI/uids/' + file).then((data) => {
@@ -17,12 +19,50 @@ export const apiPost = new class APIPost {
         })
             .then(() => {
                 // do whatever you want after all reading files is done
-
-                j1.entry['keywords'][0]['uid'] = contents[0];
-                j1.entry['contributor'][0]['uid'] = contents[1];
-                j1.entry['subbrand'][0]['uid'] = contents[2];
-                j1.entry['content_format'][0]['uid'] = contents[3];
-
+                // update keyword
+                if (j1.entry['keywords'] !== undefined) {
+                    if (j1.entry['keywords'].length === 0) {
+                        j1.entry['keywords'].push(contents[0])
+                        cy.log('Pushed content to Keywords')
+                    }
+                    else {
+                        j1.entry['keywords'][0]['uid'] = contents[0];
+                        cy.log('Updated keywords uid')
+                    }
+                }
+                //update contributor
+                if (j1.entry['contributor'] !== undefined) {
+                    if (j1.entry['contributor'].length === 0) {
+                        j1.entry['contributor'].push(contents[1])
+                        cy.log('Pushed content to contributor')
+                    }
+                    else {
+                        j1.entry['contributor'][0]['uid'] = contents[1];
+                        cy.log('Updated contributor uid')
+                    }
+                }
+                //update subbrand
+                if (j1.entry['subbrand'] !== undefined) {
+                    if (j1.entry['subbrand'].length === 0) {
+                        j1.entry['subbrand'].push(contents[2])
+                        cy.log('Pushed content to subbrand')
+                    }
+                    else {
+                        j1.entry['subbrand'][0]['uid'] = contents[2];
+                        cy.log('Updated subbrand uid')
+                    }
+                }
+                //update content format
+                if (j1.entry['content_format'] !== undefined) {
+                    if (j1.entry['content_format'].length === 0) {
+                        j1.entry['content_format'].push(contents[3])
+                        cy.log('Pushed content to subbrand')
+                    }
+                    else {
+                        j1.entry['content_format'][0]['uid'] = contents[3];
+                        cy.log('Updated content_format uid')
+                    }
+                }
                 // updated uid for bodyJSON
                 // create entry
                 this.postCreateEntry(entry, j1)
@@ -78,39 +118,43 @@ export const apiPost = new class APIPost {
             // res.body.entry['uid']
             // write to file
             cy.log(entry)
-            if (entry === 'keyword') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/keywords.txt', res.body.entry['uid'])
-            }
-            if (entry === 'contributor') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/contributor.txt', res.body.entry['uid'])
-            }
-            if (entry === 'subbrand') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/subbranch.txt', res.body.entry['uid'])
-            }
-            if (entry === 'content_format') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/contentformat.txt', res.body.entry['uid'])
-            }
-            if (entry === 'article') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/_article.txt', res.body.entry['uid'])
-            }
-            if (entry === 'webinar') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/_webinar.txt', res.body.entry['uid'])
-            }
-            if (entry === 'podcast') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/_podcast.txt', res.body.entry['uid'])
-            }
-            if (entry === 'video') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/_video.txt', res.body.entry['uid'])
-            }
-            if (entry === 'slideshow') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/_slideshow.txt', res.body.entry['uid'])
-            }
-            if (entry === 'document') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/_document.txt', res.body.entry['uid'])
-            }
-            if (entry === 'event') {
-                cy.writeFile('./cypress/fixtures/inputAPI/uids/_event.txt', res.body.entry['uid'])
-            }
+            cy.writeFile('./cypress/fixtures/inputAPI/uids/'+entry+'.txt', res.body.entry['uid'])
+            // if (entry === 'keyword') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/keywords.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'contributor') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/contributor.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'subbrand') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/subbranch.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'content_format') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/contentformat.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'article') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_article.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'webinar') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_webinar.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'podcast') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_podcast.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'video') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_video.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'slideshow') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_slideshow.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'document') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_document.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'event') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_event.txt', res.body.entry['uid'])
+            // }
+            // if (entry === 'basic_page') {
+                // cy.writeFile('./cypress/fixtures/inputAPI/uids/basic_page.txt', res.body.entry['uid'])
+            // }
 
         }).as('req');
     }
@@ -170,7 +214,7 @@ export const apiPost = new class APIPost {
     postGetEntryByUID(entry, uid) {
         cy.api({
             method: 'Get',
-            url: 'https://eu-api.contentstack.com/v3/content_types/' + entry + '/entries/' + uid ,
+            url: 'https://eu-api.contentstack.com/v3/content_types/' + entry + '/entries/' + uid,
             headers: {
                 'api_key': Cypress.env('api_key'),
                 'authtoken': Cypress.env('authtoken'),
@@ -186,7 +230,7 @@ export const apiPost = new class APIPost {
     deleteEntry(entryName, uid) {
         cy.api({
             method: 'DELETE',
-            url: 'https://eu-api.contentstack.com/v3/content_types/' + entryName + '/entries/' + uid ,
+            url: 'https://eu-api.contentstack.com/v3/content_types/' + entryName + '/entries/' + uid,
             headers: {
                 'api_key': Cypress.env('api_key'),
                 'authtoken': Cypress.env('authtoken'),
@@ -202,7 +246,7 @@ export const apiPost = new class APIPost {
     graphqlQuery(requestUrl, query, opName) {
         cy.log(query);
         cy.request({
-            method: 'POST', 
+            method: 'POST',
             url: requestUrl,
             body: { query }
         }).then((res) => {
