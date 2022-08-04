@@ -1,0 +1,70 @@
+{
+    "entry": {
+        "authored_by": "",
+        "authored_on": "",
+        "content_format": [
+            {
+                "uid": "bltdf95300c25d9fafc",
+                "_content_type_uid": "content_format"
+            }
+        ],
+        "contributor": [
+            {
+                "uid": "blt80c1bacc0104f453",
+                "_content_type_uid": "contributor"
+            }
+        ],
+        "external_link": "http://google.com",
+        "featured_image_group": {
+            "featured_image": "blt29c8d7207ab7318a",
+            "featured_image_credit": "",
+            "featured_image_caption": "",
+            "image_alt_text": ""
+        },
+        "keywords": [
+            {
+                "uid": "blt1d4210b9a978d545",
+                "_content_type_uid": "keyword"
+            }
+        ],
+        "mobile_headline": "External Link Mobile",
+        "old_url": "",
+        "published_date": "2022-06-02T10:29:04.000Z",
+        "seo": {
+            "meta_title": "SEO TTIEL",
+            "meta_description": "SEO TTIEL",
+            "canonical_url": "URL",
+            "no_index": false
+        },
+        "series_taxonomy": [],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_sponsor_flag": false,
+            "sponsorship_gating_sponsor_reference": [],
+            "sponsorship_gating_campaign_url": "",
+            "sponsorship_gating_gate_reg_flag": false,
+            "sponsorship_gating_gate_external_field_flag": "None",
+            "sponsorship_gating_external_form_id": ""
+        },
+        "subbrand": [
+            {
+                "uid": "bltfbbcd0aa341411d3",
+                "_content_type_uid": "subbrand"
+            }
+        ],
+        "summary": "External LinkExternal LinkExternal Link",
+        "tags": [],
+        "term_selector": {
+            "historyOfPrimaryTerm": [
+                "/primary-topic-1"
+            ],
+            "primaryTerm": "/primary-topic-1",
+            "primaryTermInRealText": "primary topic 1",
+            "primaryCategoryBelonged": "/primary-topic-1",
+            "secondaryTerm": [
+                "/secondary-topic-1"
+            ]
+        },
+        "title": "[Automation Test] - External Link",
+        "url": "/Automation-external-link"
+    }
+}

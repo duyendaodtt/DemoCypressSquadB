@@ -1,0 +1,79 @@
+{
+    "entry": {
+        "at_a_glance": [],
+        "authored_by": "",
+        "authored_on": "",
+        "body": "<p>Magazine Test URL body</p>",
+        "contributor": [
+            {
+                "uid": "blt80c1bacc0104f453",
+                "_content_type_uid": "contributor"
+            }
+        ],
+        "created_at": "2022-07-28T05:09:55.769Z",
+        "created_by": "bltf820cba671ae8b75",
+        "featured_image_group": {
+            "featured_image": null,
+            "featured_image_credit": "",
+            "featured_image_caption": "",
+            "image_alt_text": ""
+        },
+        "keywords": [
+            {
+                "uid": "blt1d4210b9a978d545",
+                "_content_type_uid": "keyword"
+            }
+        ],
+        "magazine": {
+            "magazine_source": "Zmag",
+            "magazine_id": "Magazine Test URL id",
+            "magazine_listing_title": "Magazine Test URLlisting title",
+            "magazine_image": null,
+            "magazine_image_alt_text": "",
+            "magazine_url": ""
+        },
+        "mobile_headline": "Magazine Test URL mh",
+        "old_url": "",
+        "published_date": "2022-07-13T17:00:00.000Z",
+        "related_events": [],
+        "seo": {
+            "meta_title": "Magazine Test URL seo title",
+            "meta_description": "Magazine Test URL seo description",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "series_taxonomy": [
+            {
+                "uid": "blt8d0c96cd42e20171",
+                "_content_type_uid": "series"
+            }
+        ],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_sponsor_flag": false,
+            "sponsorship_gating_sponsor_reference": [],
+            "sponsorship_gating_campaign_url": "",
+            "sponsorship_gating_gate_reg_flag": false,
+            "sponsorship_gating_gate_external_field_flag": "None",
+            "sponsorship_gating_external_form_id": ""
+        },
+        "subbrand": [
+            {
+                "uid": "blt9d187c6127213d42",
+                "_content_type_uid": "subbrand"
+            }
+        ],
+        "summary": "[Automation Test] - Magazine",
+        "tags": [],
+        "term_selector": {
+            "historyOfPrimaryTerm": [
+                "/secondary-topic-2",
+                "/Category-Primary-1111"
+            ],
+            "primaryTerm": "/Category-Primary-1111",
+            "primaryTermInRealText": "Edited Primary 1",
+            "primaryCategoryBelonged": "/Category-Primary-1111"
+        },
+        "title": "[Automation Test] - Magazine",
+        "url": "/magazine/Automation-test-Magazine"
+    }
+}

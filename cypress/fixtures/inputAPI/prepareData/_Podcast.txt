@@ -29,12 +29,17 @@
             "featured_image_caption": "",
             "image_alt_text": ""
         },
-        "keywords": [],
+        "keywords": [
+            {
+                "uid": "blt1d4210b9a978d545",
+                "_content_type_uid": "keyword"
+            }
+        ],
         "mobile_headline": "Licensing Mixtape: The Art of Storytelling",
         "old_url": "",
         "podcast": {
             "podcast_id": "",
-            "podcast_service": "Soundcloud",
+            "podcast_service": "soundcloud",
             "podcast_link": "",
             "duration": {
                 "duration": ""
