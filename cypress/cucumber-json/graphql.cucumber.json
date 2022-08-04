@@ -22,7 +22,7 @@
             "name": "I create keyword entry with a body from keywords.txt",
             "result": {
               "status": "passed",
-              "duration": 958000000
+              "duration": 3045000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I publish this keyword",
             "result": {
               "status": "passed",
-              "duration": 886000000
+              "duration": 912000000
             }
           }
         ]
@@ -52,7 +52,7 @@
             "name": "I create contributor entry with a body from contributor.txt",
             "result": {
               "status": "passed",
-              "duration": 1105000000
+              "duration": 953000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I publish this contributor",
             "result": {
               "status": "passed",
-              "duration": 864000000
+              "duration": 918000000
             }
           }
         ]
@@ -82,7 +82,7 @@
             "name": "I create subbrand entry with a body from subbrand.txt",
             "result": {
               "status": "passed",
-              "duration": 1024000000
+              "duration": 934000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "I publish this subbrand",
             "result": {
               "status": "passed",
-              "duration": 888000000
+              "duration": 892000000
             }
           }
         ]
@@ -112,7 +112,7 @@
             "name": "I create content_format entry with a body from contentformat.txt",
             "result": {
               "status": "passed",
-              "duration": 909000000
+              "duration": 940000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "I publish this content_format",
             "result": {
               "status": "passed",
-              "duration": 874000000
+              "duration": 903000000
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "I update and create article entry with body from _Article.txt",
             "result": {
               "status": "passed",
-              "duration": 950000000
+              "duration": 976000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "I publish this article",
             "result": {
               "status": "passed",
-              "duration": 872000000
+              "duration": 924000000
             }
           }
         ]
@@ -172,7 +172,7 @@
             "name": "I update and create document entry with body from _Document.txt",
             "result": {
               "status": "passed",
-              "duration": 965000000
+              "duration": 986000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "I publish this document",
             "result": {
               "status": "passed",
-              "duration": 901000000
+              "duration": 999000000
             }
           }
         ]
@@ -202,7 +202,7 @@
             "name": "I update and create basic_page entry with body from _BasicPage.txt",
             "result": {
               "status": "passed",
-              "duration": 942000000
+              "duration": 1044000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I publish this basic_page",
             "result": {
               "status": "passed",
-              "duration": 903000000
+              "duration": 1026000000
             }
           }
         ]
@@ -232,7 +232,7 @@
             "name": "I update and create event entry with body from _Event.txt",
             "result": {
               "status": "passed",
-              "duration": 963000000
+              "duration": 995000000
             }
           },
           {
@@ -242,7 +242,7 @@
             "name": "I publish this event",
             "result": {
               "status": "passed",
-              "duration": 881000000
+              "duration": 1012000000
             }
           }
         ]
@@ -262,7 +262,7 @@
             "name": "I update and create podcast entry with body from _Podcast.txt",
             "result": {
               "status": "passed",
-              "duration": 988000000
+              "duration": 1002000000
             }
           },
           {
@@ -272,7 +272,7 @@
             "name": "I publish this podcast",
             "result": {
               "status": "passed",
-              "duration": 883000000
+              "duration": 959000000
             }
           }
         ]
@@ -292,7 +292,7 @@
             "name": "I update and create video entry with body from _Video.txt",
             "result": {
               "status": "passed",
-              "duration": 945000000
+              "duration": 1029000000
             }
           },
           {
@@ -302,67 +302,97 @@
             "name": "I publish this video",
             "result": {
               "status": "passed",
-              "duration": 931000000
+              "duration": 916000000
             }
           }
         ]
       },
       {
-        "id": "test-query-graphql;api-e2e---delete-entries",
+        "id": "test-query-graphql;api-e2e---create-content-type-entries",
         "keyword": "Scenario",
-        "line": 36,
-        "name": "API E2E - Delete entries",
+        "line": 24,
+        "name": "API E2E - Create Content Type Entries",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete article entry with uid from Article.txt",
+            "line": 14,
+            "name": "I update and create magazine entry with body from _Magazine.txt",
             "result": {
               "status": "passed",
-              "duration": 1119000000
+              "duration": 976000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this magazine",
+            "result": {
+              "status": "passed",
+              "duration": 935000000
             }
           }
         ]
       },
       {
-        "id": "test-query-graphql;api-e2e---delete-entries",
+        "id": "test-query-graphql;api-e2e---create-content-type-entries",
         "keyword": "Scenario",
-        "line": 37,
-        "name": "API E2E - Delete entries",
+        "line": 25,
+        "name": "API E2E - Create Content Type Entries",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete document entry with uid from Document.txt",
+            "line": 14,
+            "name": "I update and create external_link entry with body from _ExternalLink.txt",
             "result": {
               "status": "passed",
-              "duration": 1001000000
+              "duration": 964000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this external_link",
+            "result": {
+              "status": "passed",
+              "duration": 930000000
             }
           }
         ]
       },
       {
-        "id": "test-query-graphql;api-e2e---delete-entries",
+        "id": "test-query-graphql;api-e2e---create-content-type-entries",
         "keyword": "Scenario",
-        "line": 38,
-        "name": "API E2E - Delete entries",
+        "line": 26,
+        "name": "API E2E - Create Content Type Entries",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete basic_page entry with uid from basic_page.txt",
+            "line": 14,
+            "name": "I update and create topic_primary entry with body from _TopicPrimary.txt",
             "result": {
               "status": "passed",
-              "duration": 1156000000
+              "duration": 970000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this topic_primary",
+            "result": {
+              "status": "passed",
+              "duration": 895000000
             }
           }
         ]
@@ -378,11 +408,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete event entry with uid from Event.txt",
+            "line": 36,
+            "name": "I delete article entry with uid from Article.txt",
             "result": {
               "status": "passed",
-              "duration": 999000000
+              "duration": 1150000000
             }
           }
         ]
@@ -398,11 +428,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete podcast entry with uid from Podcast.txt",
+            "line": 36,
+            "name": "I delete document entry with uid from Document.txt",
             "result": {
               "status": "passed",
-              "duration": 1038000000
+              "duration": 1236000000
             }
           }
         ]
@@ -418,11 +448,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete video entry with uid from Video.txt",
+            "line": 36,
+            "name": "I delete basic_page entry with uid from basic_page.txt",
             "result": {
               "status": "passed",
-              "duration": 1013000000
+              "duration": 1010000000
             }
           }
         ]
@@ -438,11 +468,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete keyword entry with uid from keyword.txt",
+            "line": 36,
+            "name": "I delete event entry with uid from Event.txt",
             "result": {
               "status": "passed",
-              "duration": 1043000000
+              "duration": 1059000000
             }
           }
         ]
@@ -458,11 +488,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete contributor entry with uid from contributor.txt",
+            "line": 36,
+            "name": "I delete podcast entry with uid from Podcast.txt",
             "result": {
               "status": "passed",
-              "duration": 999000000
+              "duration": 1098000000
             }
           }
         ]
@@ -478,11 +508,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
-            "name": "I delete subbrand entry with uid from subbrand.txt",
+            "line": 36,
+            "name": "I delete video entry with uid from Video.txt",
             "result": {
               "status": "passed",
-              "duration": 1018000000
+              "duration": 1104000000
             }
           }
         ]
@@ -498,11 +528,131 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
+            "line": 36,
+            "name": "I delete keyword entry with uid from keyword.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1146000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entries",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "API E2E - Delete entries",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I delete contributor entry with uid from contributor.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1041000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entries",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "API E2E - Delete entries",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I delete subbrand entry with uid from subbrand.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1071000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entries",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "API E2E - Delete entries",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
             "name": "I delete content_format entry with uid from content_format.txt",
             "result": {
               "status": "passed",
-              "duration": 1327000000
+              "duration": 1035000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entries",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "API E2E - Delete entries",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I delete magazine entry with uid from magazine.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1036000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entries",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "API E2E - Delete entries",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I delete external_link entry with uid from external_link.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1042000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entries",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "API E2E - Delete entries",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I delete topic_primary entry with uid from topic_primary.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1232000000
             }
           }
         ]
