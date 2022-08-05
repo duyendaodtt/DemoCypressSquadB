@@ -22,6 +22,13 @@ pipeline {
         publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/var/lib/jenkins/workspace/Cypress Pipline/reports/cucumber-htmlreport.html/', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
         }
     }
+
+    post { 
+        always { 
+            emailext( attachLog: true, body: 'body test', subject: 'Test email', to: 'ha.hoang@xpondigital.com')
+        }
+    }
+
   }
 
 }
