@@ -23,12 +23,12 @@ pipeline {
         }
     }
 
-    post { 
+  }
+
+  post { 
         always { 
             emailext( attachLog: true, body: 'body test', subject: 'Test email', to: 'ha.hoang@xpondigital.com')
         }
     }
-
-  }
 
 }
