@@ -79,7 +79,7 @@ query ExternalLinks{
         uid
         url
         locale
-        publish_details{
+        publishDetails{
           time
           locale
         }
