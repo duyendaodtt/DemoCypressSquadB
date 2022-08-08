@@ -1,6 +1,7 @@
 /// <reference types = "Cypress"/>
 import exp from "constants";
 import { Then, defineParameterType} from "cypress-cucumber-preprocessor/steps";
+import { each } from "cypress/types/bluebird";
 import {validateSchema } from "../PageObjects/apiCheck"
 var request = require('request');
 const jsonAssertion = require("soft-assert")
@@ -75,28 +76,45 @@ Then(/^Required fields for response of (.*) should not empty$/, (contentQuery) =
     cy.then(()=>{
         if(contentQuery.includes('all')){
             let fieldName = `data.${contentQuery}.items`
-            cy.get('@body').its(fieldName).then((items) =>{
-                var requiredFields = ["title", "mobileHeadline", "body", "basicPageDisplayOption", "seo.metaTitle", "seo.metaDescription"]
-                requiredFields.forEach((fieldName)=>{
-                    cy.get(item).its(fieldName).as('checkedField')
-                    expect('@checkedField').not.null
-                })
-            })
+            cy.get('@body').its(fieldName).as('entries')
+            cy.get('@entries').each(
+                entry => {
+                    var requiredFields = ["title", "mobileHeadline", "body", "basicPageDisplayOption", "seo.metaTitle", "seo.metaDescription"]
+                    // read the response
+                    requiredFields.forEach(fieldName=>{
+                        cy.log(entry.fieldName).as('requiredField')
+                        expect(entry.fieldName).not.null
+                    })
+                    
+                }
+            )         // wait for intercept instead of cy.wait(3000)
+            // then((items) =>{
+            //     // items.forEach((item) =>{
+                    
+            //     // //     requiredFields.forEach(fieldName=>{
+            //     // //         cy.get(item).its(fieldName).as('requiredField')
+            //     // //         cy.log('@requiredField').as('requiredField')
+            //     // //         // expect(item).its(fieldName).not.null 
+            //     // // })
+                
+            //     // }) 
+            // })
         }
         if(contentQuery.includes('page')){
             let fieldName = `data.${contentQuery}.content`
             cy.get('@body').its(fieldName).then((item) =>{
                 var requiredFields = ["title", "mobileHeadline", "body", "basicPageDisplayOption", "seo.metaTitle", "seo.metaDescription"]
-                requiredFields.forEach((fieldName)=>{
-                    cy.get(item).its(fieldName).as('checkedField')
-                    expect('@checkedField').not.null
+                requiredFields.forEach(fieldName=>{
+                    cy.log(item).its(fieldName).as('checkField')
+                    // cy.get(item).its(fieldName).as('checkedField')
+                    expect(item).its(fieldName).not.null
                 })
             })
         }
         else{
-            cy.get('@body').its('data').then((items) =>{
+            cy.get('@body').its('data').then((item) =>{
                 var requiredFields = ["title", "mobileHeadline", "body", "basicPageDisplayOption", "seo.metaTitle", "seo.metaDescription"]
-                requiredFields.forEach((fieldName)=>{
+                requiredFields.forEach(fieldName=>{
                     cy.get(item).its(fieldName).as('checkedField')
                     expect('@checkedField').not.null
                 })
