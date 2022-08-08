@@ -8,3 +8,4 @@ Feature: Query only Page content
     Examples:
         | contentType        | queryFile                 | contentQuery        |
         | BasicPage          | queryBasicPage.txt        | page_basic          |
+        

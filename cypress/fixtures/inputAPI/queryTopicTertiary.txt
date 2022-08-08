@@ -1,0 +1,29 @@
+query {
+  all_topic_tertiary{
+    items{
+      uid
+      contentTypeUid
+      createdAt
+      createdBy
+      icon {
+        title
+        url
+      }
+      locale
+      seo{
+        canonicalUrl
+        metaDescription
+        metaTitle
+        noIndex
+      }
+      title
+      topicPageDescription
+      updatedAt
+      updatedBy
+      url
+    }
+    meta{
+      total
+    }
+  }
+}
