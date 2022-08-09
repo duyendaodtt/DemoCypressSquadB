@@ -10,8 +10,7 @@ class HomePage extends SharedObject {
 
     verify_element_footer() {
         // call api
-        var newpath = '/inputAPI/queryFooter.text'
-        cy.fixture(newpath).then((body) => {
+        cy.fixture(constant.path_query_footer).then((body) => {
             apiPost.graphqlPost(constant.method_post, constant.path, body)
         })
 
@@ -26,8 +25,7 @@ class HomePage extends SharedObject {
 
     verify_element_nav() {
         // call api
-        var newpath = '/inputAPI/queryNavigation.text'
-        cy.fixture(newpath).then((body) => {
+        cy.fixture(constant.path_query_navigation).then((body) => {
             apiPost.graphqlPost(constant.method_post, constant.path, body)
         })
 

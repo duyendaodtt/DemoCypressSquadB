@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://content.preview.scm.informagt.com",
+    "baseUrl": "https://staging.scmdemo.informagt.com",
     "testFiles":  ["**/*.spec.js"],
     "video": false,
     "fixtures":{
