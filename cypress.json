@@ -1,9 +1,8 @@
 {
-    "baseUrl": "https://stage.quantumbusinessnews.com",
-    "testFiles": "**/*.feature",
-    "ignoreTestFiles": "*.js",
+    "baseUrl": "https://content.preview.scm.informagt.com",
+    "testFiles":  ["**/*.spec.js"],
+    "video": false,
     "fixtures":{
-        "Article": "webElements/articleElements.json"
     },
     "retries": {
         "runMode": 2,

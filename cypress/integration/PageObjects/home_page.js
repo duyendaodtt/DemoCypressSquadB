@@ -7,12 +7,15 @@ class HomePage extends SharedObject {
         super();
     }
 
-    verify_element_footer(path = "queryFooter.txt" ) {
+    verify_element_footer( ) {
+        let path = "queryFooter.text"
         // call api
         var newpath = '/inputAPI/' + path
         cy.fixture(newpath).then((body) => {
-          apiPost.graphqlPost("Post", urlServerGraphql = "/v1/graphql?client_id=master" , body)
+            cy.log( Cypress.env['base_url'])
+            apiPost.graphqlPost("Post", "https://content.preview.scm.informagt.com/v1/graphql?client_id=master" + "/v1/graphql?client_id=master" , body)
         })
+        return this
         // verify it on footer
     }
 }
