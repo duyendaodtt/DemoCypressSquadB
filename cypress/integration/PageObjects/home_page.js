@@ -1,3 +1,4 @@
+import constant from "../../fixtures/constant";
 import locator from "../locator/home_page_locator";
 import { apiPost } from "./apiSend";
 import SharedObject from "./sharedObject";
@@ -8,15 +9,13 @@ class HomePage extends SharedObject {
     }
 
     verify_element_footer( ) {
-        let path = "queryFooter.text"
         // call api
-        var newpath = '/inputAPI/' + path
+        var newpath = '/inputAPI/queryFooter.text'
         cy.fixture(newpath).then((body) => {
-            cy.log( Cypress.env['base_url'])
-            apiPost.graphqlPost("Post", "https://content.preview.scm.informagt.com/v1/graphql?client_id=master" + "/v1/graphql?client_id=master" , body)
+            apiPost.graphqlPost(constant.method_post, constant.path , body)
+            cy.log(res)
         })
         return this
-        // verify it on footer
     }
 }
 
