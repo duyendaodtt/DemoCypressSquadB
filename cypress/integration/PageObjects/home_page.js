@@ -16,7 +16,7 @@ class HomePage extends SharedObject {
         })
 
         // verify footer
-        cy.get('@res').then(dataFooter => {
+        cy.get('@req').then(dataFooter => {
             cy.wrap(dataFooter).then(item => {
                 const { copyright, linkSections, logo } = item.data.footer
                 this.checkContainsText(linkSections[0].title)
@@ -26,16 +26,18 @@ class HomePage extends SharedObject {
 
     verify_element_nav() {
         // call api
-        var newpath = '/inputAPI/queryMainNav.text'
+        var newpath = '/inputAPI/queryNavigation.text'
         cy.fixture(newpath).then((body) => {
             apiPost.graphqlPost(constant.method_post, constant.path, body)
         })
 
         // verify Nav
-        cy.get('@res').then(dataNav => {
+        cy.get('@req').then(dataNav => {
             cy.wrap(dataNav).then(item => {
-                const { copyright, linkSections, logo } = item.data.Nav
-                this.checkContainsText(linkSections[0].title)
+                const { mainMenuItems } = item.data.navigation
+                mainMenuItems.forEach(element => {
+                    this.checkContainsText(element.title)
+                });
             })
         })
         return this
