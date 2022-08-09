@@ -43,6 +43,10 @@ class SharedObject{
         .should('have.class', className);
     }
 
+    checkContainsText(text) {
+      cy.contains(text, {timeout: 10000})
+    }
+
 }
 
 export default SharedObject

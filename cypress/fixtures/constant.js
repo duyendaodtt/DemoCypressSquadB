@@ -1,5 +1,5 @@
 class constant {
-    static path = "/v1/graphql?client_id=master"
+    static path = "https://content.preview.scm.informagt.com/v1/graphql?client_id=master"
     static method_post = "Post"
 }
 
