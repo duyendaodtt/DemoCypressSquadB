@@ -4,9 +4,6 @@
   "description": "demo project",
   "main": "index.js",
   "scripts": {
-    "test-browser": "cypress run --browser chrome;cypress run --browser firefox",
-    "test": "cypress run&&node cypress/cucumber-json/cucumber-html-report.js",
-    "e2e" : "cypress run&&node cypress/cucumber-json/cucumber-html-report.js"
   },
   "keywords": [
     "demo"
@@ -16,19 +13,5 @@
   "dependencies": {
     "cypress": "^9.6.1",
     "tsify": "^5.0.4"
-  },
-  "devDependencies": {
-    "@types/cypress-cucumber-preprocessor": "^4.0.1",
-    "cypress-cucumber-preprocessor": "^4.3.1",
-    "multiple-cucumber-html-reporter": "^1.20.0"
-  },
-  "cypress-cucumber-preprocessor": {
-    "step_definitions": "cypress/integration/step_definitions",
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ".cucumber"
-    }
   }
 }
