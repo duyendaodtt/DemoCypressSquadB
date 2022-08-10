@@ -17,11 +17,12 @@ class HomePage extends SharedObject {
             cy.wrap(dataNav).then(item => {
 
                 // verify navigation
+                this.click_element(locator.icon_open_mega_menu)
                 const { mainMenuItems } = item.data["navigation"]
+                
                 mainMenuItems.forEach( (element: any) => {
-                    this.checkContainsText(element.title)
+                    this.verify_string_exits(element.title)
                 });
-
 
             })
         })

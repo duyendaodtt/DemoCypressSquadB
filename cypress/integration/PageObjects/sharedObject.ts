@@ -1,38 +1,30 @@
 /// <reference types = "Cypress"/>
 
-class SharedObject{
+class SharedObject {
 
-    //Check if locator have text
-    checkLocatorHaveText(locator, txt) {
-      cy.get(locator, { timeout: 10000 }).should('be.visible')
-        .should('have.text', txt);
-    }
+  click_element(locator: string) {
+    cy.get(locator, { timeout: 20000 }).click({ multiple: true, force: true });
+  }
 
-    //Check if locator containts text
-    checkLocatorContains(locator, txt) {
-      cy.get(locator, { timeout: 10000 }).should('be.visible')
-        .should('contain', txt);
-    }
-    //Check if first locator have text
-    checkLocatorFirstHaveText(locator, txt) {
-      cy.get(locator)
-      .first()
-        .should('have.text', txt);
-    }
-    //Check if locator have class
-    checkLocatorFirstHaveText1(locator, className) {
-      cy.get(locator) 
-        .should('have.class', className);
-    }
-    //Check if locator have class
-    checkLocatorClassHaveText(locator, className) {
-      cy.get(locator)
-        .should('have.class', className);
-    }
+  click_element_by_string(string: string) {
+    cy.contains(string, { timeout: 20000 }).click()
+  }
 
-    checkContainsText(text) {
-      cy.contains(text, {timeout: 10000})
-    }
+  send_key_locator(locator: string, key: any) {
+    cy.get(locator, { timeout: 20000 }).clear({ force: true }).type(key, { force: true });
+  }
+
+  verify_element_visible_by_locator(locator: string) {
+    expect(cy.get(locator, { timeout: 120000 }).should("be.visible"));
+  }
+
+  hover_element(locator: string) {
+    cy.get(locator, { timeout: 20000 }).trigger('mouseover')
+  }
+
+  verify_string_exits(string: string) {
+    cy.contains(string, { timeout: 20000 }).scrollIntoView()
+}
 
 }
 
