@@ -1,0 +1,40 @@
+{
+    "entry": {
+        "branding": {
+            "color": "",
+            "logo": null,
+            "logo_alt_text": "",
+            "tagline": ""
+        },
+        "display_options": "standard",
+        "modules": {
+            "module_blocks": []
+        },
+        "seo": {
+            "meta_title": "aa",
+            "meta_description": "bb",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "series_content_types": [
+            "articles",
+            "webinars",
+            "whitepapers",
+            "podcasts",
+            "videos"
+        ],
+        "series_description": "descriptions",
+        "series_url": [],
+        "sponsorship_gating_group": {
+            "sponsorship_gating_sponsor_flag": false,
+            "sponsorship_gating_sponsor_reference": [],
+            "sponsorship_gating_campaign_url": "",
+            "sponsorship_gating_gate_reg_flag": false,
+            "sponsorship_gating_gate_external_field_flag": "URL",
+            "sponsorship_gating_external_form_id": ""
+        },
+        "tags": [],
+        "title": "[Automation Test] Series Taxonomy",
+        "url": "/series/Automation-Test-Series-Taxonomy"
+    }
+}

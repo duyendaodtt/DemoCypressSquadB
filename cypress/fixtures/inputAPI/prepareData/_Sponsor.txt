@@ -1,0 +1,21 @@
+{
+    "entry": {
+        "body": "<p>body</p>",
+        "logo_group": {
+            "image": null,
+            "image_alt_text": "alt text"
+        },
+        "published_date": "2022-06-30T17:00:00.000Z",
+        "seo": {
+            "meta_title": "sponsor 1",
+            "meta_description": "desc",
+            "canonical_url": "",
+            "no_index": true
+        },
+        "sponsor_url": "google",
+        "summary": "Sumâry",
+        "tags": [],
+        "title": "[Automation Test] Sponsor",
+        "url": "/Sponsor-auto"
+    }
+}

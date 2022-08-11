@@ -1,0 +1,11 @@
+{
+    "entry": {
+        "cta_button_text": "CTA 1",
+        "promo_label": "1",
+        "promo_magazine": [],
+        "related_content": [],
+        "tags": [],
+        "text_position": "Right",
+        "title": "[Automation Test] Module Magazine Promo"
+    }
+}

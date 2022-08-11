@@ -1,11 +1,18 @@
 {
     "entry": {
+        "links": [],
+        "seo": {
+            "canonical_url": "",
+            "meta_description": "Search Engine Description*\n",
+            "meta_title": "Search Engine Title*",
+            "no_index": false
+        },
         "subbrand_logo_group": {
-            "subbrand_image": "bltbfb842f96c95b3d4",
-            "subbrand_image_alt_text": "Alt text"
+            "subbrand_image": "bltb9ee6c4710017940",
+            "subbrand_image_alt_text": "Sub-brand Logo Image Alt Text"
         },
         "tags": [],
-        "title": "[Automation Test] Subbranch",
-        "url": "/e2e-subbranch"
+        "title": "[Automation Test] Sub-brand",
+        "url": "/autotest-sub-brand"
     }
 }

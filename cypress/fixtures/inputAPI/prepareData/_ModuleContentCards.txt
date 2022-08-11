@@ -1,0 +1,32 @@
+{
+    "entry": {
+        "content_display_option": "Horizontal Card",
+        "dynamic_recent_content": {
+            "by_content_types": "Article",
+            "by_topics": [],
+            "by_keywords": [],
+            "by_content_format": [],
+            "dynamic_limit": 4
+        },
+        "manual_curated_content_group": {
+            "manual_curated_content": [
+                {
+                    "uid": "blt739df3406d66f2f4",
+                    "_content_type_uid": "webinar"
+                },
+                {
+                    "uid": "blt61c53f0629e7e8ad",
+                    "_content_type_uid": "webinar"
+                },
+                {
+                    "uid": "blt5653401dbc7b7e2b",
+                    "_content_type_uid": "webinar"
+                }
+            ],
+            "manual_curated_content_limit": 4
+        },
+        "setting_option": "Curated",
+        "tags": [],
+        "title": "[Automation Test] Module Content Cards"
+    }
+}

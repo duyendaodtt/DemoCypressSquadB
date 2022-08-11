@@ -1,0 +1,14 @@
+{
+    "entry": {
+        "cta_button": {
+            "cta_button_text": "CTA 1",
+            "cta_button_url": {
+                "title": "title button",
+                "href": "this is URL"
+            }
+        },
+        "cta_message": "msg",
+        "tags": [],
+        "title": "[Automation Test] Module Newsletter Promo"
+    }
+}

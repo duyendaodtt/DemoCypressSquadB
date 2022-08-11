@@ -1,0 +1,17 @@
+{
+    "entry": {
+        "background": {
+            "background_image": "bltb9ee6c4710017940",
+            "background_image_alt_text": "bg img txt",
+            "background_color": "Brand Color 2"
+        },
+        "event": [
+            {
+                "uid": "bltcf9a19bb6da8b351",
+                "_content_type_uid": "event"
+            }
+        ],
+        "tags": [],
+        "title": "[Automation Test] Event Promo"
+    }
+}

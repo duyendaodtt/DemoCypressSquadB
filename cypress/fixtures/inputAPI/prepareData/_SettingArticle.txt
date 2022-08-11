@@ -1,0 +1,35 @@
+{
+    "entry": {
+        "article_display_settings": {
+            "article_template": "One-column"
+        },
+        "modules": {
+            "module_blocks": [
+                {
+                    "uid": "blt2a4ecef04b92a510",
+                    "_content_type_uid": "article"
+                }
+            ]
+        },
+        "right_hand_rail_configuration": {
+            "right_component": [
+                {
+                    "uid": "blt2a4ecef04b92a510",
+                    "_content_type_uid": "article"
+                },
+                {
+                    "uid": "blt660cff8e9a56ecdc",
+                    "_content_type_uid": "article"
+                },
+                {
+                    "uid": "blt3c8b7e897cffb463",
+                    "_content_type_uid": "article"
+                }
+            ]
+        },
+        "tags": [
+            "tag"
+        ],
+        "title": "[Automation Test] Setting Article"
+    }
+}

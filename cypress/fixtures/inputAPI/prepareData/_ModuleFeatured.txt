@@ -1,0 +1,53 @@
+{
+    "entry": {
+        "featured_content": [
+            {
+                "uid": "blt495262dc35f6fbbd",
+                "_content_type_uid": "webinar"
+            }
+        ],
+        "module_display_option": "recent",
+        "recent_section": [
+            {
+                "section_label": "Section",
+                "cta_button": {
+                    "cta_button_text": "CTA1",
+                    "cta_button_link": [
+                        {
+                            "uid": "blt1c7dbde26b684846",
+                            "_content_type_uid": "topic_tertiary"
+                        }
+                    ]
+                },
+                "dynamic_recent_content": {
+                    "by_category": [
+                        {
+                            "uid": "blt798093712d1a2d10",
+                            "_content_type_uid": "topic_primary"
+                        }
+                    ],
+                    "by_keyword": [
+                        {
+                            "uid": "blt2e6da0ad7d4fe490",
+                            "_content_type_uid": "keyword"
+                        }
+                    ],
+                    "by_content_type": [
+                        {
+                            "uid": "blt194470e62a277fb1",
+                            "_content_type_uid": "video"
+                        }
+                    ],
+                    "limit": [
+                        4
+                    ]
+                },
+                "_metadata": {
+                    "uid": "csf4420bcffe8ccffb"
+                }
+            }
+        ],
+        "tags": [],
+        "title": "[Automation Test] Module Featured"
+    }
+}

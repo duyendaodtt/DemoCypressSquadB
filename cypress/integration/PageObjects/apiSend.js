@@ -119,43 +119,6 @@ export const apiPost = new class APIPost {
             // write to file
             cy.log(entry)
             cy.writeFile('./cypress/fixtures/inputAPI/uids/'+entry+'.txt', res.body.entry['uid'])
-            // if (entry === 'keyword') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/keywords.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'contributor') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/contributor.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'subbrand') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/subbranch.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'content_format') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/contentformat.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'article') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_article.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'webinar') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_webinar.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'podcast') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_podcast.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'video') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_video.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'slideshow') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_slideshow.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'document') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_document.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'event') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/_event.txt', res.body.entry['uid'])
-            // }
-            // if (entry === 'basic_page') {
-                // cy.writeFile('./cypress/fixtures/inputAPI/uids/basic_page.txt', res.body.entry['uid'])
-            // }
-
         }).as('req');
     }
 
@@ -254,5 +217,18 @@ export const apiPost = new class APIPost {
             cy.wrap(res.headers).as('graphheaders');
             cy.wrap(res.body).as('graphbody');
         }).as('graphreq');
+    }
+
+    createTopics(jsonBody) {
+        var jtertiary = ""
+        var jsecondary = ""
+        var jprimary = ""
+        
+
+        this.postCreateEntry('topic_tertiary', )
+        const contents = []
+        cy.readFile('./cypress/fixtures/inputAPI/uids/' + file).then((data) => {
+        contents.push(data)
+        })
     }
 }

@@ -1,0 +1,21 @@
+{
+    "entry": {
+        "icon": null,
+        "seo": {
+            "meta_title": "a",
+            "meta_description": "b",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "tags": [],
+        "tertiary_topics": [
+            {
+                "uid": "blt5c4e32e33083243d",
+                "_content_type_uid": "topic_tertiary"
+            }
+        ],
+        "title": "[Automation Test] Topic Secondary",
+        "topic_page_description": "",
+        "url": "/Auto-topic-secondary"
+    }
+}

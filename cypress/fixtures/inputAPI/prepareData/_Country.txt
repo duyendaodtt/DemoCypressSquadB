@@ -1,0 +1,9 @@
+{
+    "entry": {
+        "alpha_2_code": "AT",
+        "alpha_3_code": "CTY",
+        "numeric": "999",
+        "tags": [],
+        "title": "[Automation Test] Country"
+    }
+}

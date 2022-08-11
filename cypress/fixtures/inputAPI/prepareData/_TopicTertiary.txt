@@ -1,0 +1,15 @@
+{
+    "entry": {
+        "icon": null,
+        "seo": {
+            "meta_title": "a",
+            "meta_description": "b",
+            "canonical_url": "",
+            "no_index": false
+        },
+        "tags": [],
+        "title": "[Automation Test] Topic Tertiary",
+        "topic_page_description": "[Automation Test] Topic Tertiary",
+        "url": "/topictertiary-auto"
+    }
+}

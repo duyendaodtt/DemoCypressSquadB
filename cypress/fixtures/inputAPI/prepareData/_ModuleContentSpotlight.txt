@@ -1,0 +1,19 @@
+{
+    "entry": {
+        "cta_button_text": "[BTN1]",
+        "display_options": {
+            "text_position": "left",
+            "text_alignment": "left",
+            "dark_light_toggle": "dark"
+        },
+        "promo_label": "Max 32 chars",
+        "promoted_content": [
+            {
+                "uid": "blt4e3ed165d9a6d899",
+                "_content_type_uid": "document"
+            }
+        ],
+        "tags": [],
+        "title": "[Automation Test] Module Content Spotlight"
+    }
+}

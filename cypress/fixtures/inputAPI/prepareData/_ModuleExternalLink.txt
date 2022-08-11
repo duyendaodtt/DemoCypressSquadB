@@ -1,0 +1,33 @@
+{
+    "entry": {
+        "cta_button": {
+            "cta_button_text": "CTA btn 1",
+            "cta_button_url": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/module_external_links/en-us/entry/create?branch=main"
+        },
+        "external_links": [
+            {
+                "uid": "bltd89e980ce8f3a68a",
+                "_content_type_uid": "external_link"
+            },
+            {
+                "uid": "blt703784bceb603e4b",
+                "_content_type_uid": "external_link"
+            },
+            {
+                "uid": "bltb4c4f7d315a5ee13",
+                "_content_type_uid": "external_link"
+            },
+            {
+                "uid": "bltc5432188188a4a0d",
+                "_content_type_uid": "external_link"
+            },
+            {
+                "uid": "blt755b3d93444986f6",
+                "_content_type_uid": "external_link"
+            }
+        ],
+        "module_label": "[Module_Label]",
+        "tags": [],
+        "title": "[Automation Test] Module External Link"
+    }
+}
