@@ -8,7 +8,7 @@ class HomePage extends SharedObject {
         super();
     }
 
-    verify_elements_of_Nav_sub_menu() {
+    Verify_elements_of_Nav_sub_menu() {
         cy.get('@req').then(dataNav => {
             cy.wrap(dataNav).then(item => {
                 const { mainMenuItems } = item.data["navigation"]

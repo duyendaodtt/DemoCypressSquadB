@@ -10,6 +10,11 @@
         "authtoken": "blt2373644bb8f66e59",
         "Content-Type": "application/json"
     },
+    "env":{
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "blt2373644bb8f66e59",
+        "Content-Type": "application/json"
+    },
     "retries": {
         "runMode": 2,
         "openMode": 1

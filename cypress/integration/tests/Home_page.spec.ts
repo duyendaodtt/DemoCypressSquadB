@@ -27,7 +27,7 @@ describe("Given I updated data navigation on Content Stack", () => {
 
     describe("WHEN I go to the navigation on homepage", () => {
         it("THEN Verify elements all of Nav sub menu", () => {
-            home_page.verify_elements_of_Nav_sub_menu()
+            home_page.Verify_elements_of_Nav_sub_menu()
         })
 
         it.only("AND Check click ability items in Related Topics of Navigation bar", () => {

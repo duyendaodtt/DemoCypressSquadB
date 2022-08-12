@@ -2,23 +2,6 @@
     "entry": {
         "title": "Main navigation 5",
         "site_logo_override": {
-            "site_logo": {
-                "uid": "bltb9ee6c4710017940",
-                "created_at": "2021-09-27T08:00:55.490Z",
-                "updated_at": "2021-09-27T08:00:55.490Z",
-                "created_by": "blt78732bd836d545ea",
-                "updated_by": "blt78732bd836d545ea",
-                "content_type": "image/png",
-                "file_size": "187429",
-                "tags": [],
-                "filename": "Screenshot_2021-08-23_at_11.40.09.png",
-                "url": "https://eu-images.contentstack.com/v3/assets/bltaafcf579726913de/bltb9ee6c4710017940/61517a37f3dbd77caf36eb32/Screenshot_2021-08-23_at_11.40.09.png",
-                "ACL": [],
-                "is_dir": false,
-                "parent_uid": null,
-                "_version": 1,
-                "title": "Screenshot_2021-08-23_at_11.40.09.png"
-            },
             "site_logo_image_alt_text": "MasterStack gfgf"
         },
         "main_navigation": [
@@ -39,7 +22,7 @@
                     ],
                     "main_see_all_link": {
                         "title": "abc",
-                        "url": "https://gooweeegle.com/"
+                        "url": "https://gooweeegle12.com/"
                     }
                 }
             },
