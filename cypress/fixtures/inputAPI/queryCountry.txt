@@ -1,0 +1,17 @@
+query Country{
+  all_country(asc:"title"){
+    meta{total}
+    items{
+      title
+      uid
+      numeric
+      alpha2Code
+      alpha3Code
+      createdAt
+      createdBy
+      locale
+      updatedAt
+      updatedBy
+    }
+  }
+}

@@ -1,0 +1,24 @@
+query BasicPage{
+  page_basic(url: "/about-us"){
+    content{
+      title
+      uid
+      url
+      mobileHeadline
+      summary
+      body
+      basicPageDisplayOption
+      createdAt
+      createdBy
+      locale
+      updatedAt
+      updatedBy
+      seo{
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
+    }
+  }
+}

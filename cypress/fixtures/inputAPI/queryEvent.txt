@@ -1,0 +1,126 @@
+query event {
+  all_event(asc:"title") {
+    meta {
+      total
+    }
+    items {
+      title
+      url
+      uid
+      createdAt
+      createdBy
+      locale
+      updatedAt
+      updatedBy
+      eventDetails {
+        button1Link
+        button1Name
+        button2Link
+        button2Name
+        startDate
+        endDate
+        eventLogo {
+          logoFile {
+            url
+          }
+          eventLogoAlt
+        }
+        eventType
+        eventUrl
+        location
+      }
+      publishDetails{
+        locale
+        time
+      }
+      seo{
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
+      relatedInlineContent{
+        relatedItem{
+          ... on Article{
+            title
+            uid
+            url
+            publishedDate
+            summary
+            featuredImageGroup{
+              featuredImage{url}
+              featuredImageCredit
+              featuredImageCaption
+            }
+          }
+          ... on BasicPage{
+            title
+            uid
+            url
+            summary
+          }
+          ... on Webinar{
+            title
+            uid
+            url
+            publishedDate
+            summary
+            featuredImageGroup{
+              featuredImage{url}
+              featuredImageCredit
+              featuredImageCaption
+            }
+          }
+          ... on Document{
+            title
+            uid
+            url
+            publishedDate
+            summary
+            featuredImageGroup{
+              featuredImage{url}
+              featuredImageCredit
+              featuredImageCaption
+            }
+          }
+          ... on Video{
+            title
+            uid
+            url
+            publishedDate
+            summary
+            featuredImageGroup{
+              featuredImage{url}
+              featuredImageCredit
+              featuredImageCaption
+            }
+          }
+          ... on Podcast{
+            title
+            uid
+            url
+            publishedDate
+            summary
+            featuredImageGroup{
+              featuredImage{url}
+              featuredImageCredit
+              featuredImageCaption
+            }
+          }
+          ... on Slideshow{
+            title
+            uid
+            url
+            publishedDate
+            summary
+            featuredImageGroup{
+              featuredImage{url}
+              featuredImageCredit
+              featuredImageCaption
+            }
+          }
+        }
+      }
+    }
+  }
+}

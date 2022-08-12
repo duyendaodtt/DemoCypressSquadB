@@ -3,3 +3,4 @@ cypress/reports/cucumber-htmlreport.html
 cypress/screenshots
 cypress/videos
 cypress/reports
+cypress/cucumber-json

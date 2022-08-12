@@ -1,0 +1,11 @@
+{
+    "entry": {
+        "subbrand_logo_group": {
+            "subbrand_image": "bltbfb842f96c95b3d4",
+            "subbrand_image_alt_text": "Alt text"
+        },
+        "tags": [],
+        "title": "[Automation Test] Subbranch",
+        "url": "/e2e-subbranch"
+    }
+}

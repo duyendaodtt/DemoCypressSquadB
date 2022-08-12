@@ -1,5 +1,5 @@
 query {
-  all_article {
+  all_slideshow {
     meta {
       total
     }
@@ -40,6 +40,16 @@ query {
         url
         locale
       }
+      slideshow{
+        slideImage{
+          url
+        }
+        slideTitle
+        slideImageCredit
+        slideImageAltText
+        slideImageCaption
+        slideImageDescription
+      }
       featuredImageGroup {
         featuredImage {
           url
@@ -54,7 +64,7 @@ query {
         historyOfPrimaryTerm
         primaryTerm
         primaryTermInRealText
-        #primaryCategoryBelonged
+        primaryCategoryBelonged
         secondaryTerm
       }
       subbrand {

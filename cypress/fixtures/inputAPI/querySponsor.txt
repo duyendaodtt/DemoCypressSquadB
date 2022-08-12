@@ -1,0 +1,24 @@
+query Creator{
+  all_sponsor(
+    asc: "title"
+  ){
+    meta{total}
+    items{
+      title
+      url
+      body
+      summary
+      publishedDate
+      logoGroup{
+        image{url}
+        imageAltText
+      }
+      seo{
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
+    }
+  }
+}

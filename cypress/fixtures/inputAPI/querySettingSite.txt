@@ -1,0 +1,14 @@
+query SiteSetting{
+  settings_site{
+    title
+    uid
+    createdAt
+    createdBy
+    updatedAt
+    updatedBy
+    placeholderImage{
+      article{url}
+      contributor{url}
+    }
+  }
+}

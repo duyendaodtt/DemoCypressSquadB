@@ -1,0 +1,37 @@
+query TopicPrimary{
+  all_topic_primary(asc:"title"){
+    meta{
+      total
+    }
+    items{
+      title
+      uid
+      url
+      createdAt
+      createdBy
+      contentTypeUid
+      updatedAt
+      updatedBy
+      icon{
+        title
+        url
+      }
+      locale
+      topicPageDescription
+      seo{
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
+      secondaryTopics{
+        title
+        url
+        uid
+        locale
+        topicPageDescription
+        
+      }
+    }
+  }
+}

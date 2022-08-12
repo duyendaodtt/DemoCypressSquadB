@@ -1,9 +1,17 @@
 {
-    "baseUrl": "http://localhost:4001/",
+    "baseUrl": "https://content.preview.scm.informagt.com",
     "testFiles": "**/*.feature",
     "ignoreTestFiles": "*.js",
+    "video": false,
     "fixtures":{
-        "Article": "webElements/articleElements.json"
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "blt77ccc4c66a6d7939",
+        "Content-Type": "application/json"
+    },
+    "env":{
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "bltfcce8b8220d0f178",
+        "Content-Type": "application/json"
     },
     "retries": {
         "runMode": 2,

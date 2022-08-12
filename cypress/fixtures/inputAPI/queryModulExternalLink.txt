@@ -1,0 +1,27 @@
+query ExternalLinkModule{
+modular_external_link(asc:"title"){
+    meta{total}
+    items{
+      title
+      contentTypeUid
+      ctaButton{
+        ctaButtonUrl
+        ctaButtonText
+      }
+      externalLinks{
+        title
+        mobileHeadline
+        featuredImageGroup{
+          featuredImage{url}
+          featuredImageCredit
+          featuredImageCaption
+        }
+        termSelector{
+          primaryTerm
+          secondaryTerm
+        }
+      }
+      moduleLabel
+    }
+  }
+}

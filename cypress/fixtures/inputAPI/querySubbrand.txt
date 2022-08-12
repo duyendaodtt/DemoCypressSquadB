@@ -1,0 +1,15 @@
+query Creator{
+  all_subbrand(
+    asc: "title"
+  ){
+    meta{total}
+    items{
+      title
+      url
+     	subbrandLogoGroup{
+        subbrandImage{url}
+        subbrandImageAltText
+      }
+    }
+  }
+}

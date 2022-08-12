@@ -1,0 +1,22 @@
+query ContentFormat{
+  all_content_format(asc:"title"){
+    meta{total}
+    items{
+      title
+      uid
+      url
+      updatedAt
+      updatedBy
+      createdAt
+      createdBy
+      locale
+      pageDescription
+      seo{
+        metaTitle
+        metaDescription
+        canonicalUrl
+        noIndex
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 query {
-  all_article {
+  all_document {
     meta {
       total
     }
@@ -16,6 +16,7 @@ query {
       updatedBy
       createdAt
       createdBy
+      contentTypeUid
       contributor {
         title
         uid
@@ -54,7 +55,7 @@ query {
         historyOfPrimaryTerm
         primaryTerm
         primaryTermInRealText
-        #primaryCategoryBelonged
+        primaryCategoryBelonged
         secondaryTerm
       }
       subbrand {
@@ -93,6 +94,13 @@ query {
         metaDescription
         canonicalUrl
         noIndex
+      }
+			document{
+        materialUrl
+        materialTitle
+        materialMultiple{
+          url
+        }
       }
     }
   }

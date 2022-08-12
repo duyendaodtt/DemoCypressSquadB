@@ -1,0 +1,25 @@
+query {
+  all_eln_newsletter {
+    meta {
+      total
+    }
+    items {
+      uid
+      title
+			sampleUrl{
+        href
+        title
+      }
+      updatedAt
+      updatedBy
+      createdAt
+      createdBy
+			frequencyDescription
+      locale
+      newsletterCode
+      newsletterTags
+      newsletterDescription
+      order
+    }
+  }
+}
