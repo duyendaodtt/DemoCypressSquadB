@@ -24,6 +24,21 @@ class SharedObject {
 
   verify_string_exits(string: string) {
     cy.contains(string, { timeout: 20000 }).scrollIntoView()
+  }
+
+  verify_text_visible_by_element(locator: string, text: string) {
+    cy.get(locator, { timeout: 20000 }).then(($el) => {
+      expect($el.text()).to.include(text)
+    })
+  }
+
+  verify_link_by_element(locator: string, text: string) {
+    cy.get(locator, { timeout: 20000 })
+    .should('have.attr', 'href').and('include', text)
+  }
+
+  verify_include_url(url: string) {
+    expect(cy.url().should("include", url));
 }
 
 }

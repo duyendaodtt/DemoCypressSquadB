@@ -1,31 +1,21 @@
-// / <reference types = "Cypress"/>
-
-// import { env } from "process";
-
-
-// export const apiPost = new class APIPost {
-
-//     graphqlPost(requestMethod: string, requestUrl: string, queryBody: any) {
-//         cy.request({
-//             method: requestMethod,
-//             url: requestUrl,
-//             body: {
-//                 query: queryBody
-//             }
-//         }).then((res) => {
-//             cy.wrap(res.status).as('status');
-//             cy.wrap(res.headers).as('headers');
-//             cy.wrap(res.body).as('body');
-//         }).as('req');
-//     }
-// }
-
-// / <reference types = "Cypress"/>
-
-import { env } from "process";
-
 
 export const apiPost = new class APIPost {
+
+    updateEntry(entry: any, uid: any, body: any) {
+        cy.request({
+            method: 'PUT',
+            url: 'https://eu-api.contentstack.com/v3/content_types/' + entry + '/entries/' + uid,
+            headers: {
+                'api_key': Cypress.env('api_key'),
+                'authtoken': Cypress.env('authtoken'),
+                'Content-Type': 'application/json'
+            },
+            body: body
+        }).then((res) => {
+            console.log(res)
+        }).as('req');
+    }
+
 
     updateBodyAndCreateEntry(entry: any, jsonBody: any) {
         var j1 = JSON.parse(jsonBody);

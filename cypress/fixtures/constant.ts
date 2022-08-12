@@ -5,6 +5,8 @@ class constant {
 
     static path = "https://content.preview.scm.informagt.com/v1/graphql?client_id=master"
     static method_post = "Post"
+    static entry_navigation_main = "navigation_main"
+    static navigation_uid = "blt561b50ff346cb584"
 }
 
 export default constant;

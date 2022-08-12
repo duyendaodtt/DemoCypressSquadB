@@ -2,8 +2,13 @@
     "baseUrl": "https://staging.scmdemo.informagt.com",
     "testFiles":  ["**/*.spec.ts"],
     "video": false,
+    "viewportWidth": 1300,
+    "viewportHeight": 660,
     "chromeWebSecurity": false,
     "fixtures":{
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "blt2373644bb8f66e59",
+        "Content-Type": "application/json"
     },
     "retries": {
         "runMode": 2,
