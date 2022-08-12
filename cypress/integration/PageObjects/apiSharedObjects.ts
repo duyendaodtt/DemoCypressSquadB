@@ -1,8 +1,13 @@
+import cypress from "cypress"
+
+
 class ApiShareObjects {
-    verifyStatusCode(expectedStatusCode: number) {
+    verifyStatusCode(actualStatus: any, expectedStatusCode: number) {
         cy.then(
             // cy.get('@status').should('eq', expectedStatusCode)
-            expect('@status').equal(expectedStatusCode)
+            expect(actualStatus).to.eq(expectedStatusCode)
+            // expect('@status').as
+            
         )
     }
 

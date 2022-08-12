@@ -19,7 +19,7 @@
 const browserify = require('@cypress/browserify-preprocessor');
 const cucumber = require('cypress-cucumber-preprocessor').default;
 const resolve = require('resolve');
-
+let status
 
 module.exports = (on, config) => {
   const options = {
@@ -28,4 +28,24 @@ module.exports = (on, config) => {
   };
 
   on('file:preprocessor', cucumber(options));
+  on('task', {
+    setStatus: (val) => {
+      status = val
+      return status
+    },
+    getStatus: () => {
+      return status
+    },
+    setBody: (val) =>{
+      body = val
+      return body 
+    },
+    getBody: () =>{
+      return body 
+    }
+  });
+
 }
+
+
+
