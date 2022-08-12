@@ -22,10 +22,11 @@ describe(`Smoke test`, () => {
         })
     
         it("Then I expected status code as 200", ()=>{
-            cy.task('getStatus').then((statusCode) => {
-                apiExpected.verifyStatusCode(statusCode,200 )
+            apiExpected.verifyStatusCode(200 )
+            // cy.task('getStatus').then((statusCode) => {
+            //     apiExpected.verifyStatusCode(statusCode,200 )
                 
-            })      
+            // })      
         })
         
         it("And the items list should be not null", () =>{

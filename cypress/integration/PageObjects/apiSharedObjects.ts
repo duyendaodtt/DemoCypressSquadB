@@ -2,19 +2,24 @@ import cypress from "cypress"
 
 
 class ApiShareObjects {
-    verifyStatusCode(actualStatus: any, expectedStatusCode: number) {
-        cy.then(
-            // cy.get('@status').should('eq', expectedStatusCode)
-            expect(actualStatus).to.eq(expectedStatusCode)
-            // expect('@status').as
+    verifyStatusCode(expectedStatusCode: number) {
+        cy.get('@status').then(statusCode =>{
+            cy.wrap(statusCode).then(statusCode =>{
+                expect(statusCode).to.eq(expectedStatusCode)
+            })
             
-        )
+        })
+        return this 
     }
 
     verifyItemsNotNull(itemPath: string) {
         cy.then(
-            expect(itemPath.length).not.equal(0)
+            cy.get('@body').then(body =>{
+                expect(body.itemPath.length).not.equal(0)
+            })
+            
         )
+        return this 
     }
 
 }
