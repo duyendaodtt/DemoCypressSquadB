@@ -86,7 +86,10 @@ query ExternalLinks{
          eventDetails{
           endDate
           eventUrl
-          eventLogo{url}
+          eventLogo{
+          	logoFile { url}
+            eventLogoAlt
+          }
           startDate
           button1Link
           button1Name

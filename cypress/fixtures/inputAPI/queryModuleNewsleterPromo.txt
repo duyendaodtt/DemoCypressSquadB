@@ -1,5 +1,5 @@
 query ModularNewsleterPromo{
-  all_modular_newsletter_promo(asc:"title"){
+  modular_newsletter_promo(asc:"title"){
     meta{total}
     items{
       title
