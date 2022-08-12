@@ -1,0 +1,20 @@
+{
+    "entry": {
+        
+        "frequency_description": "Test Feq Description",
+        "newsletter_code": "24342",
+        "newsletter_description": "Test newsletter",
+        "newsletter_tags": [
+            "variantB"
+        ],
+        "order": [
+            1
+        ],
+        "sample_url": {
+            "title": "newsletter link",
+            "href": "/newsletter-test"
+        },
+        "tags": [],
+        "title": "[Automation Test] Setting Newsletter Promo"
+    }
+}

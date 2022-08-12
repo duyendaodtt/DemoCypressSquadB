@@ -1,6 +1,6 @@
 {
     "entry": {
-        "icon": null,
+        "icon": "blt29c8d7207ab7318a",
         "seo": {
             "meta_title": "a",
             "meta_description": "b",
@@ -16,6 +16,6 @@
         ],
         "title": "[Automation Test] Topic Secondary",
         "topic_page_description": "",
-        "url": "/Auto-topic-secondary"
+        "url": "/Auto1-topic-secondary"
     }
 }

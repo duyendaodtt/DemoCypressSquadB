@@ -1,0 +1,17 @@
+{
+    "entry": {
+        "backend_user_datastore_selector": "DATAHUB",
+        "datahub_user_datastore_properties": {
+            "event_edition_code": "000"
+        },
+        "eloqua_user_datastore_properties": {
+            "newsletter_form_id": "123",
+            "default_entitlement_form_id": "345"
+        },
+        "event_edition_code": "XXX1212",
+        "form_id": "eloquaH",
+        "site_description": "Description of Site",
+        "tags": [],
+        "title": "[Automation Test] Setting ELN Config"
+    }
+}

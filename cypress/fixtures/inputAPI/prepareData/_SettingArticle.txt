@@ -1,7 +1,7 @@
 {
     "entry": {
         "article_display_settings": {
-            "article_template": "One-column"
+            "article_template": "one_column"
         },
         "modules": {
             "module_blocks": [

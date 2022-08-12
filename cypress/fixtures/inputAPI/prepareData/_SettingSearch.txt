@@ -1,0 +1,13 @@
+{
+    "entry": {
+        "boost_matching_author": 10,
+        "boost_matching_content": 3,
+        "boost_matching_phrase": 3,
+        "boost_matching_tags": 2,
+        "boost_matching_title": 4,
+        "search_display_ranking_score": true,
+        "search_must_contain_all_words": true,
+        "tags": [],
+        "title": "[Automation Test] Setting Search"
+    }
+}

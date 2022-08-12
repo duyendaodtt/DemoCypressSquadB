@@ -1,0 +1,157 @@
+{
+    "entry": {
+        "main_menu": {
+            "main_navigation_reference": [
+                {
+                    "uid": "blt561b50ff346cb584",
+                    "_content_type_uid": "navigation_main"
+                }
+            ],
+            "additional_sections": [
+                {
+                    "title": "Industry News",
+                    "_metadata": {
+                        "uid": "cs76869065fd170a16"
+                    },
+                    "section_link": [
+                        {
+                            "title": "Executive Moves",
+                            "_metadata": {
+                                "uid": "cs4d118336e088e38a"
+                            },
+                            "url": "/industry-news/executive-moves",
+                            "reference_link": [
+                                {
+                                    "uid": "blt5ddabbb0504a37d1",
+                                    "_content_type_uid": "topic_secondary"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Agency Appointments",
+                            "_metadata": {
+                                "uid": "cs8f591f2127fe45be"
+                            },
+                            "url": "/industry-news/agency-appointments",
+                            "reference_link": [
+                                {
+                                    "uid": "blte1bbc9d2c11d1280",
+                                    "_content_type_uid": "topic_tertiary"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "registration_social_menu": {
+            "registration_social": {
+                "statement_text": "Gain easy access to downloads, webinars, magazine articles, and more!"
+            },
+            "social_networks": {
+                "title": "Follow Us",
+                "section_link": [
+                    {
+                        "title": "Facebook",
+                        "_metadata": {
+                            "uid": "csb3838b6fe4fe396e"
+                        },
+                        "url": "https://www.facebook.com/licensemag"
+                    },
+                    {
+                        "title": "LinkedIn",
+                        "_metadata": {
+                            "uid": "csec6ad12294bad311"
+                        },
+                        "url": "https://www.linkedin.com/showcase/ubm-license-global/"
+                    },
+                    {
+                        "title": "Twitter",
+                        "_metadata": {
+                            "uid": "csf78777e8055557c5"
+                        },
+                        "url": "https://twitter.com/licensemag"
+                    },
+                    {
+                        "title": "Instagram",
+                        "_metadata": {
+                            "uid": "csec1e7109af0232ce"
+                        },
+                        "url": "https://www.instagram.com/licenseglobal/"
+                    }
+                ]
+            },
+            "additional_sections": [
+                {
+                    "title": "Communicate",
+                    "_metadata": {
+                        "uid": "csbae9c836a20da6ee"
+                    },
+                    "section_link": [
+                        {
+                            "title": "title section link",
+                            "_metadata": {
+                                "uid": "cs2f345fc3f6aa397f"
+                            },
+                            "url": "/section-link-test",
+                            "reference_link": [
+                                {
+                                    "uid": "blt4d0fa3b40ebbbcaa",
+                                    "_content_type_uid": "topic_primary"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "secondary_menu": {
+            "child_sections": [
+                {
+                    "section_title": "Browse",
+                    "_metadata": {
+                        "uid": "csb77e15ccbdcf1e61"
+                    },
+                    "section_link": [
+                        {
+                            "title": "browser manual link",
+                            "_metadata": {
+                                "uid": "csb82f3a7265eeb8d5"
+                            },
+                            "url": "/browser-link",
+                            "reference_link": [
+                                {
+                                    "uid": "blt1ad1bf21441ad1cf",
+                                    "_content_type_uid": "series"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section_title": "Get in Touch",
+                    "_metadata": {
+                        "uid": "csf8c16dcd1db0447a"
+                    },
+                    "section_link": [
+                        {
+                            "title": "test1",
+                            "_metadata": {
+                                "uid": "cs4a83bf1c0d6be3a9"
+                            },
+                            "url": "/test",
+                            "reference_link": [
+                                {
+                                    "uid": "blt61ff16925e47ea9c",
+                                    "_content_type_uid": "topic_secondary"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [],
+        "title": "[Automation Test] Navigation Megamenu"
+    }
+}

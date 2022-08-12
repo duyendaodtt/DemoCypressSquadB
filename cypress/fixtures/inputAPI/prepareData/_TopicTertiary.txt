@@ -1,6 +1,6 @@
 {
     "entry": {
-        "icon": null,
+        "icon": "blt29c8d7207ab7318a",
         "seo": {
             "meta_title": "a",
             "meta_description": "b",

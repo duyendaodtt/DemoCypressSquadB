@@ -8,9 +8,699 @@
     "uri": "graphql.feature",
     "elements": [
       {
+        "id": "test-query-graphql;api-e2e---prepare-data-keyword",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "API E2E - Prepare Data keyword",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create keyword entry with a body from keywords.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I publish this keyword",
+            "result": {
+              "status": "passed",
+              "duration": 892000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-data-contributor",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "API E2E - Prepare Data contributor",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create contributor entry with a body from contributor.txt",
+            "result": {
+              "status": "passed",
+              "duration": 901000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I publish this contributor",
+            "result": {
+              "status": "passed",
+              "duration": 882000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-data-subbrand",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "API E2E - Prepare Data subbrand",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create subbrand entry with a body from subbrand.txt",
+            "result": {
+              "status": "passed",
+              "duration": 908000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I publish this subbrand",
+            "result": {
+              "status": "passed",
+              "duration": 865000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-data-content_format",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "API E2E - Prepare Data content_format",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create content_format entry with a body from contentformat.txt",
+            "result": {
+              "status": "passed",
+              "duration": 914000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I publish this content_format",
+            "result": {
+              "status": "passed",
+              "duration": 870000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--article",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "API E2E - Create Content Type For  article",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create article entry with body from _Article.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this article",
+            "result": {
+              "status": "passed",
+              "duration": 894000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--document",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "API E2E - Create Content Type For  document",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create document entry with body from _Document.txt",
+            "result": {
+              "status": "passed",
+              "duration": 954000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this document",
+            "result": {
+              "status": "passed",
+              "duration": 898000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--basic_page",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "API E2E - Create Content Type For  basic_page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create basic_page entry with body from _BasicPage.txt",
+            "result": {
+              "status": "passed",
+              "duration": 955000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this basic_page",
+            "result": {
+              "status": "passed",
+              "duration": 890000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--event",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "API E2E - Create Content Type For  event",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create event entry with body from _Event.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this event",
+            "result": {
+              "status": "passed",
+              "duration": 896000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--podcast",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "API E2E - Create Content Type For  podcast",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create podcast entry with body from _Podcast.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1001000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this podcast",
+            "result": {
+              "status": "passed",
+              "duration": 893000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--video",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "API E2E - Create Content Type For  video",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create video entry with body from _Video.txt",
+            "result": {
+              "status": "passed",
+              "duration": 998000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this video",
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--magazine",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "API E2E - Create Content Type For  magazine",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create magazine entry with body from _Magazine.txt",
+            "result": {
+              "status": "passed",
+              "duration": 942000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this magazine",
+            "result": {
+              "status": "passed",
+              "duration": 886000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--external_link",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "API E2E - Create Content Type For  external_link",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create external_link entry with body from _ExternalLink.txt",
+            "result": {
+              "status": "passed",
+              "duration": 947000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this external_link",
+            "result": {
+              "status": "passed",
+              "duration": 890000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--country",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "API E2E - Create Content Type For  country",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create country entry with body from _Country.txt",
+            "result": {
+              "status": "passed",
+              "duration": 942000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this country",
+            "result": {
+              "status": "passed",
+              "duration": 892000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--series",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "API E2E - Create Content Type For  series",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create series entry with body from _SeriesTaxonomy.txt",
+            "result": {
+              "status": "passed",
+              "duration": 941000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this series",
+            "result": {
+              "status": "passed",
+              "duration": 886000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--module_content_spotlight",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "API E2E - Create Content Type For  module_content_spotlight",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create module_content_spotlight entry with body from _ModuleContentSpotlight",
+            "result": {
+              "status": "passed",
+              "duration": 949000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this module_content_spotlight",
+            "result": {
+              "status": "passed",
+              "duration": 872000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--module_external_links",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "API E2E - Create Content Type For  module_external_links",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create module_external_links entry with body from _ModuleExternalLink.txt",
+            "result": {
+              "status": "passed",
+              "duration": 955000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this module_external_links",
+            "result": {
+              "status": "passed",
+              "duration": 876000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--module_featured",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "API E2E - Create Content Type For  module_featured",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create module_featured entry with body from _ModuleFeatured.txt",
+            "result": {
+              "status": "passed",
+              "duration": 965000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this module_featured",
+            "result": {
+              "status": "passed",
+              "duration": 882000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--module_magazine_promo",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "API E2E - Create Content Type For  module_magazine_promo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create module_magazine_promo entry with body from _ModuleMagazinePromo.txt",
+            "result": {
+              "status": "passed",
+              "duration": 912000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this module_magazine_promo",
+            "result": {
+              "status": "passed",
+              "duration": 864000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--module_newsletter_promo_cta",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "API E2E - Create Content Type For  module_newsletter_promo_cta",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create module_newsletter_promo_cta entry with body from _ModuleNewletterPromo.txt",
+            "result": {
+              "status": "passed",
+              "duration": 926000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this module_newsletter_promo_cta",
+            "result": {
+              "status": "passed",
+              "duration": 863000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--sponsor",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "API E2E - Create Content Type For  sponsor",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create sponsor entry with body from _Sponsor.txt",
+            "result": {
+              "status": "passed",
+              "duration": 921000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this sponsor",
+            "result": {
+              "status": "passed",
+              "duration": 876000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--home_page",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "API E2E - Create Content Type For  home_page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create home_page entry with body from _Homepage.txt",
+            "result": {
+              "status": "passed",
+              "duration": 927000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this home_page",
+            "result": {
+              "status": "passed",
+              "duration": 884000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--event_promo",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "API E2E - Create Content Type For  event_promo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create event_promo entry with body from _ModuleEventPromo.txt",
+            "result": {
+              "status": "passed",
+              "duration": 921000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this event_promo",
+            "result": {
+              "status": "passed",
+              "duration": 882000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---create-content-type-for--module_flexible_content_list",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "API E2E - Create Content Type For  module_flexible_content_list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I update and create module_flexible_content_list entry with body from _ModuleContentCards.txt",
+            "result": {
+              "status": "passed",
+              "duration": 945000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I publish this module_flexible_content_list",
+            "result": {
+              "status": "passed",
+              "duration": 896000000
+            }
+          }
+        ]
+      },
+      {
         "id": "test-query-graphql;api-e2e---prepare-data-topics",
         "keyword": "Scenario",
-        "line": 80,
+        "line": 48,
         "name": "API E2E - Prepare Data Topics",
         "tags": [],
         "type": "scenario",
@@ -18,12 +708,671 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 77,
-            "name": "I create _TopicTertiary.txt",
+            "line": 49,
+            "name": "I create topic entries",
             "result": {
-              "status": "failed",
-              "duration": 73000000,
-              "error_message": "ReferenceError: file is not defined\n    at exports.apiPost.APIPost.createTopics (https://content.preview.scm.informagt.com/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:212:59)\n    at Context.eval (https://content.preview.scm.informagt.com/__cypress/tests?p=cypress\\integration\\features\\graphql.feature:330:27)\nFrom previous event:\n    at Context.thenFn (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:160442:63)\n    at Context.then (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:160894:21)\n    at Context.<anonymous> (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:178413:19)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:177208:15\nFrom previous event:\n    at CommandQueue.runCommand (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:177187:17)\n    at next (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:177341:19)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:177370:16\nFrom previous event:\n    at next (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:177341:39)\nFrom previous event:\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:192198:77\nFrom previous event:\n    at CommandQueue.run (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:192193:21)\n    at CommandQueue.run (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:177404:15)\n    at cy.<computed> [as then] (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:178452:18)\n    at runnable.fn (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:178680:19)\n    at callFn (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:129491:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:129478:7)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:185755:30\nFrom previous event:\n    at Object.onRunnableRun (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:185740:19)\n    at $Cypress.action (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:174847:28)\n    at Runnable.run (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:183404:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:130150:10)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:130276:12\n    at next (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:130059:14)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:130069:7\n    at next (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:129971:14)\n    at Hook.<anonymous> (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:130032:7)\n    at next (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:185650:24)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:185679:13\nFrom previous event:\n    at onNext (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:185676:59)\n    at done (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:129431:5)\n    at callFn (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:129514:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:129478:7)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:185755:30\nFrom previous event:\n    at Object.onRunnableRun (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:185740:19)\n    at $Cypress.action (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:174847:28)\n    at Runnable.run (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:183404:13)\n    at next (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:129993:10)\n    at https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:130037:5\n    at timeslice (https://content.preview.scm.informagt.com/__cypress/runner/cypress_runner.js:123963:27)"
+              "status": "passed",
+              "duration": 5519000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-for-single-entry-settings_article",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "API E2E - Prepare for single entry settings_article",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I create settings_article entry from _SettingArticle.txt",
+            "result": {
+              "status": "passed",
+              "duration": 894000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-for-single-entry-eln_config",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "API E2E - Prepare for single entry eln_config",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I create eln_config entry from _SettingELNconfig.txt",
+            "result": {
+              "status": "passed",
+              "duration": 900000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-for-single-entry-eln_newsletter",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "API E2E - Prepare for single entry eln_newsletter",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I create eln_newsletter entry from _SettingNewsletterPromo.txt",
+            "result": {
+              "status": "passed",
+              "duration": 901000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-for-single-entry-settings_search",
+        "keyword": "Scenario",
+        "line": 58,
+        "name": "API E2E - Prepare for single entry settings_search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I create settings_search entry from _SettingSearch.txt",
+            "result": {
+              "status": "passed",
+              "duration": 883000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-for-single-entry-navigation_footer",
+        "keyword": "Scenario",
+        "line": 59,
+        "name": "API E2E - Prepare for single entry navigation_footer",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I create navigation_footer entry from _NavigationFooter.txt",
+            "result": {
+              "status": "passed",
+              "duration": 919000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-for-single-entry-navigation_main",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "API E2E - Prepare for single entry navigation_main",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I create navigation_main entry from _NavigationMain.txt",
+            "result": {
+              "status": "passed",
+              "duration": 918000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---prepare-for-single-entry-mega_menu",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "API E2E - Prepare for single entry mega_menu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I create mega_menu entry from _NavigationMegaMenu.txt",
+            "result": {
+              "status": "passed",
+              "duration": 911000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-article",
+        "keyword": "Scenario",
+        "line": 67,
+        "name": "API E2E - Delete entry article",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete article entry with uid from Article.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1067000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-document",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "API E2E - Delete entry document",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete document entry with uid from Document.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1062000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-basic_page",
+        "keyword": "Scenario",
+        "line": 69,
+        "name": "API E2E - Delete entry basic_page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete basic_page entry with uid from basic_page.txt",
+            "result": {
+              "status": "passed",
+              "duration": 996000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-event",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "API E2E - Delete entry event",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete event entry with uid from Event.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1163000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-podcast",
+        "keyword": "Scenario",
+        "line": 71,
+        "name": "API E2E - Delete entry podcast",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete podcast entry with uid from Podcast.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1223000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-video",
+        "keyword": "Scenario",
+        "line": 72,
+        "name": "API E2E - Delete entry video",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete video entry with uid from Video.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1047000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-keyword",
+        "keyword": "Scenario",
+        "line": 73,
+        "name": "API E2E - Delete entry keyword",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete keyword entry with uid from keyword.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1042000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-contributor",
+        "keyword": "Scenario",
+        "line": 74,
+        "name": "API E2E - Delete entry contributor",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete contributor entry with uid from contributor.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1002000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-subbrand",
+        "keyword": "Scenario",
+        "line": 75,
+        "name": "API E2E - Delete entry subbrand",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete subbrand entry with uid from subbrand.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1133000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-content_format",
+        "keyword": "Scenario",
+        "line": 76,
+        "name": "API E2E - Delete entry content_format",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete content_format entry with uid from content_format.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1058000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-magazine",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "API E2E - Delete entry magazine",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete magazine entry with uid from magazine.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1035000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-external_link",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "API E2E - Delete entry external_link",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete external_link entry with uid from external_link.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1037000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-country",
+        "keyword": "Scenario",
+        "line": 79,
+        "name": "API E2E - Delete entry country",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete country entry with uid from country.txt",
+            "result": {
+              "status": "passed",
+              "duration": 957000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-series",
+        "keyword": "Scenario",
+        "line": 80,
+        "name": "API E2E - Delete entry series",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete series entry with uid from series.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1028000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-module_content_spotlight",
+        "keyword": "Scenario",
+        "line": 81,
+        "name": "API E2E - Delete entry module_content_spotlight",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete module_content_spotlight entry with uid from module_content_spotlight.txt",
+            "result": {
+              "status": "passed",
+              "duration": 956000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-module_external_links",
+        "keyword": "Scenario",
+        "line": 82,
+        "name": "API E2E - Delete entry module_external_links",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete module_external_links entry with uid from module_external_links.txt",
+            "result": {
+              "status": "passed",
+              "duration": 947000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-module_featured",
+        "keyword": "Scenario",
+        "line": 83,
+        "name": "API E2E - Delete entry module_featured",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete module_featured entry with uid from module_featured.txt",
+            "result": {
+              "status": "passed",
+              "duration": 979000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-module_magazine_promo",
+        "keyword": "Scenario",
+        "line": 84,
+        "name": "API E2E - Delete entry module_magazine_promo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete module_magazine_promo entry with uid from module_magazine_promo.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1031000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-module_newsletter_promo_cta",
+        "keyword": "Scenario",
+        "line": 85,
+        "name": "API E2E - Delete entry module_newsletter_promo_cta",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete module_newsletter_promo_cta entry with uid from module_newsletter_promo_cta.txt",
+            "result": {
+              "status": "passed",
+              "duration": 950000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-sponsor",
+        "keyword": "Scenario",
+        "line": 86,
+        "name": "API E2E - Delete entry sponsor",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete sponsor entry with uid from sponsor.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1060000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-home_page",
+        "keyword": "Scenario",
+        "line": 87,
+        "name": "API E2E - Delete entry home_page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete home_page entry with uid from home_page.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1071000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-event_promo",
+        "keyword": "Scenario",
+        "line": 88,
+        "name": "API E2E - Delete entry event_promo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete event_promo entry with uid from event_promo.txt",
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-module_flexible_content_list",
+        "keyword": "Scenario",
+        "line": 89,
+        "name": "API E2E - Delete entry module_flexible_content_list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete module_flexible_content_list entry with uid from module_flexible_content_list.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1050000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-topic_primary",
+        "keyword": "Scenario",
+        "line": 90,
+        "name": "API E2E - Delete entry topic_primary",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete topic_primary entry with uid from topic_primary.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1045000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-topic_tertiary",
+        "keyword": "Scenario",
+        "line": 91,
+        "name": "API E2E - Delete entry topic_tertiary",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete topic_tertiary entry with uid from topic_tertiary.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1023000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-query-graphql;api-e2e---delete-entry-topic_secondary",
+        "keyword": "Scenario",
+        "line": 92,
+        "name": "API E2E - Delete entry topic_secondary",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I delete topic_secondary entry with uid from topic_secondary.txt",
+            "result": {
+              "status": "passed",
+              "duration": 1179000000
             }
           }
         ]

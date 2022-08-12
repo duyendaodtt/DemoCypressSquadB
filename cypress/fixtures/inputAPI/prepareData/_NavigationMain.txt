@@ -1,0 +1,204 @@
+{
+    "entry":{
+    "informa_bar": {
+        "informa_bar_enabled": false,
+        "informa_bar_left_section": {
+            "informa_bar_left_description": "Left Section",
+            "informa_bar_manual_link": [
+                {
+                    "title": "",
+                    "_metadata": {
+                        "uid": "cs96f48c3edae94d12"
+                    },
+                    "url": ""
+                }
+            ]
+        },
+        "informa_bar_right_section": {
+            "informa_bar_right_description": "Right Sectiogfdgfdgfdn"
+        }
+    },
+    "main_navigation": [
+        {
+            "main_submenu": {
+                "main_submenu_title": "Resources",
+                "_metadata": {
+                    "uid": "cs8dad209baa6d4d9d"
+                },
+                "main_section_link": [
+                    {
+                        "title": "abc",
+                        "_metadata": {
+                            "uid": "cs961619fe5028c556"
+                        },
+                        "url": "https://google.com/"
+                    }
+                ],
+                "main_see_all_link": {
+                    "title": "abcdf",
+                    "url": "https://gooweeegle1234.com/"
+                }
+            }
+        },
+        {
+            "main_submenu": {
+                "main_submenu_title": "Entertainment",
+                "_metadata": {
+                    "uid": "cs20f85df1cf5823f0"
+                },
+                "main_section_link": [
+                    {
+                        "title": "ff",
+                        "_metadata": {
+                            "uid": "csedbf015c8e0da88d"
+                        },
+                        "url": "https://google.com/"
+                    },
+                    {
+                        "title": "ff",
+                        "_metadata": {
+                            "uid": "csfac7da02204e9fab"
+                        },
+                        "url": "https://google.com/"
+                    },
+                    {
+                        "title": "as",
+                        "_metadata": {
+                            "uid": "cs563d70b001d72347"
+                        },
+                        "url": "https://google.com/"
+                    }
+                ],
+                "main_see_all_link": {
+                    "title": "fff",
+                    "url": "https://googgggggle.com/"
+                }
+            }
+        },
+        {
+            "topic_link": {
+                "reference": [
+                    {
+                        "uid": "blt9e52858b4e247ef9",
+                        "_content_type_uid": "topic_secondary"
+                    }
+                ],
+                "_metadata": {
+                    "uid": "cs6513f733016314ef"
+                }
+            }
+        },
+        {
+            "topic_link": {
+                "reference": [
+                    {
+                        "uid": "blt1c7dbde26b684846",
+                        "_content_type_uid": "topic_tertiary"
+                    }
+                ],
+                "_metadata": {
+                    "uid": "csab3e203f3bf31c10"
+                }
+            }
+        },
+        {
+            "keyword_link": {
+                "reference": [
+                    {
+                        "uid": "blta795ad9584b51ed5",
+                        "_content_type_uid": "keyword"
+                    }
+                ],
+                "_metadata": {
+                    "uid": "cs66c7bb16f84ac449"
+                }
+            }
+        },
+        {
+            "manual_link": {
+                "title": "abc",
+                "_metadata": {
+                    "uid": "csf8b506d37c708cab"
+                },
+                "url": "https://github.com/"
+            }
+        }
+    ],
+    "pillar_navigation": {
+        "pillar_navigation_enabled": false,
+        "menu_items": [
+            {
+                "topic_link": [
+                    {
+                        "uid": "blt4d0fa3b40ebbbcaa",
+                        "_content_type_uid": "topic_primary"
+                    }
+                ],
+                "_metadata": {
+                    "uid": "csb5ce97fa265048e8"
+                },
+                "keyword_link": [
+                    {
+                        "uid": "blt1d4210b9a978d545",
+                        "_content_type_uid": "keyword"
+                    }
+                ],
+                "series_link": [
+                    {
+                        "uid": "bltb0de71a036cd0471",
+                        "_content_type_uid": "series"
+                    }
+                ],
+                "manual_link": {
+                    "title": "",
+                    "url": ""
+                }
+            },
+            {
+                "topic_link": [],
+                "_metadata": {
+                    "uid": "cs26185caa339db40c"
+                },
+                "keyword_link": [
+                    {
+                        "uid": "blt26c76752f72bbbf9",
+                        "_content_type_uid": "keyword"
+                    }
+                ],
+                "series_link": [
+                    {
+                        "uid": "bltb0de71a036cd0471",
+                        "_content_type_uid": "series"
+                    }
+                ],
+                "manual_link": {
+                    "title": "",
+                    "url": ""
+                }
+            },
+            {
+                "topic_link": [],
+                "_metadata": {
+                    "uid": "csfc966f69580e7420"
+                },
+                "keyword_link": [],
+                "series_link": [
+                    {
+                        "uid": "blt6feae921afbf6fa9",
+                        "_content_type_uid": "series"
+                    }
+                ],
+                "manual_link": {
+                    "title": "instance 3",
+                    "url": ""
+                }
+            }
+        ]
+    },
+    "site_logo_override": {
+        "site_logo":"bltb9ee6c4710017940",
+        "site_logo_image_alt_text": "MasterStack gfgf"
+    },
+    "tags": [],
+    "title": "[Automation Test] Navigation Main"
+}}

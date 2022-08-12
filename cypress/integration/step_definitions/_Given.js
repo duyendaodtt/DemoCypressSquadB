@@ -83,9 +83,14 @@ Given(/^I delete (.*) entry with uid from (.*)$/, (entryName, filename) => {
   })
 })
 
-Given(/^I create (.*)$/, (file) => {
-  var newpath = '/inputAPI/prepareData/' + file
+Given(/^I create topic entries$/, () => {
+   apiPost.createTopics();
+});
+
+Given(/^I create (.*) entry from (.*)$/, (entryName, filename) => {
+  var newpath = '/inputAPI/prepareData/' + filename
   cy.fixture(newpath).then((body) => {
-    apiPost.createTopics(body)
+      apiPost.createSingleEntryItem(entryName, body);
+
   })
 });

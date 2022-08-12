@@ -122,6 +122,22 @@ export const apiPost = new class APIPost {
         }).as('req');
     }
 
+    getAllEntries(entry, body) {
+        cy.api({
+            method: 'GET',
+            url: 'https://eu-api.contentstack.com/v3/content_types/' + entry + '/entries?locale=en-us',
+            headers: {
+                'api_key': Cypress.env('api_key'),
+                'authtoken': Cypress.env('authtoken'),
+                'Content-Type': 'application/json'
+            }
+        }).then((res) => {
+            cy.wrap(res.status).as('status');
+            cy.wrap(res.headers).as('headers');
+            cy.wrap(res.body).as('body');
+        }).as('req');
+    }
+
 
     postPublishUID(entry, uid) {
         cy.api({
@@ -219,16 +235,56 @@ export const apiPost = new class APIPost {
         }).as('graphreq');
     }
 
-    createTopics(jsonBody) {
-        var jtertiary = ""
-        var jsecondary = ""
-        var jprimary = ""
-        
-
-        this.postCreateEntry('topic_tertiary', )
-        const contents = []
-        cy.readFile('./cypress/fixtures/inputAPI/uids/' + file).then((data) => {
-        contents.push(data)
+    createTopics() {
+        cy.readFile('./cypress/fixtures/inputAPI/prepareData/_TopicTertiary.txt').then((str)=>{
+            this.postCreateEntry('topic_tertiary', str);
+            cy.readFile('./cypress/fixtures/inputAPI/uids/topic_tertiary.txt').then((uid)=>{
+                cy.log(`published uid `)
+                this.postPublishUID('topic_tertiary',uid);
+            })
         })
+        cy.readFile('./cypress/fixtures/inputAPI/prepareData/_TopicSecondary.txt').then((str)=>{
+            cy.readFile('./cypress/fixtures/inputAPI/uids/topic_tertiary.txt').then((uid)=>{
+                let a = JSON.parse(str)
+                a.entry.tertiary_topics[0].uid = uid;
+                this.postCreateEntry('topic_secondary', a);
+                cy.readFile('./cypress/fixtures/inputAPI/uids/topic_secondary.txt').then((uid)=>{
+                    cy.log(`published uid `)
+                    this.postPublishUID('topic_secondary',uid);
+                })
+            })
+        })
+        cy.readFile('./cypress/fixtures/inputAPI/prepareData/_TopicPrimary.txt').then((str)=>{
+            cy.readFile('./cypress/fixtures/inputAPI/uids/topic_secondary.txt').then((uid)=>{
+                let a = JSON.parse(str)
+                a.entry.secondary_topics[0].uid = uid;
+                this.postCreateEntry('topic_primary', a);
+                cy.readFile('./cypress/fixtures/inputAPI/uids/topic_primary.txt').then((uid)=>{
+                    cy.log(`published uid `)
+                    this.postPublishUID('topic_primary',uid);
+                })
+            })
+        })
+
+    }
+
+    createSingleEntryItem(entryName, body){
+        this.getAllEntries(entryName);
+        var count = "";
+        cy.get('@body').then((responseBody) => {
+            count = responseBody.entries.length
+            cy.log(count);
+            if(count === 0){
+                cy.log('Create new');
+                this.postCreateEntry(entryName, body);
+                cy.readFile('./cypress/fixtures/inputAPI/uids/'+entryName+'.txt').then((uid)=>{
+                    cy.log(`published ${entryName} with uid is ${uid} `)
+                    this.postPublishUID(entryName,uid);
+                })
+            }
+            else {
+                cy.log('Already has entry, query successful!')
+            }
+        });
     }
 }

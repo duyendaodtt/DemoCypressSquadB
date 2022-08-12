@@ -21,8 +21,8 @@
             "no_index": false
         },
         "tags": [],
-        "title": "[Automation Test] - Topic Primary",
+        "title": "[Automation Test] Topic Primary",
         "topic_page_description": "[Automation Test] - Topic Primary 1",
-        "url": "/Automation-Test-Topic-Primary"
+        "url": "/Automation-Test1-Topic-Primary"
     }
 }

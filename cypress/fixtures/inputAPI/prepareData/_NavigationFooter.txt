@@ -1,0 +1,166 @@
+{
+    "entry": {
+        "footer_logo": {
+            "image_alt_text": "title",
+            "image": "bltd80121967d547a70"
+        },
+        "footer_sections": [
+            {
+                "title": "Informa Copyrighter",
+                "_metadata": {
+                    "uid": "csca44c3f4a1089e26"
+                },
+                "section_type": "5",
+                "editable_links": [],
+                "fixed_links": [
+                    {
+                        "reference_topic": [
+                            {
+                                "uid": "bltcf25ee2fb54470d8",
+                                "_content_type_uid": "topic_tertiary"
+                            }
+                        ],
+                        "_metadata": {
+                            "uid": "csc37231cf9459eb11"
+                        },
+                        "open_in_new_tab": true
+                    },
+                    {
+                        "reference_topic": [
+                            {
+                                "uid": "blt174c3085210ef791",
+                                "_content_type_uid": "topic_tertiary"
+                            }
+                        ],
+                        "_metadata": {
+                            "uid": "cs0cba78a25aa2024d"
+                        },
+                        "open_in_new_tab": false
+                    },
+                    {
+                        "reference_topic": [
+                            {
+                                "uid": "bltec635cb3ca0ed6a8",
+                                "_content_type_uid": "topic_secondary"
+                            }
+                        ],
+                        "_metadata": {
+                            "uid": "csb91077fb61b1d1a0"
+                        },
+                        "open_in_new_tab": true
+                    },
+                    {
+                        "reference_topic": [
+                            {
+                                "uid": "bltef2841149c09f41c",
+                                "_content_type_uid": "topic_primary"
+                            }
+                        ],
+                        "_metadata": {
+                            "uid": "cs546e394b244d22e3"
+                        },
+                        "open_in_new_tab": false
+                    },
+                    {
+                        "reference_topic": [
+                            {
+                                "uid": "blt26c76752f72bbbf9",
+                                "_content_type_uid": "keyword"
+                            }
+                        ],
+                        "_metadata": {
+                            "uid": "cs85aa175f277e6f18"
+                        },
+                        "open_in_new_tab": false
+                    }
+                ]
+            },
+            {
+                "title": "sns copyrighter",
+                "_metadata": {
+                    "uid": "cs0046d8f40f1d21db"
+                },
+                "section_type": "2",
+                "editable_links": [],
+                "fixed_links": [
+                    {
+                        "reference_topic": [
+                            {
+                                "uid": "blt735428ad3b91f1eb",
+                                "_content_type_uid": "topic_tertiary"
+                            }
+                        ],
+                        "open_in_new_tab": false,
+                        "_metadata": {
+                            "uid": "cs3292e4d8c5eac46f"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Section 3 brand network",
+                "_metadata": {
+                    "uid": "cs795d7b92d89d7e02"
+                },
+                "section_type": "4",
+                "editable_links": [
+                    {
+                        "link": {
+                            "title": "brand link 1",
+                            "href": "/brand-link-1"
+                        },
+                        "_metadata": {
+                            "uid": "cs5485e7372669ee51"
+                        },
+                        "open_in_new_tab": false,
+                        "image": "blt29c8d7207ab7318a",
+                        "image_alt_text": ""
+                    }
+                ],
+                "fixed_links": [
+                    {
+                        "reference_topic": [
+                            {
+                                "uid": "blt735428ad3b91f1eb",
+                                "_content_type_uid": "topic_tertiary"
+                            }
+                        ],
+                        "_metadata": {
+                            "uid": "cs71f9a804fb2ff3fe"
+                        },
+                        "open_in_new_tab": false
+                    }
+                ]
+            }
+        ],
+        "informa_footer_bar": {
+            "brand_logo": {
+                "image": "blt6893e4b1f4992e39",
+                "image_alt_text": "brand logo txt",
+                "link": {
+                    "title": "test",
+                    "href": "/title-img"
+                },
+                "open_in_new_tab": true
+            },
+            "division_legal": {
+                "title": "vivision",
+                "section_type": "5",
+                "editable_links": [
+                    {
+                        "link": {
+                            "title": "instance 1",
+                            "href": "/instance-1"
+                        },
+                        "_metadata": {
+                            "uid": "cs7432d7fd70d9743a"
+                        },
+                        "open_in_new_tab": false
+                    }
+                ]
+            }
+        },
+        "tags": [],
+        "title": "[Automation Test] Navigation Footer"
+    }
+}
