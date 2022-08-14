@@ -21,8 +21,8 @@ describe("Given I updated data navigation on Content Stack", () => {
         }).then(() => {
             cy.get('@req').then(dataNav => {
                 cy.wrap(dataNav).then(item => {
-                    const { mainMenuItems } = item.data["navigation"]
-                   data = [...mainMenuItems]
+                    const { sideNavSections } = item.data["navigation"]
+                   data = [...sideNavSections]
                 })
             })
         })
