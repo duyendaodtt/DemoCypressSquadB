@@ -39,7 +39,15 @@ describe("Given I updated data navigation on Content Stack", () => {
         })
 
         it("AND Verify click ability of items in 'Related Topics' of Navigation bar", () => {
-            home_page.Verify_click_ability_of_items_Nav_sub_menu(data.data.navigation.mainMenuItems)
+            home_page.Verify_click_ability_of_items_in_related_topics(data.data.navigation.mainMenuItems)
+        })
+
+        it("AND Verify Related In section of Navigation sub menu", () => {
+            home_page.Verify_related_in_of_Nav_sub_menu(data.data.navigation.mainMenuItems)
+        })
+
+        it("AND Verify click ability of items in 'Related In' of Navigation bar", () => {
+            home_page.Verify_click_ability_of_items_in_related_in(data.data.navigation.mainMenuItems)
         })
     })
 })
