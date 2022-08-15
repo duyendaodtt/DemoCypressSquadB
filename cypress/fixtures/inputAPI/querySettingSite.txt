@@ -1,14 +1,31 @@
-query SiteSetting{
-  settings_site{
+query {
+  settings_article {
     title
     uid
+    articleDisplaySettings {
+      articleTemplate
+    }
     createdAt
     createdBy
-    updatedAt
-    updatedBy
-    placeholderImage{
-      article{url}
-      contributor{url}
+    locale
+    modules {
+      moduleBlocks {
+        title
+        uid
+      }
+    }
+    recommendations {
+      recommendationsTitle {
+        categoryIdBibblio
+        title
+      }
+      serviceSelect
+    }
+    sidebarConfiguration {
+      rightComponents {
+        uid
+      }
+      title
     }
   }
 }
