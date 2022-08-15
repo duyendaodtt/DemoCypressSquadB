@@ -1,14 +1,14 @@
 class locator {
     static footer = "[data-module='footer']"
     static icon_open_mega_menu = "[aria-label='Open Mega menu']"
-    static sub_menu_title(index: string) {
+    static sub_menu_title(index: number) {
         return `[role='menu'] > div:nth-child(${index}) [role="menuitem"] span`
     }
-    static sub_menu_item_title(index: string) {
+    static sub_menu_item_title(index: number) {
         return `.block  [data-module="sub-menu"] ul li:nth-child(${index}) p`
     }
 
-    static sub_menu_item_url(index: string) {
+    static sub_menu_item_url(index: number) {
         return `.block  [data-module="sub-menu"] ul li:nth-child(${index}) a`
     }
 

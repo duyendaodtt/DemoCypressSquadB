@@ -1,7 +1,7 @@
 import constant from "../../fixtures/constant";
 import { apiPost } from "../PageObjects/apiSend";
 import HomePage from "../PageObjects/home_page"
-let data = []
+let data = require('../../fixtures/inputAPI/navigation_test.json')
 Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
 })
@@ -22,7 +22,7 @@ describe("Given I updated data navigation on Content Stack", () => {
             cy.get('@req').then(dataNav => {
                 cy.wrap(dataNav).then(item => {
                     const { mainMenuItems } = item.data["navigation"]
-                   data = [...mainMenuItems]
+                //    data = [...mainMenuItems]
                 })
             })
         })
@@ -33,13 +33,13 @@ describe("Given I updated data navigation on Content Stack", () => {
         cy.visit("/", { timeout: 20000 });
     });
 
-    describe("WHEN I go to the navigation on homepage", () => {
-        it("THEN Verify elements all of Nav sub menu", () => {
-            home_page.Verify_elements_of_Nav_sub_menu(data)
+    describe("When I open the navigation on Homepage", () => {
+        it("Then Verify all elements of Nav sub menu", () => {
+            home_page.Verify_elements_of_Nav_sub_menu(data.data.navigation.mainMenuItems)
         })
 
-        it("AND Check click ability items in Related Topics of Navigation bar", () => {
-            home_page.Verify_click_ability_items_of_Nav_sub_menu(data)
+        it("AND Check ability of clicking item on Related Topics of Navigation bar", () => {
+            home_page.Verify_click_ability_items_of_Nav_sub_menu(data.data.navigation.mainMenuItems)
         })
     })
 })
