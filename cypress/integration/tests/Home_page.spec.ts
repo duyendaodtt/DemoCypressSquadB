@@ -34,12 +34,12 @@ describe("Given I updated data navigation on Content Stack", () => {
     });
 
     describe("When I open the navigation on Homepage", () => {
-        it("Then Verify all elements of Nav sub menu", () => {
-            home_page.Verify_elements_of_Nav_sub_menu(data.data.navigation.mainMenuItems)
+        it("Then Verify Related Topics section of Navigation sub menu", () => {
+            home_page.Verify_related_topics_of_Nav_sub_menu(data.data.navigation.mainMenuItems)
         })
 
-        it("AND Check ability of clicking item on Related Topics of Navigation bar", () => {
-            home_page.Verify_click_ability_items_of_Nav_sub_menu(data.data.navigation.mainMenuItems)
+        it("AND Verify click ability of items in 'Related Topics' of Navigation bar", () => {
+            home_page.Verify_click_ability_of_items_Nav_sub_menu(data.data.navigation.mainMenuItems)
         })
     })
 })

@@ -8,7 +8,7 @@ class HomePage extends SharedObject {
         super();
     }
 
-    Verify_elements_of_Nav_sub_menu(mainMenuItems: any) {
+    Verify_related_topics_of_Nav_sub_menu(mainMenuItems: any) {
         mainMenuItems.length > 0 && mainMenuItems.forEach((mainMenu: any, index: number) => {
             console.log(mainMenu)
             this.verify_text_visible_by_element(locator.sub_menu_title(index+1), mainMenu.title)
@@ -27,7 +27,7 @@ class HomePage extends SharedObject {
         return this
     }
 
-    Verify_click_ability_items_of_Nav_sub_menu(mainMenuItems: any) {
+    Verify_click_ability_of_items_Nav_sub_menu(mainMenuItems: any) {
         mainMenuItems.length > 0 && mainMenuItems.forEach((mainMenu: any, index: number) => {
             this.click_element(locator.sub_menu_title(index+1))
             // sub menu
