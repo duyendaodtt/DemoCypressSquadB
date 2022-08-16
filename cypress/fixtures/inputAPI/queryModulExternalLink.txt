@@ -1,5 +1,5 @@
 query ExternalLinkModule{
-  all_modular_external_link(asc:"title"){
+modular_external_link(asc:"title"){
     meta{total}
     items{
       title

@@ -19,7 +19,9 @@ query {
 
       contributor {
         title
-   
+        contributorDescription
+        contributorName
+   			url
         contributorRole
         contributorImage {
           image {

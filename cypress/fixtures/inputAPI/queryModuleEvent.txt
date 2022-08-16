@@ -1,5 +1,5 @@
 query {
-  all_modular_event_promo {
+  modular_event_promo {
     meta {
       total
     }
@@ -8,7 +8,7 @@ query {
       title
       background{
         backgroundImage{url}
-        backgroundColour
+        backgroundColor
         backgroundImageAltText
       }
       moduleDisplayOption
