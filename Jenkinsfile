@@ -27,7 +27,7 @@ pipeline {
 
   post { 
         always { 
-            emailext( attachLog: true, body: 'body test', subject: 'Test email', to: 'ha.hoang@xpondigital.com')
+            emailext( attachLog: true, body: "Please visit ${env.BUILD_URL} for further information", subject: "Job '${env.JOB_NAME}' (${env.BUILD_NUMBER})", to: "ha.hoang@xpondigital.com")
         }
     }
 }
