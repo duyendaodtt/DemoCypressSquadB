@@ -2,7 +2,7 @@
     "entry": {
         "footer_logo": {
             "image_alt_text": "title",
-            "image": "bltd80121967d547a70"
+            "image": null
         },
         "footer_sections": [
             {
@@ -113,7 +113,7 @@
                             "uid": "cs5485e7372669ee51"
                         },
                         "open_in_new_tab": false,
-                        "image": "blt29c8d7207ab7318a",
+                        "image": null,
                         "image_alt_text": ""
                     }
                 ],
@@ -135,7 +135,7 @@
         ],
         "informa_footer_bar": {
             "brand_logo": {
-                "image": "blt6893e4b1f4992e39",
+                "featured_image": null,
                 "image_alt_text": "brand logo txt",
                 "link": {
                     "title": "test",

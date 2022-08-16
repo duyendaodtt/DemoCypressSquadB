@@ -24,7 +24,7 @@
             }
         ],
         "featured_image_group": {
-            "featured_image": "blt29c8d7207ab7318a",
+            "featured_image": null,
             "featured_image_credit": "Cá hồi hoang",
             "featured_image_caption": "Cá hồi hoang",
             "image_alt_text": ""

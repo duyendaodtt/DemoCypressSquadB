@@ -11,7 +11,7 @@
             "button_2_link": "google.com",
             "event_type": "Informa",
             "event_logo": {
-                "logo_file": "bltb9ee6c4710017940",
+                "logo_file": null,
                 "event_logo_alt": "https://eu-app.contentstack.com/#!/stack/bltaafcf579726913de/content-type/event/en-us/entry/create?branch=main"
             }
         },

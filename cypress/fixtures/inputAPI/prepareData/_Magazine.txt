@@ -10,8 +10,6 @@
                 "_content_type_uid": "contributor"
             }
         ],
-        "created_at": "2022-07-28T05:09:55.769Z",
-        "created_by": "bltf820cba671ae8b75",
         "featured_image_group": {
             "featured_image": null,
             "featured_image_credit": "",

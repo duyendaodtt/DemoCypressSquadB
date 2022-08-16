@@ -1,7 +1,7 @@
 {
     "entry": {
         "background": {
-            "background_image": "bltb9ee6c4710017940",
+            "background_image": null,
             "background_image_alt_text": "bg img txt",
             "background_color": "Brand Color 2"
         },

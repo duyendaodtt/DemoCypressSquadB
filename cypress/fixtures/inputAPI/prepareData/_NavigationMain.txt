@@ -196,7 +196,7 @@
         ]
     },
     "site_logo_override": {
-        "site_logo":"bltb9ee6c4710017940",
+        "site_logo":null,
         "site_logo_image_alt_text": "MasterStack gfgf"
     },
     "tags": [],

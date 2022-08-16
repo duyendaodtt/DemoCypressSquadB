@@ -8,7 +8,7 @@
             "no_index": false
         },
         "subbrand_logo_group": {
-            "subbrand_image": "bltb9ee6c4710017940",
+            "subbrand_image": null,
             "subbrand_image_alt_text": "Sub-brand Logo Image Alt Text"
         },
         "tags": [],

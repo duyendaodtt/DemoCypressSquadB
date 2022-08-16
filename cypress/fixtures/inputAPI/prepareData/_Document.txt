@@ -26,13 +26,13 @@
         "document": {
             "material_title": "Entertainment One -  Taking preschool properties to every global market",
             "material_url": "Entertainment One -  Taking preschool properties to every global market",
-            "material_resource": "blt29c8d7207ab7318a",
+            "material_resource": null,
             "material_multiple": [
-                "blt29c8d7207ab7318a"
+                
             ]
         },
         "featured_image_group": {
-            "featured_image": "bltbfb842f96c95b3d4",
+            "featured_image": null,
             "featured_image_credit": "Entertainment One -  Taking preschool properties to every global market",
             "featured_image_caption": "Entertainment One -  Taking preschool properties to every global market",
             "image_alt_text": "Entertainment One -  Taking preschool properties to every global market"
