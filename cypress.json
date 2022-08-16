@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://content.preview.scm.informagt.com/v1/graphql?client_id=master",
+    "baseUrl": "https://content.staging.scm.informagt.com/v1/graphql?client_id=scmdemo",
     "testFiles": "**/*.feature",
     "ignoreTestFiles": "*.js",
     "fixtures":{
@@ -8,7 +8,7 @@
         "Content-Type": "application/json"
     },
     "env":{
-        "api_key": "bltaafcf579726913de",
+        "api_key": "bltace826a255a35e75",
         "authtoken": "blt01763cdc199617eb",
         "Content-Type": "application/json"
     },
