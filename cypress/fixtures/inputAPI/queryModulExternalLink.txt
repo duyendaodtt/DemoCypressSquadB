@@ -1,27 +1,115 @@
-query ExternalLinkModule{
-modular_external_link(asc:"title"){
-    meta{total}
-    items{
-      title
-      contentTypeUid
-      ctaButton{
-        ctaButtonUrl
-        ctaButtonText
-      }
-      externalLinks{
-        title
-        mobileHeadline
-        featuredImageGroup{
-          featuredImage{url}
-          featuredImageCredit
-          featuredImageCaption
-        }
-        termSelector{
-          primaryTerm
-          secondaryTerm
-        }
-      }
-      moduleLabel
+query{
+  modular_external_link(uid:"blt4833a03e3a8f01b4")
+  {
+    contentTypeUid
+    title
+    ctaButton {
+      ctaButtonText
+      ctaButtonUrl
     }
+    externalLinks {
+      contentFormat {
+        title
+        uid
+        contentTypeUid
+        pageDescription
+        url
+      }
+      contentTypeUid
+      contributor {
+        contentTypeUid
+        contributorCompanyName
+        contributorDescription
+        contributorEmail{
+          emailAddress
+          hideEmail
+        }
+        contributorImage {
+          image {url}
+          imageAltText
+        }
+        contributorName
+        contributorRole
+        contributorSummary
+        country {
+          title
+          uid
+        }
+      } 
+      externalLink 
+      featuredImageGroup {
+        featuredImage {url}
+        featuredImageCaption
+        featuredImageCredit
+        imageAltText
+      }
+      keywords {
+        contentTypeUid
+        title
+      }
+      mobileHeadline
+      publishedDate
+      relatedEvents {
+        title
+        uid
+        eventDetails {
+          eventUrl
+        }
+      }
+      seo {
+        canonicalUrl
+        metaDescription
+        metaTitle
+        noIndex
+      }
+      seriesTaxonomy {
+        branding {
+          color
+          logo {url}
+          logoAltText
+          tagline
+        }
+        contentTypeUid
+        createdAt
+        createdBy
+        displayOptions
+        locale
+        modules{
+          moduleBlocks {
+            title
+            uid
+          }
+        }
+      }
+      sponsorshipGatingGroup {
+        sponsorshipGatingCampaignUrl
+        sponsorshipGatingExternalFormId
+        sponsorshipGatingGateExternalFieldFlag
+        sponsorshipGatingGateRegFlag
+        sponsorshipGatingSponsorFlag
+        sponsorshipGatingSponsorReference {
+          body
+          title
+          uid
+        }
+      }
+      subbrand {
+        createdAt
+        title
+        url
+      }
+      summary
+      termSelector {
+        historyOfPrimaryTerm
+        primaryCategoryBelonged
+        primaryTerm
+        primaryTermInRealText
+        secondaryTerm
+      }
+      title
+      uid
+      url
+    }
+    moduleLabel
   }
 }

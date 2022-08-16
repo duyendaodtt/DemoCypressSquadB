@@ -1,17 +1,15 @@
-query ModularNewsleterPromo{
-  modular_newsletter_promo(asc:"title"){
-    meta{total}
-    items{
-      title
-      uid
-      ctaButton{
-        ctaButtonUrl{
-          href
-          title
-        }
-        ctaButtonText
+query{
+  modular_newsletter_promo(uid:"blt0c3882df2bf23c8a"){
+    ctaButton {
+      ctaButtonText
+      ctaButtonUrl{
+        title
+        href
       }
-      ctaMessage
     }
+    ctaMessage
+    title
+    uid
+    __typename
   }
 }
