@@ -4,12 +4,12 @@ class locator {
     static sub_menu_title(index: number) {
         return `[role='menu'] > div:nth-child(${index}) [role="menuitem"] span`
     }
-    static sub_menu_item_title(index: number) {
-        return `.block  [data-module="sub-menu"] ul li:nth-child(${index}) p`
+    static sub_menu_item_title(column:number, index: number) {
+        return `.block  [data-module="sub-menu"] ul:nth-child(${column}) li:nth-child(${index}) p`
     }
 
-    static sub_menu_item_url(index: number) {
-        return `.block  [data-module="sub-menu"] ul li:nth-child(${index}) a`
+    static sub_menu_item_url(column:number, index: number) {
+        return `.block  [data-module="sub-menu"] ul:nth-child(${column}) li:nth-child(${index}) a`
     }
 
     static all_link_title = '.block  [data-module="sub-menu"] > div:nth-child(2) > div:nth-child(2)  span'

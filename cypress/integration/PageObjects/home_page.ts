@@ -10,14 +10,14 @@ class HomePage extends SharedObject {
 
     Verify_related_topics_of_Nav_sub_menu(mainMenuItems: any) {
         mainMenuItems.length > 0 && mainMenuItems.forEach((mainMenu: any, index: number) => {
-            console.log(mainMenu)
             this.verify_text_visible_by_element(locator.sub_menu_title(index+1), mainMenu.title)
             this.click_element(locator.sub_menu_title(index+1))
             this.verify_string_exits(locator.label_related_topics)
             // sub menu
-            mainMenu.subMenu.forEach((subMenu_item: any, index: number) => {
-                this.verify_text_visible_by_element(locator.sub_menu_item_title(index+1), subMenu_item.title)
-                this.verify_link_by_element(locator.sub_menu_item_url(index+1), subMenu_item.url)
+            mainMenu.subMenu.forEach((subMenu_item: any, index1: number) => {
+                let index_new = Math.abs(index1-10*Math.floor((index1)/10)) + 1
+                let temp = Math.floor((index1)/10) + 1
+                this.verify_text_visible_by_element(locator.sub_menu_item_title(temp, index_new ), subMenu_item.title)
             });
             // all link
             this.verify_text_visible_by_element(locator.all_link_title, mainMenu.seeAllLink)
@@ -30,10 +30,12 @@ class HomePage extends SharedObject {
     Verify_click_ability_of_items_in_related_topics(mainMenuItems: any) {
         mainMenuItems.length > 0 && mainMenuItems.forEach((mainMenu: any, index: number) => {
             this.click_element(locator.sub_menu_title(index+1))
-            // sub menu
-            mainMenu.subMenu.forEach((subMenu_item: any, index1: number) => {
-                this.click_element(locator.sub_menu_item_url(index1+1))
-                this.verify_include_url('https://www.' + subMenu_item.url.slice(8))
+             // sub menu
+             mainMenu.subMenu.forEach((subMenu_item: any, index1: number) => {
+                let index_new = Math.abs(index1-10*Math.floor((index1)/10)) + 1
+                let temp = Math.floor((index1)/10) + 1
+                this.click_element(locator.sub_menu_item_url(temp, index_new))
+                this.verify_include_url(subMenu_item.url.slice(8))
                 cy.go('back')
                 if(mainMenu.subMenu.length != index1+1) {
                     this.click_element(locator.sub_menu_title(index+1))
@@ -45,6 +47,7 @@ class HomePage extends SharedObject {
 
     Verify_related_in_of_Nav_sub_menu(mainMenuItems: any) {
         mainMenuItems.length > 0 && mainMenuItems.forEach((mainMenu: any, index: number) => {
+            this.click_element(locator.sub_menu_title(index+1))
             this.verify_text_visible_by_element(locator.all_link_title, mainMenu.seeAllLink)
             this.verify_link_by_element(locator.all_link_url, mainMenu.seeAllLinkUrl)
             this.click_element(locator.sub_menu_title(index+1))
@@ -54,10 +57,10 @@ class HomePage extends SharedObject {
 
     Verify_click_ability_of_items_in_related_in(mainMenuItems: any) {
         mainMenuItems.length > 0 && mainMenuItems.forEach((mainMenu: any, index: number) => {
-            this.click_element(locator.all_link_url)
-            this.verify_include_url('https://www.' +  mainMenu.seeAllLinkUrl.slice(8))
-            cy.go('back')
             this.click_element(locator.sub_menu_title(index+1))
+            this.click_element(locator.all_link_url)
+            this.verify_include_url(mainMenu.seeAllLinkUrl.slice(8))
+            cy.go('back')
         })
 
         return this
