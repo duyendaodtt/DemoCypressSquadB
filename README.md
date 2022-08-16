@@ -1,14 +1,8 @@
 # Demo
 1. Run to install dependencies: 
  - npm i
- - npm i cypress-xpath
-2. Execute test as cmd: npx cypress run;node cypress/cucumber-json/cucumber-html-report.js 
-4. If want to add more feature, create on folder: cypress/integration/features
-5. Then define the step definition at folder: cypress/integration/step_definitions
-# Gherkin Expressions 
-1. Given I open {taxonomyPath} page
-2. Then I see {string} is {string}
-3. Then I see (.*) image
-4. Then I see (.*) as (.*)
-  
+2. Run test case with test runner: npx cypress open
+3. If Run test case headless:  npx cypress run --spec "**/*.spec.js" --browser chrome --headless
+4. Read report: open cypress\reports\index.html
+
 

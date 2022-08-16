@@ -1,0 +1,261 @@
+{
+    "data": {
+      "navigation": {
+        "informaBar": {
+          "enabled": false,
+          "leftSection": {
+            "description": "Left Section",
+            "subMenu": []
+          },
+          "rightSection": {
+            "description": "Right Sectiogfdgfdgfdn"
+          }
+        },
+        "logo": {
+          "url": "https://eu-images.contentstack.com/v3/assets/bltaafcf579726913de/bltb9ee6c4710017940/61517a37f3dbd77caf36eb32/Screenshot_2021-08-23_at_11.40.09.png",
+          "altText": "MasterStack gfgf 5555"
+        },
+        "mainMenuItems": [
+          {
+            "title": "Resources",
+            "url": "https://google.com/",
+            "hasSubMenu": true,
+            "recentEvent": [],
+            "seeAllLink": "abc",
+            "seeAllLinkUrl": "https://google.com/",
+            "subMenu": [
+              {
+                "title": "abc",
+                "url": "https://google.com/"
+              }
+            ]
+          },
+          {
+            "title": "Entertainment",
+            "url": "https://google.com/",
+            "hasSubMenu": true,
+            "recentEvent": [],
+            "seeAllLink": "fff",
+            "seeAllLinkUrl": "https://google.com/",
+            "subMenu": [
+              {
+                "title": "ff",
+                "url": "https://google.com/"
+              },
+              {
+                "title": "ff",
+                "url": "https://google.com/"
+              },
+              {
+                "title": "as",
+                "url": "https://google.com/"
+              }
+            ]
+          },
+          {
+            "title": "Fashion",
+            "url": "https://github.com/",
+            "hasSubMenu": true,
+            "recentEvent": [],
+            "seeAllLink": "abc",
+            "seeAllLinkUrl": "https://github.com/",
+            "subMenu": [
+              {
+                "title": "a1",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a2",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a3",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a4",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a5",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a6",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a7",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a8",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a9",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a10",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a11",
+                "url": "https://github.com/"
+              },
+              {
+                "title": "a12",
+                "url": "https://github.com/"
+              }
+            ]
+          }
+        ],
+        "megaMenu": {
+          "largeMenu": [
+            {
+              "title": "Resources",
+              "url": "https://google.com/",
+              "hasSubMenu": true,
+              "seeAllLink": "abc",
+              "seeAllLinkUrl": "https://google.com/",
+              "subMenu": [
+                {
+                  "title": "abc",
+                  "url": "https://google.com/"
+                }
+              ]
+            },
+            {
+              "title": "Entertainment",
+              "url": "https://google.com/",
+              "hasSubMenu": true,
+              "seeAllLink": "fff",
+              "seeAllLinkUrl": "https://google.com/",
+              "subMenu": [
+                {
+                  "title": "ff",
+                  "url": "https://google.com/"
+                },
+                {
+                  "title": "ff",
+                  "url": "https://google.com/"
+                },
+                {
+                  "title": "as",
+                  "url": "https://google.com/"
+                }
+              ]
+            },
+            {
+              "title": "Fashion",
+              "url": "https://github.com/",
+              "hasSubMenu": true,
+              "seeAllLink": "abc",
+              "seeAllLinkUrl": "https://github.com/",
+              "subMenu": [
+                {
+                  "title": "a1",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a2",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a3",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a4",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a5",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a6",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a7",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a8",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a9",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a10",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a11",
+                  "url": "https://github.com/"
+                },
+                {
+                  "title": "a12",
+                  "url": "https://github.com/"
+                }
+              ]
+            }
+          ],
+          "smallMenu": [
+            {
+              "title": "Browse",
+              "url": null,
+              "subMenu": [
+                {
+                  "title": "browser manual link",
+                  "url": "/browser-link"
+                }
+              ]
+            },
+            {
+              "title": "Get in Touch",
+              "url": null,
+              "subMenu": [
+                {
+                  "title": "test1",
+                  "url": "/test"
+                }
+              ]
+            }
+          ]
+        },
+        "secondaryMenu": [
+          {
+            "title": "primary topic 1",
+            "url": "/primary-topic-1"
+          },
+          {
+            "title": "keyword test 1",
+            "url": "/test-key"
+          },
+          {
+            "title": "a series of documents",
+            "url": "/series/a-series-of-documents"
+          }
+        ],
+        "sideNavSections": [
+          {
+            "title": "Communicate",
+            "url": "",
+            "seeAllLink": "",
+            "seeAllLinkUrl": "",
+            "subMenu": [
+              {
+                "title": "title section link",
+                "url": "/section-link-test"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }

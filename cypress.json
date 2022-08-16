@@ -1,12 +1,37 @@
 {
-    "baseUrl": "https://stage.quantumbusinessnews.com",
-    "testFiles": "**/*.feature",
-    "ignoreTestFiles": "*.js",
+    "baseUrl": "https://staging.scmdemo.informagt.com",
+    "testFiles":  ["**/*.spec.ts"],
+    "video": false,
+    "viewportWidth": 1300,
+    "viewportHeight": 660,
+    "chromeWebSecurity": false,
     "fixtures":{
-        "Article": "webElements/articleElements.json"
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "blt2373644bb8f66e59",
+        "Content-Type": "application/json"
+    },
+    "env":{
+        "api_key": "bltaafcf579726913de",
+        "authtoken": "blt2373644bb8f66e59",
+        "Content-Type": "application/json"
     },
     "retries": {
         "runMode": 2,
         "openMode": 1
-      }
+      },
+      "numTestsKeptInMemory": 1,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
+        "cypressMochawesomeReporterReporterOptions": {
+        "reportDir": "cypress/reports",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+        },
+        "mochaJunitReporterReporterOptions": {
+        "mochaFile": "cypress/reports/junit/results-[hash].xml"
+        }
+    }
 }
