@@ -19,9 +19,6 @@ class HomePage extends SharedObject {
                 let temp = Math.floor((index1)/10) + 1
                 this.verify_text_visible_by_element(locator.sub_menu_item_title(temp, index_new ), subMenu_item.title)
             });
-            // all link
-            this.verify_text_visible_by_element(locator.all_link_title, mainMenu.seeAllLink)
-            this.verify_link_by_element(locator.all_link_url, mainMenu.seeAllLinkUrl)
             this.click_element(locator.sub_menu_title(index+1))
         })
         return this
@@ -62,7 +59,6 @@ class HomePage extends SharedObject {
             this.verify_include_url(mainMenu.seeAllLinkUrl.slice(8))
             cy.go('back')
         })
-
         return this
     }
 }
