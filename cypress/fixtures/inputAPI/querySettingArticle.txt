@@ -16,7 +16,10 @@ query ArticleSetting {
     articleDisplaySettings {
       articleTemplate
     }
-    rightHandRailConfiguration {
+    sidebarConfiguration{
+      rightComponents {
+        uid
+      }
       title
     }
     modules {
