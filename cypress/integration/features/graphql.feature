@@ -60,33 +60,33 @@ Feature: Test query graphql
             | navigation_main   | _NavigationMain.txt         |
             | mega_menu         | _NavigationMegaMenu.txt     |
 
-    Scenario Outline: API E2E - Delete entry <entryName>
-        Given I delete <entryName> entry with uid from <fileName>
-        Examples:
-            | fileName                         | entryName                    |
-            | Article.txt                      | article                      |
-            | Document.txt                     | document                     |
-            | basic_page.txt                   | basic_page                   |
-            | Event.txt                        | event                        |
-            | Podcast.txt                      | podcast                      |
-            | Video.txt                        | video                        |
-            | keyword.txt                      | keyword                      |
-            | contributor.txt                  | contributor                  |
-            | subbrand.txt                     | subbrand                     |
-            | content_format.txt               | content_format               |
-            | magazine.txt                     | magazine                     |
-            | external_link.txt                | external_link                |
-            | country.txt                      | country                      |
-            | series.txt                       | series                       |
-            | module_content_spotlight.txt     | module_content_spotlight     |
-            | module_external_links.txt        | module_external_links        |
-            | module_featured.txt              | module_featured              |
-            | module_magazine_promo.txt        | module_magazine_promo        |
-            | module_newsletter_promo_cta.txt  | module_newsletter_promo_cta  |
-            | sponsor.txt                      | sponsor                      |
-            | home_page.txt                    | home_page                    |
-            | event_promo.txt                  | event_promo                  |
-            | module_flexible_content_list.txt | module_flexible_content_list |
-            | topic_primary.txt                | topic_primary                |
-            | topic_tertiary.txt               | topic_tertiary               |
-            | topic_secondary.txt              | topic_secondary              |
+    #Scenario Outline: API E2E - Delete entry <entryName>
+    #    Given I delete <entryName> entry with uid from <fileName>
+    #    Examples:
+    #        | fileName                         | entryName                    |
+    #        | Article.txt                      | article                      |
+    #        | Document.txt                     | document                     |
+    #        | basic_page.txt                   | basic_page                   |
+    #        | Event.txt                        | event                        |
+            # | Podcast.txt                      | podcast                      |
+            # | Video.txt                        | video                        |
+            # | keyword.txt                      | keyword                      |
+            # | contributor.txt                  | contributor                  |
+            # | subbrand.txt                     | subbrand                     |
+            # | content_format.txt               | content_format               |
+            # | magazine.txt                     | magazine                     |
+            # | external_link.txt                | external_link                |
+            # | country.txt                      | country                      |
+            # | series.txt                       | series                       |
+            # | module_content_spotlight.txt     | module_content_spotlight     |
+            # | module_external_links.txt        | module_external_links        |
+            # | module_featured.txt              | module_featured              |
+            # | module_magazine_promo.txt        | module_magazine_promo        |
+            # | module_newsletter_promo_cta.txt  | module_newsletter_promo_cta  |
+            # | sponsor.txt                      | sponsor                      |
+            # | home_page.txt                    | home_page                    |
+            # | event_promo.txt                  | event_promo                  |
+            # | module_flexible_content_list.txt | module_flexible_content_list |
+            # | topic_primary.txt                | topic_primary                |
+            # | topic_tertiary.txt               | topic_tertiary               |
+            # | topic_secondary.txt              | topic_secondary              |

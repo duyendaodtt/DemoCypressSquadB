@@ -22,7 +22,7 @@
             "name": "I create keyword entry with a body from keywords.txt",
             "result": {
               "status": "passed",
-              "duration": 1571000000
+              "duration": 1070000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I publish this keyword",
             "result": {
               "status": "passed",
-              "duration": 908000000
+              "duration": 926000000
             }
           }
         ]
@@ -52,7 +52,7 @@
             "name": "I create contributor entry with a body from contributor.txt",
             "result": {
               "status": "passed",
-              "duration": 943000000
+              "duration": 962000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I publish this contributor",
             "result": {
               "status": "passed",
-              "duration": 887000000
+              "duration": 921000000
             }
           }
         ]
@@ -82,7 +82,7 @@
             "name": "I create subbrand entry with a body from subbrand.txt",
             "result": {
               "status": "passed",
-              "duration": 924000000
+              "duration": 936000000
             }
           },
           {
@@ -91,8 +91,8 @@
             "line": 5,
             "name": "I publish this subbrand",
             "result": {
-              "status": "passed",
-              "duration": 883000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/subbrand/entries/bltaa0166099e690da7/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/subbrand/entries/bltaa0166099e690da7/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:22 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"25ms\",\n  \"x-request-id\": \"16119\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"subbrand_logo_group.subbrand_image\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -112,7 +112,7 @@
             "name": "I create content_format entry with a body from contentformat.txt",
             "result": {
               "status": "passed",
-              "duration": 911000000
+              "duration": 1003000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "I publish this content_format",
             "result": {
               "status": "passed",
-              "duration": 902000000
+              "duration": 938000000
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "I update and create article entry with body from _Article.txt",
             "result": {
               "status": "passed",
-              "duration": 999000000
+              "duration": 1017000000
             }
           },
           {
@@ -151,8 +151,8 @@
             "line": 15,
             "name": "I publish this article",
             "result": {
-              "status": "passed",
-              "duration": 1086000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/article/entries/blt4b4394238cd5ab79/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/article/entries/blt4b4394238cd5ab79/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:25 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"43ms\",\n  \"x-request-id\": \"21468\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"topic_selector\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -172,7 +172,7 @@
             "name": "I update and create document entry with body from _Document.txt",
             "result": {
               "status": "passed",
-              "duration": 995000000
+              "duration": 1022000000
             }
           },
           {
@@ -181,8 +181,8 @@
             "line": 15,
             "name": "I publish this document",
             "result": {
-              "status": "passed",
-              "duration": 904000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/document/entries/blt17536ead16026968/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/document/entries/blt17536ead16026968/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:27 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"51ms\",\n  \"x-request-id\": \"24851\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"topic_selector\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -202,7 +202,7 @@
             "name": "I update and create basic_page entry with body from _BasicPage.txt",
             "result": {
               "status": "passed",
-              "duration": 945000000
+              "duration": 985000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I publish this basic_page",
             "result": {
               "status": "passed",
-              "duration": 898000000
+              "duration": 919000000
             }
           }
         ]
@@ -232,7 +232,7 @@
             "name": "I update and create event entry with body from _Event.txt",
             "result": {
               "status": "passed",
-              "duration": 987000000
+              "duration": 1007000000
             }
           },
           {
@@ -241,8 +241,8 @@
             "line": 15,
             "name": "I publish this event",
             "result": {
-              "status": "passed",
-              "duration": 903000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/event/entries/blt1a0f10181739f2db/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/event/entries/blt1a0f10181739f2db/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:31 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"41ms\",\n  \"x-request-id\": \"79771\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"event_description\": [\n      \"is a required field.\"\n    ],\n    \"published_date\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -262,7 +262,7 @@
             "name": "I update and create podcast entry with body from _Podcast.txt",
             "result": {
               "status": "passed",
-              "duration": 1011000000
+              "duration": 1056000000
             }
           },
           {
@@ -271,8 +271,8 @@
             "line": 15,
             "name": "I publish this podcast",
             "result": {
-              "status": "passed",
-              "duration": 936000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/podcast/entries/blt017edd0f377e3edd/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/podcast/entries/blt017edd0f377e3edd/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:32 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"54ms\",\n  \"x-request-id\": \"35771\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"topic_selector\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -292,7 +292,7 @@
             "name": "I update and create video entry with body from _Video.txt",
             "result": {
               "status": "passed",
-              "duration": 988000000
+              "duration": 1027000000
             }
           },
           {
@@ -301,8 +301,8 @@
             "line": 15,
             "name": "I publish this video",
             "result": {
-              "status": "passed",
-              "duration": 911000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/video/entries/blte4e01078ab6594b1/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/video/entries/blte4e01078ab6594b1/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:34 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"65ms\",\n  \"x-request-id\": \"66610\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"topic_selector\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -322,7 +322,7 @@
             "name": "I update and create magazine entry with body from _Magazine.txt",
             "result": {
               "status": "passed",
-              "duration": 979000000
+              "duration": 1040000000
             }
           },
           {
@@ -331,8 +331,8 @@
             "line": 15,
             "name": "I publish this magazine",
             "result": {
-              "status": "passed",
-              "duration": 910000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/magazine/entries/blt5afb60752f92b9d2/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/magazine/entries/blt5afb60752f92b9d2/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:36 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"52ms\",\n  \"x-request-id\": \"55\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"topic_selector\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -352,7 +352,7 @@
             "name": "I update and create external_link entry with body from _ExternalLink.txt",
             "result": {
               "status": "failed",
-              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/external_link/entries?locale=en-us\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/external_link/entries?locale=en-us\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"bltace826a255a35e75\",\n  \"authtoken\": \"blt01763cdc199617eb\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 1399\n}\nBody: {\"entry\":{\"authored_by\":\"\",\"authored_on\":\"\",\"content_format\":[{\"uid\":\"blt87f19fd3c7ff582d\",\"_content_type_uid\":\"content_format\"}],\"contributor\":[{\"uid\":\"blt70b159a5cef6e878\",\"_content_type_uid\":\"contributor\"}],\"external_link\":\"http://google.com\",\"featured_image_group\":{\"featured_image\":\"blt29c8d7207ab7318a\",\"featured_image_credit\":\"\",\"featured_image_caption\":\"\",\"image_alt_text\":\"\"},\"keywords\":[{\"uid\":\"bltac1e1f0f326f03ec\",\"_content_type_uid\":\"keyword\"}],\"mobile_headline\":\"External Link Mobile\",\"old_url\":\"\",\"published_date\":\"2022-06-02T10:29:04.000Z\",\"seo\":{\"meta_title\":\"SEO TTIEL\",\"meta_description\":\"SEO TTIEL\",\"canonical_url\":\"URL\",\"no_index\":false},\"series_taxonomy\":[],\"sponsorship_gating_group\":{\"sponsorship_gating_sponsor_flag\":false,\"sponsorship_gating_sponsor_reference\":[],\"sponsorship_gating_campaign_url\":\"\",\"sponsorship_gating_gate_reg_flag\":false,\"sponsorship_gating_gate_external_field_flag\":\"None\",\"sponsorship_gating_external_form_id\":\"\"},\"subbrand\":[{\"uid\":\"blt5f1b95de93900aac\",\"_content_type_uid\":\"subbrand\"}],\"summary\":\"External LinkExternal LinkExternal Link\",\"tags\":[],\"term_selector\":{\"historyOfPrimaryTerm\":[\"/primary-topic-1\"],\"primaryTerm\":\"/primary-topic-1\",\"primaryTermInRealText\":\"primary topic 1\",\"primaryCategoryBelonged\":\"/primary-topic-1\",\"secondaryTerm\":[\"/secondary-topic-1\"]},\"title\":\"[Automation Test] - External Link\",\"url\":\"/Automation-external-link\"}}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 16 Aug 2022 09:01:24 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"49ms\",\n  \"x-request-id\": \"27864\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry creation failed.\",\n  \"error_code\": 119,\n  \"errors\": {\n    \"featured_image_group.featured_image\": [\n      \"is not a valid upload.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/external_link/entries?locale=en-us\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/external_link/entries?locale=en-us\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 1399\n}\nBody: {\"entry\":{\"authored_by\":\"\",\"authored_on\":\"\",\"content_format\":[{\"uid\":\"blte550b85d3cb8d910\",\"_content_type_uid\":\"content_format\"}],\"contributor\":[{\"uid\":\"blt52f1732223b2b932\",\"_content_type_uid\":\"contributor\"}],\"external_link\":\"http://google.com\",\"featured_image_group\":{\"featured_image\":\"blt29c8d7207ab7318a\",\"featured_image_credit\":\"\",\"featured_image_caption\":\"\",\"image_alt_text\":\"\"},\"keywords\":[{\"uid\":\"bltf66a0431d7bd2180\",\"_content_type_uid\":\"keyword\"}],\"mobile_headline\":\"External Link Mobile\",\"old_url\":\"\",\"published_date\":\"2022-06-02T10:29:04.000Z\",\"seo\":{\"meta_title\":\"SEO TTIEL\",\"meta_description\":\"SEO TTIEL\",\"canonical_url\":\"URL\",\"no_index\":false},\"series_taxonomy\":[],\"sponsorship_gating_group\":{\"sponsorship_gating_sponsor_flag\":false,\"sponsorship_gating_sponsor_reference\":[],\"sponsorship_gating_campaign_url\":\"\",\"sponsorship_gating_gate_reg_flag\":false,\"sponsorship_gating_gate_external_field_flag\":\"None\",\"sponsorship_gating_external_form_id\":\"\"},\"subbrand\":[{\"uid\":\"bltaa0166099e690da7\",\"_content_type_uid\":\"subbrand\"}],\"summary\":\"External LinkExternal LinkExternal Link\",\"tags\":[],\"term_selector\":{\"historyOfPrimaryTerm\":[\"/primary-topic-1\"],\"primaryTerm\":\"/primary-topic-1\",\"primaryTermInRealText\":\"primary topic 1\",\"primaryCategoryBelonged\":\"/primary-topic-1\",\"secondaryTerm\":[\"/secondary-topic-1\"]},\"title\":\"[Automation Test] - External Link\",\"url\":\"/Automation-external-link\"}}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:36 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"8\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"53ms\",\n  \"x-request-id\": \"61842\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry creation failed.\",\n  \"error_code\": 119,\n  \"errors\": {\n    \"featured_image_group.featured_image\": [\n      \"is not a valid upload.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           },
           {
@@ -381,7 +381,7 @@
             "name": "I update and create country entry with body from _Country.txt",
             "result": {
               "status": "passed",
-              "duration": 978000000
+              "duration": 990000000
             }
           },
           {
@@ -391,7 +391,7 @@
             "name": "I publish this country",
             "result": {
               "status": "passed",
-              "duration": 900000000
+              "duration": 907000000
             }
           }
         ]
@@ -410,8 +410,8 @@
             "line": 14,
             "name": "I update and create series entry with body from _SeriesTaxonomy.txt",
             "result": {
-              "status": "passed",
-              "duration": 1049000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/series/entries?locale=en-us\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/series/entries?locale=en-us\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 742\n}\nBody: {\"entry\":{\"branding\":{\"color\":\"\",\"logo\":null,\"logo_alt_text\":\"\",\"tagline\":\"\"},\"display_options\":\"standard\",\"modules\":{\"module_blocks\":[]},\"seo\":{\"meta_title\":\"aa\",\"meta_description\":\"bb\",\"canonical_url\":\"\",\"no_index\":false},\"series_content_types\":[\"articles\",\"webinars\",\"whitepapers\",\"podcasts\",\"videos\"],\"series_description\":\"descriptions\",\"series_url\":[],\"sponsorship_gating_group\":{\"sponsorship_gating_sponsor_flag\":false,\"sponsorship_gating_sponsor_reference\":[],\"sponsorship_gating_campaign_url\":\"\",\"sponsorship_gating_gate_reg_flag\":false,\"sponsorship_gating_gate_external_field_flag\":\"URL\",\"sponsorship_gating_external_form_id\":\"\"},\"tags\":[],\"title\":\"[Automation Test] Series Taxonomy\",\"url\":\"/series/Automation-Test-Series-Taxonomy\"}}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:39 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"51ms\",\n  \"x-request-id\": \"55024\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry creation failed.\",\n  \"error_code\": 119,\n  \"errors\": {\n    \"series_content_types.2\": [\n      \"whitepapers is not a valid enum value for series_content_types.2.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           },
           {
@@ -420,8 +420,7 @@
             "line": 15,
             "name": "I publish this series",
             "result": {
-              "status": "passed",
-              "duration": 918000000
+              "status": "skipped"
             }
           }
         ]
@@ -441,7 +440,7 @@
             "name": "I update and create module_content_spotlight entry with body from _ModuleContentSpotlight",
             "result": {
               "status": "passed",
-              "duration": 975000000
+              "duration": 1058000000
             }
           },
           {
@@ -451,7 +450,7 @@
             "name": "I publish this module_content_spotlight",
             "result": {
               "status": "passed",
-              "duration": 915000000
+              "duration": 932000000
             }
           }
         ]
@@ -471,7 +470,7 @@
             "name": "I update and create module_external_links entry with body from _ModuleExternalLink.txt",
             "result": {
               "status": "passed",
-              "duration": 950000000
+              "duration": 1060000000
             }
           },
           {
@@ -480,8 +479,8 @@
             "line": 15,
             "name": "I publish this module_external_links",
             "result": {
-              "status": "passed",
-              "duration": 895000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/module_external_links/entries/bltc7cd174118c7e16c/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/module_external_links/entries/bltc7cd174118c7e16c/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:43 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"23ms\",\n  \"x-request-id\": \"52879\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"module_label\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -501,7 +500,7 @@
             "name": "I update and create module_featured entry with body from _ModuleFeatured.txt",
             "result": {
               "status": "passed",
-              "duration": 977000000
+              "duration": 1029000000
             }
           },
           {
@@ -511,7 +510,7 @@
             "name": "I publish this module_featured",
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 930000000
             }
           }
         ]
@@ -531,7 +530,7 @@
             "name": "I update and create module_magazine_promo entry with body from _ModuleMagazinePromo.txt",
             "result": {
               "status": "passed",
-              "duration": 964000000
+              "duration": 998000000
             }
           },
           {
@@ -541,7 +540,7 @@
             "name": "I publish this module_magazine_promo",
             "result": {
               "status": "passed",
-              "duration": 904000000
+              "duration": 922000000
             }
           }
         ]
@@ -561,7 +560,7 @@
             "name": "I update and create module_newsletter_promo_cta entry with body from _ModuleNewletterPromo.txt",
             "result": {
               "status": "passed",
-              "duration": 941000000
+              "duration": 976000000
             }
           },
           {
@@ -571,7 +570,7 @@
             "name": "I publish this module_newsletter_promo_cta",
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 898000000
             }
           }
         ]
@@ -591,7 +590,7 @@
             "name": "I update and create sponsor entry with body from _Sponsor.txt",
             "result": {
               "status": "passed",
-              "duration": 992000000
+              "duration": 993000000
             }
           },
           {
@@ -601,7 +600,7 @@
             "name": "I publish this sponsor",
             "result": {
               "status": "passed",
-              "duration": 901000000
+              "duration": 908000000
             }
           }
         ]
@@ -621,7 +620,7 @@
             "name": "I update and create home_page entry with body from _Homepage.txt",
             "result": {
               "status": "passed",
-              "duration": 941000000
+              "duration": 1053000000
             }
           },
           {
@@ -631,7 +630,7 @@
             "name": "I publish this home_page",
             "result": {
               "status": "passed",
-              "duration": 896000000
+              "duration": 877000000
             }
           }
         ]
@@ -650,8 +649,8 @@
             "line": 14,
             "name": "I update and create event_promo entry with body from _ModuleEventPromo.txt",
             "result": {
-              "status": "passed",
-              "duration": 972000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/event_promo/entries?locale=en-us\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/event_promo/entries?locale=en-us\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 244\n}\nBody: {\"entry\":{\"background\":{\"background_image\":null,\"background_image_alt_text\":\"bg img txt\",\"background_color\":\"Brand Color 2\"},\"event\":[{\"uid\":\"bltcf9a19bb6da8b351\",\"_content_type_uid\":\"event\"}],\"tags\":[],\"title\":\"[Automation Test] Event Promo\"}}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:53 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"13ms\",\n  \"x-request-id\": \"48830\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"The Content Type 'event_promo' was not found. Please try again.\",\n  \"error_code\": 118,\n  \"errors\": {\n    \"uid\": [\n      \"is not valid.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           },
           {
@@ -660,8 +659,7 @@
             "line": 15,
             "name": "I publish this event_promo",
             "result": {
-              "status": "passed",
-              "duration": 903000000
+              "status": "skipped"
             }
           }
         ]
@@ -680,8 +678,8 @@
             "line": 14,
             "name": "I update and create module_flexible_content_list entry with body from _ModuleContentCards.txt",
             "result": {
-              "status": "passed",
-              "duration": 933000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/module_flexible_content_list/entries?locale=en-us\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/module_flexible_content_list/entries?locale=en-us\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 542\n}\nBody: {\"entry\":{\"content_display_option\":\"Horizontal Card\",\"dynamic_recent_content\":{\"by_content_types\":\"Article\",\"by_topics\":[],\"by_keywords\":[],\"by_content_format\":[],\"dynamic_limit\":4},\"manual_curated_content_group\":{\"manual_curated_content\":[{\"uid\":\"blt739df3406d66f2f4\",\"_content_type_uid\":\"webinar\"},{\"uid\":\"blt61c53f0629e7e8ad\",\"_content_type_uid\":\"webinar\"},{\"uid\":\"blt5653401dbc7b7e2b\",\"_content_type_uid\":\"webinar\"}],\"manual_curated_content_limit\":4},\"setting_option\":\"Curated\",\"tags\":[],\"title\":\"[Automation Test] Module Content Cards\"}}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:54 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"15ms\",\n  \"x-request-id\": \"14026\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"The Content Type 'module_flexible_content_list' was not found. Please try again.\",\n  \"error_code\": 118,\n  \"errors\": {\n    \"uid\": [\n      \"is not valid.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           },
           {
@@ -690,8 +688,7 @@
             "line": 15,
             "name": "I publish this module_flexible_content_list",
             "result": {
-              "status": "passed",
-              "duration": 884000000
+              "status": "skipped"
             }
           }
         ]
@@ -710,8 +707,8 @@
             "line": 49,
             "name": "I create topic entries",
             "result": {
-              "status": "passed",
-              "duration": 5524000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/topic_tertiary/entries/blt954ce9556ab3e2a0/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/topic_tertiary/entries/blt954ce9556ab3e2a0/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:03:55 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"25ms\",\n  \"x-request-id\": \"99442\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"icon\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -731,7 +728,7 @@
             "name": "I create settings_article entry from _SettingArticle.txt",
             "result": {
               "status": "passed",
-              "duration": 2710000000
+              "duration": 2809000000
             }
           }
         ]
@@ -751,7 +748,7 @@
             "name": "I create eln_config entry from _SettingELNconfig.txt",
             "result": {
               "status": "passed",
-              "duration": 2701000000
+              "duration": 2845000000
             }
           }
         ]
@@ -771,7 +768,7 @@
             "name": "I create eln_newsletter entry from _SettingNewsletterPromo.txt",
             "result": {
               "status": "passed",
-              "duration": 2732000000
+              "duration": 2787000000
             }
           }
         ]
@@ -791,7 +788,7 @@
             "name": "I create settings_search entry from _SettingSearch.txt",
             "result": {
               "status": "passed",
-              "duration": 2716000000
+              "duration": 2874000000
             }
           }
         ]
@@ -810,8 +807,8 @@
             "line": 52,
             "name": "I create navigation_footer entry from _NavigationFooter.txt",
             "result": {
-              "status": "passed",
-              "duration": 2802000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/navigation_footer/entries/blt623e62e0140bb34a/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/navigation_footer/entries/blt623e62e0140bb34a/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:04:09 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"68ms\",\n  \"x-request-id\": \"29084\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"footer_logo.image\": [\n      \"is a required field.\"\n    ],\n    \"footer_sections.2.editable_links.0.image\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -830,8 +827,8 @@
             "line": 52,
             "name": "I create navigation_main entry from _NavigationMain.txt",
             "result": {
-              "status": "passed",
-              "duration": 2830000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/navigation_main/entries/blt8a5581a340ff4369/publish\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://eu-api.contentstack.com/v3/content_types/navigation_main/entries/blt8a5581a340ff4369/publish\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"blt31d6b0704ba96e9d\",\n  \"authtoken\": \"blt401515ad2c0c524f\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 139\n}\nBody: {\"entry\":{\"environments\":[\"preview\",\"staging\"],\"locales\":[\"en-us\"]},\"locale\":\"en-us\",\"version\":1,\"scheduled_at\":\"2019-02-14T18:30:00.000Z\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 04 Oct 2022 04:04:12 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"76ms\",\n  \"x-request-id\": \"53280\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"Entry publishing failed. Please enter valid data.\",\n  \"error_code\": 357,\n  \"errors\": {\n    \"site_logo_override.site_logo\": [\n      \"is a required field.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
             }
           }
         ]
@@ -851,527 +848,7 @@
             "name": "I create mega_menu entry from _NavigationMegaMenu.txt",
             "result": {
               "status": "passed",
-              "duration": 2788000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-article",
-        "keyword": "Scenario",
-        "line": 67,
-        "name": "API E2E - Delete entry article",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete article entry with uid from Article.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1066000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-document",
-        "keyword": "Scenario",
-        "line": 68,
-        "name": "API E2E - Delete entry document",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete document entry with uid from Document.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1042000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-basic_page",
-        "keyword": "Scenario",
-        "line": 69,
-        "name": "API E2E - Delete entry basic_page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete basic_page entry with uid from basic_page.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1044000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-event",
-        "keyword": "Scenario",
-        "line": 70,
-        "name": "API E2E - Delete entry event",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete event entry with uid from Event.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1048000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-podcast",
-        "keyword": "Scenario",
-        "line": 71,
-        "name": "API E2E - Delete entry podcast",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete podcast entry with uid from Podcast.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1051000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-video",
-        "keyword": "Scenario",
-        "line": 72,
-        "name": "API E2E - Delete entry video",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete video entry with uid from Video.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1048000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-keyword",
-        "keyword": "Scenario",
-        "line": 73,
-        "name": "API E2E - Delete entry keyword",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete keyword entry with uid from keyword.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1089000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-contributor",
-        "keyword": "Scenario",
-        "line": 74,
-        "name": "API E2E - Delete entry contributor",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete contributor entry with uid from contributor.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1059000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-subbrand",
-        "keyword": "Scenario",
-        "line": 75,
-        "name": "API E2E - Delete entry subbrand",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete subbrand entry with uid from subbrand.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1057000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-content_format",
-        "keyword": "Scenario",
-        "line": 76,
-        "name": "API E2E - Delete entry content_format",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete content_format entry with uid from content_format.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1037000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-magazine",
-        "keyword": "Scenario",
-        "line": 77,
-        "name": "API E2E - Delete entry magazine",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete magazine entry with uid from magazine.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1087000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-external_link",
-        "keyword": "Scenario",
-        "line": 78,
-        "name": "API E2E - Delete entry external_link",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete external_link entry with uid from external_link.txt",
-            "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://eu-api.contentstack.com/v3/content_types/external_link/entries/bltb0ad3339fc9329aa\n\nThe response we received from your web server was:\n\n  > 422: Unprocessable Entity\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: https://eu-api.contentstack.com/v3/content_types/external_link/entries/bltb0ad3339fc9329aa\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"api_key\": \"bltace826a255a35e75\",\n  \"authtoken\": \"blt01763cdc199617eb\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 422 - Unprocessable Entity\nHeaders: {\n  \"date\": \"Tue, 16 Aug 2022 09:02:22 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"x-ratelimit-limit\": \"10\",\n  \"x-ratelimit-remaining\": \"9\",\n  \"x-contentstack-organization\": \"blt5948195ac13977b0\",\n  \"x-runtime\": \"28ms\",\n  \"x-request-id\": \"53341\",\n  \"strict-transport-security\": \"max-age=31536000; includeSubDomains\"\n}\nBody: {\n  \"error_message\": \"The requested object doesn't exist.\",\n  \"error_code\": 141,\n  \"errors\": {\n    \"uid\": [\n      \"is not valid.\"\n    ]\n  }\n}\n\n    at https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165424:80\nFrom previous event:\n    at Context.request (https://content.staging.scm.informagt.com/__cypress/runner/cypress_runner.js:165420:35)\nFrom Your Spec Code:\n    at Context.eval (https://content.staging.scm.informagt.com/__cypress/tests?p=cypress\\support\\index.js:166:8)"
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-country",
-        "keyword": "Scenario",
-        "line": 79,
-        "name": "API E2E - Delete entry country",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete country entry with uid from country.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1029000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-series",
-        "keyword": "Scenario",
-        "line": 80,
-        "name": "API E2E - Delete entry series",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete series entry with uid from series.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1057000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-module_content_spotlight",
-        "keyword": "Scenario",
-        "line": 81,
-        "name": "API E2E - Delete entry module_content_spotlight",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete module_content_spotlight entry with uid from module_content_spotlight.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1007000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-module_external_links",
-        "keyword": "Scenario",
-        "line": 82,
-        "name": "API E2E - Delete entry module_external_links",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete module_external_links entry with uid from module_external_links.txt",
-            "result": {
-              "status": "passed",
-              "duration": 945000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-module_featured",
-        "keyword": "Scenario",
-        "line": 83,
-        "name": "API E2E - Delete entry module_featured",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete module_featured entry with uid from module_featured.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1032000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-module_magazine_promo",
-        "keyword": "Scenario",
-        "line": 84,
-        "name": "API E2E - Delete entry module_magazine_promo",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete module_magazine_promo entry with uid from module_magazine_promo.txt",
-            "result": {
-              "status": "passed",
-              "duration": 963000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-module_newsletter_promo_cta",
-        "keyword": "Scenario",
-        "line": 85,
-        "name": "API E2E - Delete entry module_newsletter_promo_cta",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete module_newsletter_promo_cta entry with uid from module_newsletter_promo_cta.txt",
-            "result": {
-              "status": "passed",
-              "duration": 962000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-sponsor",
-        "keyword": "Scenario",
-        "line": 86,
-        "name": "API E2E - Delete entry sponsor",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete sponsor entry with uid from sponsor.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1044000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-home_page",
-        "keyword": "Scenario",
-        "line": 87,
-        "name": "API E2E - Delete entry home_page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete home_page entry with uid from home_page.txt",
-            "result": {
-              "status": "passed",
-              "duration": 996000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-event_promo",
-        "keyword": "Scenario",
-        "line": 88,
-        "name": "API E2E - Delete entry event_promo",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete event_promo entry with uid from event_promo.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1035000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-module_flexible_content_list",
-        "keyword": "Scenario",
-        "line": 89,
-        "name": "API E2E - Delete entry module_flexible_content_list",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete module_flexible_content_list entry with uid from module_flexible_content_list.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1018000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-topic_primary",
-        "keyword": "Scenario",
-        "line": 90,
-        "name": "API E2E - Delete entry topic_primary",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete topic_primary entry with uid from topic_primary.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1040000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-topic_tertiary",
-        "keyword": "Scenario",
-        "line": 91,
-        "name": "API E2E - Delete entry topic_tertiary",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete topic_tertiary entry with uid from topic_tertiary.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1046000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "test-query-graphql;api-e2e---delete-entry-topic_secondary",
-        "keyword": "Scenario",
-        "line": 92,
-        "name": "API E2E - Delete entry topic_secondary",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 64,
-            "name": "I delete topic_secondary entry with uid from topic_secondary.txt",
-            "result": {
-              "status": "passed",
-              "duration": 1064000000
+              "duration": 2873000000
             }
           }
         ]
